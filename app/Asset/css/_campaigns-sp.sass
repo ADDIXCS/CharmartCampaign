@@ -1,0 +1,203 @@
+//
+// 基本はモバイルファーストだが、上書きしたほうが都合がよいものを定義
+// --------------------------------------------------
+
+//
+// content
+// --------------------------------------------------
+
+// section
+// -------------------------
+
+.section-items
+  .row
+    margin-left: -7.5px
+    margin-right: -7.5px
+  .col-xs-4
+    padding-left: 7.5px
+    padding-right: 7.5px
+.container-img
+  padding-left: 0
+  padding-right: 0
+
+// btn
+// -------------------------
+
+.btn-shadow
+  .btn-lg
+    padding-top: $padding-large-vertical - 2
+    padding-bottom: $padding-large-vertical - 2
+
+// footer
+// -------------------------
+
+#section-footer
+  margin-top: 32px
+  p
+    text-align: center
+
+// breadcrumb
+// -------------------------
+
+.breadcrumb
+  li
+    font-size: $font-size-small
+
+//
+// individual
+// --------------------------------------------------
+
+#section-info,
+#section-items,
+#section-item
+  &:before
+    top: -10px
+
+// campaignview-top
+// -------------------------
+
+#section-header
+  padding: 0 0 20px
+#section-info
+  img
+    margin-bottom: $line-height-computed / 2
+#section-summary,
+#section-notice
+  &:before
+    display: none
+#section-summary + #section-notice
+  padding-top: 0
+
+#section-entried
+  .lead
+    font-size: 18px
+
+// campaignview-entry
+// campaignview-entry-confirm
+// -------------------------
+
+#section-fangate
+  padding-bottom: 15px
+  background: $gray-bg
+  .section
+    padding-left: 15px
+    padding-right: 15px
+.campaign-shindan
+  #section-fangate
+    background: #fff
+    padding-top: 15px
+#like-btn-wrapper
+  height: 51px
+  margin-top: 15px
+  padding-top: 15px
+#section-form-inner
+  p
+    font-size: $font-size-small
+    span
+      display: block
+
+#campaignview-entry-confirm,
+#campaignview-vote-confirm
+  #section-form
+    label
+      display: block
+      margin-bottom: 0
+      background: rgba(red($gray-dark), green($gray-dark), blue($gray-dark), .1)
+      font-size: $font-size-small
+
+// campaignview-questions
+// -------------------------
+
+#section-questions
+  .lead
+    font-size: 16px
+
+// campaignview-result
+// -------------------------
+
+#section-share
+  .lead
+    margin-bottom: $line-height-computed / 2
+    font-size: 18px
+
+// campaignview-items
+// -------------------------
+
+#section-items
+  .row > div:nth-child(2n + 1)
+    clear: both
+  .item-wrap
+    font-size: 12px
+    margin-bottom: 10px
+    padding: 5px
+    .section-sm
+      padding: 5px 0 0
+      p
+        font-size: 12px
+        margin: 0
+      .sns-data
+        margin-top: 2px
+        img
+          margin-right: 5px
+      .vote-count
+        font-size: 12px
+        margin-bottom: 2px
+        &:after
+          font-size: 10px
+#section-item
+  font-size: 12px
+  .item-wrap
+    margin: 10px 0
+    padding: 10px
+  h2
+    font-size: 12px
+    margin-bottom: 5px
+  .panel-body
+    padding: 0 0 10px
+    .nickname
+      font-size: 12px
+      margin-bottom: 5px
+  #section-entry-btn
+    .vote-count
+      .lead
+        font-size: 24px
+        margin: 0 0 10px
+        span:after
+          font-size: 10px
+  #section-share-btns
+    padding-top: 0
+
+#section-btn-top
+  .btn
+    margin-bottom: $line-height-computed / 2
+
+//
+// theme colors
+// --------------------------------------------------
+
+@mixin theme-color-sp($color1, $color2, $color3)
+  &#campaignview-entry-confirm,
+  &#campaignview-vote-confirm
+    #section-form
+      label
+        background: rgba(red($color2), green($color2), blue($color2), .1)
+
+.theme-color-gray
+  @include theme-color-sp(nth($theme-color-gray, 1), nth($theme-color-gray, 2), nth($theme-color-gray, 3))
+.theme-color-red
+  @include theme-color-sp(nth($theme-color-red, 1), nth($theme-color-red, 2), nth($theme-color-red, 3))
+.theme-color-green
+  @include theme-color-sp(nth($theme-color-green, 1), nth($theme-color-green, 2), nth($theme-color-green, 3))
+.theme-color-blue
+  @include theme-color-sp(nth($theme-color-blue, 1), nth($theme-color-blue, 2), nth($theme-color-blue, 3))
+.theme-color-yellow
+  @include theme-color-sp(nth($theme-color-yellow, 1), nth($theme-color-yellow, 2), nth($theme-color-yellow, 3))
+.theme-color-purple
+  @include theme-color-sp(nth($theme-color-purple, 1), nth($theme-color-purple, 2), nth($theme-color-purple, 3))
+.theme-color-pink
+  @include theme-color-sp(nth($theme-color-pink, 1), nth($theme-color-pink, 2), nth($theme-color-pink, 3))
+.theme-color-pastel
+  @include theme-color-sp(nth($theme-color-pastel, 1), nth($theme-color-pastel, 2), nth($theme-color-pastel, 3))
+.theme-color-natural
+  @include theme-color-sp(nth($theme-color-natural, 1), nth($theme-color-natural, 2), nth($theme-color-natural, 3))
+

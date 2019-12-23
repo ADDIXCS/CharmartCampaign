@@ -1,0 +1,50 @@
+:php
+  | $this->Form->inputDefaults([
+  |   'div' => false,
+  |   'class' => 'form-control',
+  |   'label' => false,
+  |   'wrapInput' => false,
+  |   'before' => '<td>',
+  |   'after' => '</td>',
+  | ]);
+  | $objectAnswerClass = 'object-answer';
+  | if(!empty($this->request->data['Question'][$i]['Answer'][$j]['delete_flg'])) {
+  |   $objectAnswerClass .= ' hide';
+  | }
+tr(class="#{$objectAnswerClass}")
+  :php
+    | echo $this->Form->input('Question.' . $i . '.Answer.' . $j . '.text', [
+    |   'type' => 'text',
+    |   'before' => $this->Form->isFieldError('Question.' . $i . '.Answer.' . $j . '.text')
+    |     ? '<td class="has-error error">'
+    |     : '<td>',
+    | ]);
+    | echo $this->Form->input('Question.' . $i . '.Answer.' . $j . '.point', [
+    |   'type' => 'text',
+    |   'before' => $this->Form->isFieldError('Question.' . $i . '.Answer.' . $j . '.point')
+    |     ? '<td class="has-error error">'
+    |     : '<td>',
+    | ]);
+  td
+    :php
+      | if(!empty($this->request->data['Question'][$i]['Answer'][$j]['id'])) {
+      |   echo $this->Form->hidden('Question.' . $i . '.Answer.' . $j . '.id');
+      | }
+      | echo $this->Form->input(
+      |   'Question.' . $i . '.Answer.' . $j . '.delete_flg',
+      |   [
+      |     'type' => 'hidden',
+      |     'class' => 'object-answer-delete-flg',
+      |   ]
+      | );
+      | echo $this->Html->btn(
+      |   '',
+      |   '#',
+      |   ['type' => 'danger', 'icon' => 'minus'],
+      |   [
+      |     'data-toggle' => 'remove-object',
+      |     'data-target' => 'answer',
+      |     'data-parent' => '.object-question'
+      |   ]
+      | );
+

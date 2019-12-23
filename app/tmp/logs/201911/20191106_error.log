@@ -1,0 +1,279 @@
+2019-11-06 01:00:12 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /gs
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 01:02:32 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /.env.backup
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 01:42:31 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /GponForm/diag_Form?style%2F=
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 05:25:26 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /remote/fgt_lang?lang=%2F..%2F..%2F..%2F..%2F%2F%2F%2F%2F%2F%2F%2F%2F%2Fdev%2Fcmdb%2Fsslvpn_websession
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 09:28:02 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 09:28:02 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 09:31:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 09:31:19 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 12:01:27 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 12:05:30 Error: [BadRequestException] Facebook Authentication Failed
+Request URL: /oauth/facebook/callback?error_code=100&error_message=Invalid+Scopes%3A+user_friends.+This+message+is+only+shown+to+developers.+Users+of+your+app+will+ignore+these+permissions+if+present.+Please+read+the+documentation+for+valid+permissions+at%3A+https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Ffacebook-login%2Fpermissions
+Stack Trace:
+#0 [internal function]: OauthController->facebookCallback()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OauthController), Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(OauthController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-11-06 12:23:56 Error: [BadRequestException] Facebook Authentication Failed
+Request URL: /oauth/facebook/callback?error_code=100&error_message=Invalid+Scopes%3A+user_friends.+This+message+is+only+shown+to+developers.+Users+of+your+app+will+ignore+these+permissions+if+present.+Please+read+the+documentation+for+valid+permissions+at%3A+https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Ffacebook-login%2Fpermissions
+Stack Trace:
+#0 [internal function]: OauthController->facebookCallback()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OauthController), Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(OauthController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-11-06 13:08:06 Error: [BadRequestException] Facebook Authentication Failed
+Request URL: /oauth/facebook/callback?error_code=100&error_message=Invalid+Scopes%3A+user_friends.+This+message+is+only+shown+to+developers.+Users+of+your+app+will+ignore+these+permissions+if+present.+Please+read+the+documentation+for+valid+permissions+at%3A+https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Ffacebook-login%2Fpermissions
+Stack Trace:
+#0 [internal function]: OauthController->facebookCallback()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OauthController), Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(OauthController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-11-06 13:16:07 Error: [BadRequestException] Facebook Authentication Failed
+Request URL: /oauth/facebook/callback?error_code=100&error_message=Invalid+Scopes%3A+user_friends.+This+message+is+only+shown+to+developers.+Users+of+your+app+will+ignore+these+permissions+if+present.+Please+read+the+documentation+for+valid+permissions+at%3A+https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Ffacebook-login%2Fpermissions
+Stack Trace:
+#0 [internal function]: OauthController->facebookCallback()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(OauthController), Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(OauthController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2019-11-06 14:51:15 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /_src/sc1078/maeda.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:09:31 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:09:55 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:20:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:20:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:20:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:21:40 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:33:26 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 15:37:23 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 18:19:00 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /policy.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 18:26:29 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /wp-login.php
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 18:52:09 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /access.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 21:13:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 21:13:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 21:19:38 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 21:19:39 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 21:28:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /gallery.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-06 21:28:10 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /policy.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

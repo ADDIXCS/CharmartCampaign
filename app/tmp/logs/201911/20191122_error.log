@@ -1,0 +1,424 @@
+2019-11-22 09:36:44 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 09:36:44 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 10:29:11 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /campaign/images/menu-icon.png
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 10:45:37 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 10:45:38 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 12:19:08 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /access.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 13:00:37 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:38:13 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:13 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:13 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:45 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:45 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:45 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:51 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:51 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:51 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:13 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:13 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:13 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:25 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:25 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:25 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:40:00 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:40:00 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:40:00 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:41:10 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:11 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:11 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:11 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:12 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:12 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:46 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:47 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:47 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:41:47 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 15:46:48 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 678 and defined in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:46:48 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:46:48 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/charmart/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 22:05:25 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 22:05:25 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 22:21:16 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-11-22 22:21:16 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

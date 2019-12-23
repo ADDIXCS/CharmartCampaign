@@ -1,0 +1,117 @@
+- $this->extend('admin_edit_preview');
+
+:php
+  | echo $this->Form->create('Campaign', [
+  |   'type' => 'file',
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  |   'angular' => true,
+  | ]);
+  | echo $this->Form->input('title', ['type' => 'hidden']);
+  | echo $this->Form->input('start_date', ['type' => 'hidden']);
+  | echo $this->Form->input('end_date.year', [
+  |   'type' => 'hidden',
+  |   'default' => date('Y', strtotime($campaign['Campaign']['end_date'])),
+  | ]);
+  | echo $this->Form->input('end_date.month', [
+  |   'type' => 'hidden',
+  |   'default' => date('m', strtotime($campaign['Campaign']['end_date'])),
+  | ]);
+  | echo $this->Form->input('end_date.day', [
+  |   'type' => 'hidden',
+  |   'default' => date('d', strtotime($campaign['Campaign']['end_date'])),
+  | ]);
+  | echo $this->Form->input('announce_date.year', [
+  |   'type' => 'hidden',
+  |   'default' => date('Y', strtotime($campaign['Campaign']['announce_date'])),
+  | ]);
+  | echo $this->Form->input('announce_date.month', [
+  |   'type' => 'hidden',
+  |   'default' => date('m', strtotime($campaign['Campaign']['announce_date'])),
+  | ]);
+  | echo $this->Form->input('announce_date.day', [
+  |   'type' => 'hidden',
+  |   'default' => date('d', strtotime($campaign['Campaign']['announce_date'])),
+  | ]);
+  | if($campaign['Campaign']['campaign_type'] == 'coupon') {
+  |   echo $this->Form->input('sponsor_name', ['type' => 'hidden']);
+  |   echo $this->Form->input('sponsor_url', ['type' => 'hidden']);
+  |   echo $this->Form->input('sponsor_contact', ['type' => 'hidden']);
+  |   echo $this->Form->input('sponsor_address', ['type' => 'hidden']);
+  |   echo $this->Form->input('sponsor_tel', ['type' => 'hidden']);
+  |   echo $this->Form->input('sponsor_access', ['type' => 'hidden']);
+  |   echo $this->Form->input('sponsor_map', ['type' => 'hidden']);
+  | }
+- if($campaign['Campaign']['campaign_type'] == 'coupon'):
+  fieldset
+    :php
+      | echo $this->Form->input('gift_image', [
+      |   'type' => 'image',
+      |   'label' => 'クーポン画像を変更する',
+      |   'preview' => false,
+      | ]);
+- endif;
+fieldset
+  :php
+    | echo $this->Form->input('finish_message_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => '応募完了メッセージを変更する',
+    |   'class' => false,
+    | ]);
+    | echo $this->Form->input('finish_message', [
+    |   'type' => 'text',
+    |   'label' => false,
+    |   'div' => ['class' => 'form-group', 'ng-show' => 'finish_message_flg'],
+    |   'default' => 'ご応募ありがとうございました',
+    |   'placeholder' => 'ご応募ありがとうございました',
+    | ]);
+  - if($campaign['Campaign']['facebook_entry_flg'] || $campaign['Campaign']['twitter_entry_flg']):
+    :php
+      | echo $this->Form->input('share_btn_label_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => 'シェアボタンのテキストを変更する',
+      |   'class' => false,
+      | ]);
+      | echo $this->Form->input('share_btn_label', [
+      |   'type' => 'text',
+      |   'label' => false,
+      |   'div' => ['class' => 'form-group', 'ng-show' => 'share_btn_label_flg'],
+      |   'default' => 'キャンペーンをシェアする',
+      |   'placeholder' => 'キャンペーンをシェアする',
+      | ]);
+  - endif;
+  :php
+    | echo $this->Form->input('finish_bnr_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => 'バナーを追加する',
+    |   'class' => false,
+    | ]);
+    | echo $this->Form->input('finish_bnr', [
+    |   'type' => 'image',
+    |   'label' => false,
+    |   'div' => ['class' => 'form-group', 'ng-show' => 'finish_bnr_flg'],
+    |   'preview' => false,
+    | ]);
+    | echo $this->Form->input('finish_bnr_url', [
+    |   'type' => 'text',
+    |   'label' => 'リンク先URL',
+    |   'div' => ['class' => 'form-group', 'ng-show' => 'finish_bnr_flg'],
+    | ]);
+- if($campaign['Campaign']['campaign_type'] == 'lottery'):
+  fieldset
+    :php
+      | echo $this->Form->input('entry_limit', [
+      |   'type' => 'radio',
+      |   'label' => '応募回数',
+      |   'options' => [
+      |     0 => '期間中1回',
+      |     1 => '1日1回',
+      |   ],
+      |   'inline' => true,
+      | ]);
+- endif;
+!{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}

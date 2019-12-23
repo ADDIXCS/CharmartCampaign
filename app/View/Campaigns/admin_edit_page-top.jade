@@ -1,0 +1,160 @@
+- $this->extend('admin_edit_preview');
+
+:php
+  | echo $this->Form->create('Campaign', [
+  |   'type' => 'file',
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  |   'angular' => true,
+  | ]);
+fieldset
+  :php
+    | echo $this->Form->input('top_image_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => 'ヘッダ画像を追加する',
+    |   'class' => false,
+    | ]);
+    | echo $this->Form->input('top_image', [
+    |   'type' => 'image',
+    |   'label' => false,
+    |   'div' => ['class' => 'form-group', 'ng-show' => 'top_image_flg'],
+    |   'preview' => false,
+    | ]);
+fieldset
+  :php
+    | echo $this->Form->input('title', [
+    |   'type' => 'text',
+    |   'label' => 'キャンペーンタイトル',
+    | ]);
+    | echo $this->Form->input('summary', [ // or description or detail
+    |   'type' => 'textarea',
+    |   'label' => 'キャンペーン概要',
+    | ]);
+    | echo $this->Form->input('start_date', [
+    |   'type' => 'datetime',
+    |   'label' => '開始日時',
+    |   'multiLines' => true,
+    | ]);
+    | echo $this->Form->input('end_date', [
+    |   'type' => 'datetime',
+    |   'label' => '終了日時',
+    |   'multiLines' => true,
+    | ]);
+fieldset
+  - if($campaign['Campaign']['campaign_type'] != 'coupon'):
+    :php
+      | echo $this->Form->input('gift_name', [
+      |   'type' => 'textarea',
+      |   'label' => '景品名',
+      |   'default' => isset($gifts) ? implode("\n", Hash::extract($gifts, '{n}.Gift.name')) : '',
+      | ]);
+      | echo $this->Form->input('gift_image_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => '景品画像を追加する',
+      |   'class' => false,
+      | ]);
+      | echo $this->Form->input('gift_image', [
+      |   'type' => 'image',
+      |   'label' => false,
+      |   'div' => ['class' => 'form-group', 'ng-show' => 'gift_image_flg'],
+      |   'helpBlock' => '推奨サイズ：幅320px',
+      |   'preview' => false,
+      | ]);
+      | echo $this->Form->input('win_count', [
+      |   'type' => 'textarea',
+      |   'label' => '当選数',
+      |   'default' => isset($gifts) ? implode("\n", Hash::format(
+      |     $gifts, ['{n}.Gift.name', '{n}.Gift.win_count'], '%1s：%2d'
+      |   )) : '',
+      | ]);
+  - else:
+    :php
+      | echo $this->Form->input('gift_name', [
+      |   'type' => 'text',
+      |   'label' => 'クーポン名',
+      | ]);
+  - endif;
+  - if($campaign['Campaign']['campaign_type'] == 'coupon'):
+    :php
+      | echo $this->Form->input('coupon_limit', [
+      |   'type' => 'text',
+      |   'label' => '配布上限',
+      |   'class' => 'form-control input-small text-right',
+      |   'helpInline' => '枚',
+      |   'helpBlock' => '空白の場合は無制限になります',
+      |   'beforeInput' => '<span class="control-label">' . $campaign['Campaign']['entry_count'] . ' /&nbsp;</span>',
+      | ]);
+  - endif;
+  - if(!in_array($campaign['Campaign']['campaign_type'], ['coupon', 'lottery'])):
+    :php
+      | echo $this->Form->input('announce_date_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => '当選発表日を表示する',
+      |   'class' => false,
+      | ]);
+      | echo $this->Form->input('announce_date', [
+      |   'type' => 'datetime',
+      |   'label' => false,
+      |   'div' => ['class' => 'form-group', 'ng-show' => 'announce_date_flg'],
+      |   'multiLines' => true,
+      |   'default' => date('Y-m-d 00:00', strtotime($campaign['Campaign']['end_date'] . ' +1 day')),
+      | ]);
+  - endif;
+fieldset
+  :php
+    | echo $this->Form->input('sponsor_name', [
+    |   'type' => 'text',
+    |   'label' => '主催者名',
+    | ]);
+    | echo $this->Form->input('sponsor_url', [
+    |   'type' => 'text',
+    |   'label' => '主催者URL',
+    | ]);
+    | echo $this->Form->input('sponsor_contact', [
+    |   'type' => 'text',
+    |   'label' => '問合せ先',
+    |   'helpBlock' => 'URLかメールアドレスを入力してください',
+    | ]);
+- if($campaign['Campaign']['campaign_type'] == 'coupon'):
+  fieldset
+    :php
+      | echo $this->Form->input('sponsor_address', [
+      |   'type' => 'textarea',
+      |   'label' => '住所',
+      |   'helpBlock' => '入力された住所でGoogleMapのリンクが作成されます',
+      | ]);
+      | echo $this->Form->input('sponsor_tel', [
+      |   'type' => 'text',
+      |   'label' => '電話番号',
+      | ]);
+      | echo $this->Form->input('sponsor_access', [
+      |   'type' => 'textarea',
+      |   'label' => 'アクセス方法',
+      | ]);
+- endif;
+fieldset
+  :php
+    | echo $this->Form->input('notice', [
+    |   'type' => 'textarea',
+    |   'label' => '注意事項',
+    | ]);
+  - if(!in_array($campaign['Campaign']['campaign_type'], ['vote', 'lancers'])):
+    :php
+      | echo $this->Form->input('entry_btn_label_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => CampaignValue::${$campaign['Campaign']['campaign_type']}['entryActionName'] . 'ボタンのテキストを変更する',
+      |   'class' => false,
+      | ]);
+      | echo $this->Form->input('entry_btn_label', [
+      |   'type' => 'text',
+      |   'label' => false,
+      |   'div' => ['class' => 'form-group', 'ng-show' => 'entry_btn_label_flg'],
+      |   'default' => CampaignValue::${$campaign['Campaign']['campaign_type']}['entryBtnDefaultText'],
+      |   'placeholder' => CampaignValue::${$campaign['Campaign']['campaign_type']}['entryBtnDefaultText'],
+      | ]);
+  - endif;
+!{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}

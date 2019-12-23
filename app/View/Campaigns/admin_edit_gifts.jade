@@ -1,0 +1,37 @@
+- $this->extend('admin_edit');
+
+!{$this->Form->create('Campaign', ['type' => 'file'])}
+//- 雛形
+.object-base.hide
+  table
+    tbody
+      - echo $this->element('admin/inputs-gift', ['i' => '{{gift}}']);
+table.object-gift-table.table.table-condensed
+  thead
+    tr
+      th 景品名
+      th 当選数 / 当選上限
+      th 当選確率
+      th 一日の<br>当選上限
+      th 画像
+      th
+  tbody.object-gift-wrapper
+    - foreach($this->request->data['Gift'] as $i => $gift):
+      !{$this->element('admin/inputs-gift', ['i' => $i])}
+.form-group.text-center
+  :php
+    | echo $this->Html->btn(
+    |   '',
+    |   '#',
+    |   ['type' => 'success', 'icon' => 'plus'],
+    |   ['data-toggle' => 'add-object', 'data-target' => 'gift', 'data-parent' => 'form']
+    | );
+.form-group.text-center
+  !{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}
+
+- $this->start('script');
+:javascript
+  | var editType = 'gifts';
+!{$this->Html->script('admin-edit-objects')}
+- $this->end();

@@ -1,0 +1,123 @@
+- $campaign = $campaign['Campaign'];
+- $entried = !empty($entried) ? $entried['Entry'] : false;
+
+//- ステップ
+!{$this->element('campaigns/section-step')}
+//- 参加済みコンテンツ
+#section-entried.text-center
+  .container.separator-triangle
+  //- クーポン
+  - if($campaign['campaign_type'] == 'coupon'):
+    #section-coupon.section-sm
+      .container
+        p.js-CampaignGiftImage-preview
+          - if($couponImage = $this->S3->image($campaign, 'Campaign.gift_image')):
+            !{$couponImage}
+          - else:
+            !{$this->Html->image('campaigns/coupon_default.jpg')}
+          - endif;
+        p.lead #{$campaign['gift_name'] ?: 'クーポン'}を取得しました！
+      .container.container-xs
+        .visible-xs
+          p !{$this->element('campaigns/btn-coupon')}
+          small.text-danger ※誤って「使用ボタン」を押さないようにご注意ください
+        - if($this->Soraps->isPreview() || $entried):
+          .row.hidden-xs
+            .col-sm-6
+              :php
+                | echo $this->Html->btn(
+                |   'クーポンを印刷する',
+                |   '#',
+                |   ['block' => true],
+                |   ['onclick' => 'window.print(); return false;']
+                | );
+            .col-sm-6
+              :php
+                | echo $this->Html->btn(
+                |   'クーポンをメールで送る',
+                |   $this->Soraps->isPreview() ? '#' : 'mailto:?body=' . Router::url([
+                |     'action' => 'coupon',
+                |     'accountName' => $currentAccount['Account']['account_name'],
+                |     'id' => $campaign['id'],
+                |     'entryType' => $entried['entry_type'],
+                |   ], true),
+                |   ['block' => true]
+                | );
+        - endif;
+  - endif;
+  //- スピードくじの結果
+  - if($campaign['campaign_type'] == 'lottery'):
+    #section-gift.section-sm
+      - if($gift):
+        .container
+          - if($gift['Gift']['image']):
+            p !{$this->S3->image($gift, 'Gift.image')}
+          - else:
+            p !{$this->Html->image('campaigns/lottery_win.jpg')}
+          - endif;
+        p.lead #{$gift['Gift']['name']}が当たりました！
+      - else:
+        .container
+          p !{$this->Html->image('campaigns/lottery_blank.jpg')}
+      - endif;
+      - if($this->Soraps->isDisplay('entry_limit')):
+        .container.container-xs(ng-show="entry_limit")
+          .panel.panel-default
+            .panel-body
+              p また明日チャレンジできます！
+      - endif;
+  - endif;
+  #section-entried-message.section-sm
+    .alert.alert-danger
+      !{$this->Soraps->customText('finish_message', 'ご参加ありがとうございました！')}
+    .container
+      //- 日付
+      .section-sm
+        p.text-danger
+          - if($campaign['announce_date_flg']):
+            | 当選発表日
+            span !{$this->Soraps->date('announce_date')}
+          - else:
+            | キャンペーン終了日
+            span !{$this->Soraps->date('end_date')}
+          - endif;
+  //- 投稿コンテスト
+  - if($campaign['campaign_type'] == 'contest' && $item):
+    .container
+      p !{$this->S3->image($item, 'Item.image')}
+      p.lead #{$item['Item']['title']}を投稿しました！
+  - endif;
+  - if($campaign['campaign_type'] == 'coupon'):
+    //- 主催者情報
+    !{$this->element('campaigns/section-sponsor')}
+  - endif;
+  //- シェア
+  :php
+    | if(
+    |   $this->Soraps->isPreview() ||
+    |   (
+    |     $campaign['status'] == 'published' &&
+    |     $entried &&
+    |     in_array($entried['entry_type'], ['facebook', 'twitter'])
+    |   )
+    | ):
+  #section-share.section
+    .container.container-xs
+      - if($this->Soraps->isDisplay('share_double_flg')):
+        p.lead.text-center(ng-show="share_double_flg") シェアで当選確率2倍
+      - elseif($campaign['campaign_type'] == 'contest' && $item):
+        p.lead.text-center 投稿した#{$this->Soraps->text('item_name')}をみんなにシェアしよう！
+      - else:
+        p.lead.text-center キャンペーンをみんなにシェアしよう！
+      - endif;
+      !{$this->element('campaigns/content-share')}
+  - endif;
+  .container
+    //- バナー
+    - if($this->Soraps->isDisplay('finish_bnr_flg') && $this->Soraps->isDisplay('finish_bnr')):
+      .section-sm(ng-show="finish_bnr_flg")
+        .row
+          .col-sm-10.col-sm-offset-1
+            !{$this->element('campaigns/bnr-finish')}
+    - endif;
+

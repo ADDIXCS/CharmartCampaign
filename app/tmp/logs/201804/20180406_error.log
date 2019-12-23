@@ -1,0 +1,9 @@
+2018-04-06 16:14:41 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /terashiclient/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

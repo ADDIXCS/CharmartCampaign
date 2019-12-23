@@ -1,0 +1,21 @@
+- $this->set('title_for_layout', 'アンケート結果');
+
+!{$this->element('admin/campaign-btn')}
+
+table.table.table-bordered
+  tbody
+    - foreach($campaign['Enquete'] as $enquete):
+      - if(in_array($enquete['type'], ['select', 'radio', 'check'])):
+        tr
+          td.active(colspan="2") #{$enquete['text']}
+        - foreach($enquete['EnqueteOption'] as $enqueteOption):
+          tr
+            td #{$enqueteOption['text']}
+            td #{$enqueteOption['entry_count']}人
+      - else:
+        tr
+          td.active(colspan="2") #{$enquete['text']}（最新10件）
+        - foreach($enquete['EntryEnquete'] as $entryEnquete):
+          tr
+            td(colspan="2") !{nl2br($entryEnquete['text'])}
+      - endif;

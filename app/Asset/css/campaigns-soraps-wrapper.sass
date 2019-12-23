@@ -1,0 +1,45 @@
+@import "variables-campaigns"
+@import "mixins"
+
+//== Normalize
+html
+  font-family: sans-serif
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+body
+  margin: 0
+//== Scaffolding
+html
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+//== soraps-wrapper
+#soraps-wrapper
+  font-family: $font-family-base
+  font-size: $font-size-base
+  line-height: $line-height-base
+  color: $text-color
+  background-color: $body-bg
+
+#soraps-wrapper
+  @import "bootstrap-campaigns"
+  @import "campaigns"
+
+//== Modals
+.modal-open
+  overflow: hidden
+  .modal
+    overflow-x: hidden
+    overflow-y: auto
+.modal-backdrop
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: $zindex-modal-background
+  background-color: $modal-backdrop-bg
+  // Fade for backdrop
+  &.fade
+    @include opacity(0)
+  &.in
+    @include opacity($modal-backdrop-opacity)

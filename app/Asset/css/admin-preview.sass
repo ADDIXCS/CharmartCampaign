@@ -1,0 +1,106 @@
+//
+// 枠
+// --------------------------------------------------
+
+.design-preview-pc
+  padding-top: 73px
+  // @todo 画像をsorapsに変更する
+  background: url(../img/admin/design-chrome-right.png) right 0 no-repeat, url(../img/admin/design-chrome-left.png) no-repeat, url(../img/admin/design-chrome-repeat.png) repeat-x
+.design-preview-pc-content
+  position: relative
+  border: solid 1px #7f7f7f
+  border-top: none
+.design-preview-sp
+  position: relative
+  width: 367px
+  margin: 0 auto
+  padding: 115px 23px 123px 24px
+  // @todo 画像をiPhone5に、ヘッダとかつける
+  background: url(../img/admin/design-iphone-top.png) center top no-repeat, url(../img/admin/design-iphone-bottom.png) center bottom no-repeat, url(../img/admin/design-iphone-repeat.png) repeat-y
+.design-preview-sp-content
+  position: relative
+
+//
+// content
+// --------------------------------------------------
+@import "variables-campaigns"
+@import "mixins"
+
+//== Scaffolding
+.design-preview-content
+  font-family: $font-family-base
+  font-size: $font-size-base
+  line-height: $line-height-base
+  color: $text-color
+  background-color: $body-bg
+
+// bootstrapの読み込み
+@mixin set-preview-breakpoints($width)
+  $screen-xs-min: $width
+  $screen-sm-min: $width
+  $screen-md-min: $width
+  $screen-lg-min: $width
+  $grid-float-breakpoint: $width
+  $screen-xs-max: ($width - 1)
+  $screen-sm-max: ($width - 1)
+  $screen-md-max: ($width - 1)
+  $grid-float-breakpoint-max: ($width - 1)
+.design-preview-pc-content
+  @import "bootstrap-campaigns"
+.design-preview-sp-content
+  @include set-preview-breakpoints(9999px)
+  @import "bootstrap-campaigns"
+
+.design-preview-content
+  @import "campaigns-common"
+  .container
+    width: auto
+  .section
+    margin-bottom: 0
+  #section-entry-btn-fixed
+    position: absolute
+.design-preview-pc-content
+  @import "campaigns-pc"
+  // 表面の両側のスペースを擬似的に表現
+  .container
+    margin-left: 30px
+    margin-right: 30px
+  .container-sm,
+  .container-xs
+    width: auto
+  .container-sm
+    padding-left: 7%
+    padding-right: 7%
+  .container-xs
+    padding-left: 18%
+    padding-right: 18%
+  // 開催期間が切れるのに対応
+  #section-info
+    dd:first-of-type span
+      font-size: inherit
+.design-preview-sp-content
+  @import "campaigns-sp"
+  // .col-smのグリッドを無効化
+  $list-width: '.col-sm-1'
+  $list-offset: '.col-sm-offset-1'
+  @for $i from 2 through $grid-columns
+    $list-width: "#{$list-width}, .col-sm-#{$i}"
+    $list-offset: "#{$list-offset}, .col-sm-offset-#{$i}"
+  #{$list-width}
+    float: none
+    width: auto
+  #{$list-offset}
+    margin-left: 0
+  // .col-xsのグリッドを再設定
+  @include float-grid-columns(xs)
+  @include loop-grid-columns($grid-columns, xs, width)
+  @include loop-grid-columns($grid-columns, xs, offset)
+  //== Typography
+  .dl-horizontal
+    dt
+      float: none
+      width: auto
+      text-align: center
+    dd
+      margin-left: 0
+

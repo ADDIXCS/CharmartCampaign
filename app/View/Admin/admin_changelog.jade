@@ -1,0 +1,7 @@
+- $this->set('title_for_layout', '更新履歴');
+
+.section
+  :php
+    | $file = new File(ROOT . DS . 'CHANGELOG.md', false);
+    | $file = str_replace('# Changelog', '', $file->read());
+    | echo \Michelf\Markdown::defaultTransform($file);

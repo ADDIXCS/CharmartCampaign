@@ -1,0 +1,13 @@
+- if($this->request->param('entryType') == 'facebook' && $campaign['Campaign']['facebook_fangate_flg']):
+  - $this->start('script');
+    :javascript
+      | var facebookPageId = '#{$currentAccount['Account']['facebook_id']}';
+      | var apiUrl = '#{$this->Html->url([
+      |   'action' => 'like',
+      |   'accountName' => $currentAccount['Account']['account_name'],
+      |   'id' => $campaign['Campaign']['id'],
+      | ])}';
+    !{$this->Html->script('facebook-fangate')}
+  - $this->end();
+- endif;
+

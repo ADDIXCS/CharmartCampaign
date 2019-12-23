@@ -1,0 +1,128 @@
+2019-11-13 19:38:53 Notice: Notice (8): Undefined variable: entried in [/var/www/charmart/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbdd3d5b039.ctp, line 20
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbdd3d55ff9.ctp, line 6
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::renderPreview() - /var/www/faro-campaign/app/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_5dcbdd3d5553c.ctp, line 20
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 903
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 28
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-13 19:38:53 Notice: Notice (8): Undefined variable: entried in [/var/www/charmart/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbdd3d680c0.ctp, line 20
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbdd3d63026.ctp, line 6
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::renderPreview() - /var/www/faro-campaign/app/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_5dcbdd3d5553c.ctp, line 25
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 903
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 28
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-13 19:51:58 Notice: Notice (8): Undefined variable: entried in [/var/www/charmart/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbe04eb618f.ctp, line 20
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbe04eb1706.ctp, line 6
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::renderPreview() - /var/www/faro-campaign/app/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_5dcbe04eb0c82.ctp, line 20
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 903
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 28
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-13 19:51:58 Notice: Notice (8): Undefined variable: entried in [/var/www/charmart/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbe04ec2cce.ctp, line 20
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_renderElement() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 1189
+View::element() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5dcbe04ebe0e1.ctp, line 6
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::renderPreview() - /var/www/faro-campaign/app/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_5dcbe04eb0c82.ctp, line 25
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 903
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 28
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+

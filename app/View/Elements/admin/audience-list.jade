@@ -1,0 +1,87 @@
+p
+  :php
+    | echo $this->Html->btn(
+    |   'CSVダウンロード',
+    |   [
+    |     'action' => 'csv',
+    |     'accountName' => $currentAccount['Account']['account_name'],
+    |   ],
+    |   ['type' => 'success', 'icon' => 'download']
+    | );
+.audience-list-wrapper
+  table.table.audience-list
+    thead
+      tr
+        th.cell-w200
+        th.cell-w50 性別
+        th.cell-w50 年齢
+        th.cell-w70 都道府県
+        th.cell-w70.text-right 参加
+        th.cell-w70.text-right 投票
+        th.cell-w70.text-right シェア
+        th.cell-w70.text-right リファラー
+        th.cell-w90.text-right 友達<br>フォロワー
+        th.cell-w70.text-right エンゲージメント
+        th.cell-w140 最終参加日時
+        th.cell-w90 アクション
+    tbody
+      - foreach($audiences as $_audience):
+        - $audience = $_audience['Audience'];
+        tr
+          td
+            .media
+              - if($audience['entry_type'] == 'facebook'):
+                img.pull-left(src="//graph.facebook.com/#{$audience['facebook_id']}/picture", width="48")
+              - elseif($audience['entry_type'] == 'twitter'):
+                img.pull-left(src="#{$audience['twitter_profile_image_url']}")
+              - endif;
+              .media-body
+                p
+                  :php
+                    | echo $this->Html->link(
+                    |   $audience['full_name'],
+                    |   [
+                    |     'action' => 'view',
+                    |     'accountName' => $currentAccount['Account']['account_name'],
+                    |     'audienceId' => $audience['id'],
+                    |   ]
+                    | );
+                - if($audience['entry_type'] == 'facebook'):
+                  a(href="//www.facebook.com/#{$audience['facebook_id']}", target="_blank")
+                    | #{$audience['facebook_username']}
+                    !{$this->Html->icon('facebook-square')}
+                - elseif($audience['entry_type'] == 'twitter'):
+                  a(href="//twitter.com/#{$audience['twitter_screen_name']}", target="_blank")
+                    | #{$audience['twitter_name']} (#{$audience['twitter_screen_name']})
+                    !{$this->Html->icon('twitter')}
+                - endif;
+          td #{$audience['gender_ja']}
+          td #{$audience['age']}
+          td #{$audience['state']}
+          td.text-right.success #{$audience['entry_count']}
+          td.text-right #{$audience['vote_count']}
+          td.text-right #{$audience['shared_count']}
+          td.text-right= '0'
+          td.text-right #{$audience['friend_count']}
+          td.text-right.warning #{$audience['engagement']}
+          td #{date('Y-m-d H:i', strtotime($audience['modified']))}
+          td.td-action
+            :php
+              | echo $this->Html->btn(
+              |   '詳細',
+              |   [
+              |     'action' => 'view',
+              |     'accountName' => $currentAccount['Account']['account_name'],
+              |     'audienceId' => $audience['id'],
+              |   ],
+              |   ['type' => 'primary', 'size' => 'sm', 'icon' => 'user']
+              | );
+            br
+            :php
+              | // echo $this->Html->btn(
+              | //   '削除',
+              | //   '#',
+              | //   ['type' => 'danger disabled', 'size' => 'sm', 'icon' => 'trash-o']
+              | // );
+
+!{$this->Paginator->pagination()}

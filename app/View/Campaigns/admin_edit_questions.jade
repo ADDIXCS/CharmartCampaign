@@ -1,0 +1,27 @@
+- $this->extend('admin_edit');
+
+!{$this->Form->create('Campaign', ['type' => 'file'])}
+//- 雛形
+.object-base.hide
+  - echo $this->element('admin/inputs-question', ['i' => '{{question}}', 'answers' => []]);
+.object-question-wrapper
+  //- 編集時はフォームが出力される
+  - foreach($this->request->data['Question'] as $i => $question):
+    !{$this->element('admin/inputs-question', ['i' => $i, 'answers' => $question['Answer']])}
+.form-group.text-center
+  :php
+    | echo $this->Html->btn(
+    |   '',
+    |   '#',
+    |   ['type' => 'success', 'icon' => 'plus'],
+    |   ['data-toggle' => 'add-object', 'data-target' => 'question', 'data-parent' => 'form']
+    | );
+.form-group.text-center
+  !{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}
+
+- $this->start('script');
+:javascript
+  | var editType = 'questions';
+!{$this->Html->script('admin-edit-objects')}
+- $this->end();

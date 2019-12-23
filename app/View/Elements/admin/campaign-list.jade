@@ -1,0 +1,107 @@
+.campaign-list
+  - foreach($campaigns as $_campaign):
+    :php
+      | $campaign = $_campaign['Campaign'];
+      | // 開催中のキャンペーン一覧ページ用に必要
+      | if($campaign['status'] == 'stopped' && $this->Soraps->pageId() == 'admin-campaigns') {
+      |   continue;
+      | }
+      | if(array_key_exists('Account', $_campaign)) {
+      |   $accountName = $_campaign['Account']['account_name'];
+      | } else {
+      |   $accountName = $currentAccount['Account']['account_name'];
+      | }
+    div(class="campaign-list-item#{$campaign['deleted'] ? 'deleted' : ''}")
+      .row
+        .col-sm-1
+          !{$this->Html->image('common/icon-' . $campaign['campaign_type'] . '.png')}
+        .col-sm-11
+          h3
+            small
+              - if($campaign['status'] == 'published'):
+                span.label.label-success #{$campaign['status_ja']}
+              - else:
+                span.label.label-default #{$campaign['status_ja']}
+              - endif;
+              span.label.label-primary #{$campaign['campaign_type_ja']}
+            :php
+              | echo $this->Html->link(
+              |   $campaign['title'],
+              |   [
+              |     'controller' => 'campaigns',
+              |     'action' => 'view',
+              |     'accountName' => $accountName,
+              |     'id' => $campaign['id'],
+              |   ]
+              | );
+          p.campaign-list-item-url
+            :php
+              | echo $this->Html->link(
+              |   $this->Html->url([
+              |     'controller' => 'campaign_view',
+              |     'action' => 'top',
+              |     'accountName' => $accountName,
+              |     'id' => $campaign['id'],
+              |     'admin' => false,
+              |   ], true),
+              |   [
+              |     'controller' => 'campaign_view',
+              |     'action' => 'top',
+              |     'accountName' => $accountName,
+              |     'id' => $campaign['id'],
+              |     'admin' => false,
+              |   ],
+              |   ['target' => '_blank']
+              | );
+          !{$this->element('admin/campaign-btn', ['campaign' => $_campaign])}
+      table.table.table-bordered
+        thead
+          tr
+            th.cell-w200 ID
+            - if(array_key_exists('Account', $_campaign)):
+              th クライアント
+            - endif;
+            th 開催期間
+            th.cell-w90.text-right 参加回数
+            th.cell-w90.text-right 参加人数
+            - if(in_array($campaign['campaign_type'], ['contest', 'vote', 'lancers'])):
+              th.cell-w90.text-right 投票
+            - endif;
+            - if($campaign['campaign_type'] == 'coupon' && $campaign['coupon_used_flg']):
+              th.cell-w90.text-right クーポン<br>使用
+            - endif;
+            th.cell-w100.text-right 新規いいね！<br>フォロー
+            th.cell-w90.text-right シェア
+            th.cell-w90.text-right リーチ
+            th.cell-w90.text-right リファラー
+        tbody
+          tr
+            td #{$campaign['id']}
+            - if(array_key_exists('Account', $_campaign)):
+              td
+                :php
+                  | echo $this->Html->link(
+                  |   $_campaign['Account']['screen_name'],
+                  |   [
+                  |     'controller' => 'dashboard',
+                  |     'accountName' => $accountName,
+                  |   ]
+                  | );
+            - endif;
+            td
+              #{date('Y-m-d', strtotime($campaign['start_date']))}
+              | 〜
+              #{!$campaign['end_date_flg'] ? date('Y-m-d', strtotime($campaign['end_date'])) : ''}
+            td.text-right #{$campaign['entry_count']}
+            td.text-right #{$campaign['entrant_count']}
+            - if(in_array($campaign['campaign_type'], ['contest', 'vote', 'lancers'])):
+              td.text-right #{$campaign['vote_count']}
+            - endif;
+            - if($campaign['campaign_type'] == 'coupon' && $campaign['coupon_used_flg']):
+              td.text-right #{$campaign['coupon_used_count']}
+            - endif;
+            td.text-right #{$campaign['facebook_new_fan_count']} / #{$campaign['twitter_new_fan_count']}
+            td.text-right #{$campaign['shared_count']}
+            td.text-right #{$campaign['total_reach_count']}
+            td.text-right= '0'
+

@@ -1,0 +1,136 @@
+2019-11-01 19:50:56 Notice: Notice (8): Undefined offset: 1 in [/var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 997]
+Trace:
+Codebird\Codebird::_parseApiReply() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 997
+Codebird\Codebird::_callApi() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 927
+Codebird\Codebird::__call() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 294
+Codebird\Codebird::oauth_requestToken() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:50:56 Notice: Notice (8): Undefined offset: 1 in [/var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 998]
+Trace:
+Codebird\Codebird::_parseApiReply() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 998
+Codebird\Codebird::_callApi() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 927
+Codebird\Codebird::__call() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 294
+Codebird\Codebird::oauth_requestToken() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:50:56 Notice: Notice (8): Undefined property: stdClass::$oauth_token in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:50:56 Notice: Notice (8): Undefined property: stdClass::$oauth_token_secret in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:50:56 Notice: Notice (8): Undefined property: stdClass::$oauth_token in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 140]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 140
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:50:56 Notice: Notice (8): Undefined property: stdClass::$oauth_token_secret in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 141]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 141
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:51:01 Notice: Notice (8): Undefined offset: 1 in [/var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 997]
+Trace:
+Codebird\Codebird::_parseApiReply() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 997
+Codebird\Codebird::_callApi() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 927
+Codebird\Codebird::__call() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 294
+Codebird\Codebird::oauth_requestToken() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:51:01 Notice: Notice (8): Undefined offset: 1 in [/var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 998]
+Trace:
+Codebird\Codebird::_parseApiReply() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 998
+Codebird\Codebird::_callApi() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 927
+Codebird\Codebird::__call() - /var/www/faro-campaign/vendor/jublonet/codebird-php/src/codebird.php, line 294
+Codebird\Codebird::oauth_requestToken() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 138
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:51:01 Notice: Notice (8): Undefined property: stdClass::$oauth_token in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:51:01 Notice: Notice (8): Undefined property: stdClass::$oauth_token_secret in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 139
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:51:01 Notice: Notice (8): Undefined property: stdClass::$oauth_token in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 140]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 140
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-01 19:51:01 Notice: Notice (8): Undefined property: stdClass::$oauth_token_secret in [/var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 141]
+Trace:
+IqueTwitter::getLoginUrl() - /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php, line 141
+OauthController::twitterLogin() - /var/www/faro-campaign/app/Controller/OauthController.php, line 68
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+

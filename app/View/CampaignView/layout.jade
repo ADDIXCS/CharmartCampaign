@@ -1,0 +1,39 @@
+div(id="#{$this->Soraps->pageId(true)}", class="theme-color-#{$this->Soraps->text('theme_color')} campaign-#{$campaign['Campaign']['campaign_type']}")
+  //- テストモードの表示
+  - if($campaign['Campaign']['status'] == 'test'):
+    .alert
+      .text-danger.text-center 本キャンペーンはテストです
+  - endif;
+  //- ヘッダ
+  .navbar.navbar-inverse.navbar-static-top
+    .container
+      h1.navbar-brand !{$this->Soraps->text('title')}
+  //- アラート
+  - if(!$this->Soraps->isPreview()):
+    .text-center
+      !{$this->Session->flash()}
+  - endif;
+  //- 各ビュー
+  !{$this->fetch('content')}
+  //- フッタ
+  #section-footer.section-sm
+    a.pagetop.visible-xs(href="#top") !{$this->Html->icon('arrow-up')}
+    .container
+      .row
+        .col-sm-6
+          p.text-right
+            :php
+              | echo $this->Html->link(
+              |   '利用規約',
+              |   $this->Soraps->isPreview() ? '#' : [
+              |     'controller' => 'root',
+              |     'action' => 'pages',
+              |     'pageName' => 'terms',
+              |   ],
+              |   ['target' => '_blank']
+              | );
+        .col-sm-6
+          //- p.text-left Copyright &copy; #{date('Y')} #{Configure::read('service.companyNameEn')} All rights reserved.
+          p.text-left Copyright &copy; #{date('Y')} ADDIX C&S, Inc. All rights reserved.
+!{$this->fetch('modal')}
+!{$this->element('common/loading')}

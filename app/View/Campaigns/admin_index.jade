@@ -1,0 +1,19 @@
+- $this->set('title_for_layout', 'キャンペーン一覧');
+
+p
+  :php
+    | foreach(CampaignValue::getAvailableTypes($currentAccount) as $campaignType) {
+    |   echo $this->Html->btn(
+    |     CampaignValue::${$campaignType}['name'] . '新規作成',
+    |     [
+    |       'action' => 'add',
+    |       'accountName' => $currentAccount['Account']['account_name'],
+    |       'campaignType' => $campaignType,
+    |     ],
+    |     ['type' => 'primary', 'icon' => 'plus']
+    |   );
+    | }
+
+!{$this->element('admin/campaign-list')}
+
+!{$this->Paginator->pagination()}

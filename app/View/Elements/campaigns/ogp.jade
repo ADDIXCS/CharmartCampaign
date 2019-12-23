@@ -1,0 +1,49 @@
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+
+//- ソーシャルメディアの設定
+meta(property="fb:app_id", content="#{Configure::read('facebook.appId')}")
+meta(name="twitter:card", content="summary")
+- if($this->viewPath == 'Root'):
+  meta(name="twitter:site", content="@#{Configure::read('service.twitterAccount')}")
+- elseif(!empty($currentAccount['Account']['twitter_screen_name'])):
+  meta(name="twitter:site", content="@#{$currentAccount['Account']['twitter_screen_name']}")
+- endif;
+//- 共通
+meta(property="og:site_name", content="#{Configure::read('service.name')}")
+meta(property="og:url", content="#{Router::url(null, true)}")
+meta(property="og:title", content="#{$this->Soraps->title()}")
+meta(property="og:description", content="#{$this->Soraps->description()}")
+//- 画像
+:php
+  | $ogImage = '';
+  | // キャンペーン公開時
+  | if(!in_array($campaign['status'], ['stopped', 'editing', 'closed'])) {
+  |   // アイテム詳細ページ、投票ページの場合
+  |   if(
+  |     in_array($this->action, ['items', 'vote']) &&
+  |     !empty($item['Item']['image'])
+  |   ) {
+  |     if(is_array($item['Item']['image'])) {
+  |       $ogImage = str_replace('https:', 'http:', current($item['Item']['image']));
+  |     } else {
+  |       $ogImage = $this->S3->url($item, 'Item.image');
+  |     }
+  |   } elseif(!empty($campaign['top_image'])) {
+  |     $ogImage = $this->S3->url($campaign, 'Campaign.top_image');
+  |   }
+  | }
+  | // デフォルト
+  | if(!$ogImage) {
+  |   $ogImage = $this->Html->assetUrl(Configure::read('service.ogImage'), [
+  |     'pathPrefix' => Configure::read('App.imageBaseUrl'),
+  |     'fullBase' => true,
+  |   ]);
+  | }
+meta(property="og:image", content="#{$ogImage}")
+//- トップページの場合はtypeをwebsiteに
+- if($this->viewPath == 'Root'):
+  meta(property="og:type", content="website")
+- else:
+  meta(property="og:type", content="article")
+- endif;

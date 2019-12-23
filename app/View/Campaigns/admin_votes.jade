@@ -1,0 +1,85 @@
+- $this->set('title_for_layout', '投票数');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+
+!{$this->element('admin/campaign-btn')}
+
+table.table.table-bordered
+  thead
+    tr
+      th ID
+      th
+      th 投票数
+      th タイトル
+      th 説明文
+      - if($campaign['campaign_type'] == 'contest'):
+        th ニックネーム
+      - endif;
+  tbody
+    - foreach($items as $_item):
+      - $item = $_item['Item'];
+      tr
+        td
+          - if($campaign['campaign_type'] != 'contest'):
+            #{$item['id']}
+          - else:
+            p
+              #{$item['id']}
+            - if($item['unpublished_flg']):
+              :php
+                | echo $this->Form->postBtn(
+                |   '非公開',
+                |   [
+                |     'action' => 'publish_item',
+                |     'accountName' => $currentAccount['Account']['account_name'],
+                |     'id' => $campaign['id'],
+                |     'itemId' => $item['id'],
+                |   ],
+                |   ['size' => 'sm', 'icon' => 'stop'],
+                |   ['confirm' => '公開しますか？']
+                | );
+            - else:
+              :php
+                | echo $this->Form->postBtn(
+                |   '公開中',
+                |   [
+                |     'action' => 'publish_item',
+                |     'accountName' => $currentAccount['Account']['account_name'],
+                |     'id' => $campaign['id'],
+                |     'itemId' => $item['id'],
+                |   ],
+                |   ['type' => 'primary', 'size' => 'sm', 'icon' => 'play'],
+                |   ['confirm' => '非公開にしますか？']
+                | );
+            - endif;
+          - endif;
+        td
+          - if($campaign['campaign_type'] == 'lancers'):
+            :php
+              | $images = explode(',', $item['image']);
+              | echo $this->Html->link(
+              |   $this->Html->image(current($images)),
+              |   [
+              |     'controller' => 'campaign_view',
+              |     'action' => 'items',
+              |     'accountName' => $currentAccount['Account']['account_name'],
+              |     'id' => $campaign['id'],
+              |     'itemId' => $item['id'],
+              |     'admin' => false,
+              |   ],
+              |   ['target' => '_blank', 'escape' => false]
+              | );
+          - else:
+            a(href="#{$this->S3->url($item, 'Item.image')}", target="_blank")
+              !{$this->S3->image($item, 'Item.image')}
+          - endif;
+        td #{$item['vote_count']}票
+          a.btn.btn-default(href="?csv=#{$item['id']}") CSV
+        td #{$item['title']}
+        td !{nl2br(String::truncate($item['description'], 50))}
+        - if($campaign['campaign_type'] == 'contest'):
+          td #{$item['nickname']}
+        - endif;
+
+!{$this->Paginator->pagination()}

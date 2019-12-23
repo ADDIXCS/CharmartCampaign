@@ -1,0 +1,696 @@
+@import "compass/css3/transform"
+
+//
+// navbar
+// --------------------------------------------------
+
+.navbar-brand
+  float: none
+  height: auto
+  padding-left: 0
+  padding-right: 0
+  font-size: $font-size-base
+  text-align: center
+// bootstrapのmargin-leftを上書きするために詳細に指定
+.navbar > .container .navbar-brand
+  margin: 0
+
+//
+// content
+// --------------------------------------------------
+
+// headings
+// -------------------------
+
+h2, .h2
+  margin-top: 0
+.page-header
+  margin: 0 0 15px
+  padding: 0
+  border: none
+
+// section
+// -------------------------
+
+.section,
+.section-lg,
+.section-sm
+  padding: 15px 0
+  background: #fff
+.section-bg
+  background: $gray-bg
+.section-bg-dark
+  background: $gray
+.section-content
+  p, li
+    font-size: 13px
+
+// separator
+// -------------------------
+
+.separator-triangle
+  position: relative
+  &:before
+    @include transform2d(translateX(-50%) rotate(45deg))
+    position: absolute
+    top: -5px
+    left: 50%
+    width: 25px
+    height: 25px
+    background: inherit
+    content: ''
+  // .separator-triangleの三角がかぶらないように
+  .page-header,
+  .panel-heading
+    position: relative
+
+// form
+// -------------------------
+
+.form-horizontal
+  .control-label
+    margin-bottom: 5px
+  .form-control-name
+    display: block
+    + .form-control-name
+      margin-top: 5px
+    .control-label
+      display: inline-block
+      width: 30px
+      text-align: right
+
+// btn
+// -------------------------
+
+.btn-lg
+  font-weight: bold
+.btn-shadow
+  position: relative
+  z-index: 0
+  .btn
+    position: relative
+    border-width: 0
+    &:after
+      @include box-sizing(content-box)
+      display: block
+      position: absolute
+      top: -1px
+      left: -1px
+      width: 100%
+      height: 100%
+      padding-bottom: 4px
+      background: url(../img/common/bg-btn-stripe-sp.png) left bottom repeat-x
+      background-color: inherit
+      border: inherit
+      border-width: 1px
+      border-radius: $border-radius-large
+      content: ''
+      z-index: -1
+
+// alert
+// -------------------------
+
+.alert
+  margin-bottom: 0
+
+// media object
+// -------------------------
+
+.media-account
+  a
+    color: $link-black-color
+    &:hover
+      text-decoration: none
+  .media-object
+    float: left
+    margin-right: 10px
+  .media-heading
+    font-size: 16px
+
+// footer
+// -------------------------
+
+#section-footer
+  @media print
+    display: none
+  position: relative
+  background: $gray-darker
+  color: #fff
+  p
+    margin-bottom: 0
+    font-size: 10px
+  a
+    color: #fff
+  .pagetop
+    position: absolute
+    top: -32px
+    right: 15px
+    padding: 1px 3px 3px
+    background-color: $gray-dark
+
+// modal-btns-entry
+// -------------------------
+
+.modal-btns-entry
+  .modal-content
+    padding: 3px 7px
+  .modal-body
+    padding: 15px
+  .close
+    position: absolute
+    top: 0
+    right: 0
+  .row
+    text-align: center
+    p
+      font-size: 13px
+      margin: 5px 0 0
+  .btn
+    text-align: center
+  .fa
+    font-size: 2em
+    font-size: 70px
+  .fa-envelope-square
+    color: $brand-success
+    &:hover, &:focus, &:active
+      color: darken($brand-success, 8%)
+  .fa-facebook-square
+    color: $brand-facebook
+    &:hover, &:focus, &:active
+      color: darken($brand-facebook, 8%)
+  .fa-twitter-square
+    color: $brand-twitter
+    &:hover, &:focus, &:active
+      color: darken($brand-twitter, 8%)
+.modal-content-triangle
+  &:before,
+  &:after
+    position: absolute
+    left: 50%
+    margin-left: -15px
+    border-top: solid 15px transparent
+    border-left: solid 15px transparent
+    border-right: solid 15px transparent
+    content: ''
+  &:before
+    bottom: -16px
+    border-top-color: $modal-content-border-color
+  &:after
+    bottom: -15px
+    border-top-color: #fff
+
+// breadcrumb
+// -------------------------
+
+.breadcrumb
+  margin-bottom: 0
+  background: $gray-darker
+  color: #fff
+  font-size: 0
+  li
+    width: percentage(1 / 3)
+    font-size: $font-size-base
+    text-align: center
+  span
+    display: block
+    padding-left: 10px
+  span:before
+    right: -5px
+  span:after
+    border: none
+  li
+    &:first-child
+      span
+        background: $gray
+      span:before
+        background: $gray-dark
+        border-left-color: $gray
+    &:nth-child(2)
+      span
+        background: $gray-dark
+      span:before
+        background: $gray-darker
+        border-left-color: $gray-dark
+    &:last-child
+      padding-left: 10px
+
+//
+// individual
+// --------------------------------------------------
+
+#campaignview-top.campaign-prize,
+#campaignview-top.campaign-contest,
+#campaignview-top.campaign-vote,
+#campaignview-top.campaign-coupon,
+#campaignview-top.campaign-lottery,
+#campaignview-top.campaign-lancers,
+#campaignview-items.campaign-contest
+  #section-footer
+    padding-bottom: 75px
+
+// campaignview-top
+// -------------------------
+
+#section-summary,
+#section-notice
+  .panel-primary
+    margin-bottom: 0
+    border: none
+  .panel-heading
+    padding: 0
+    border: none
+    a
+      display: block
+      padding: 10px 15px
+      text-decoration: none
+    i
+      float: right
+      margin-top: 2px
+  .fa-plus
+    display: none
+  .collapsed
+    .fa-plus
+      display: inline-block
+    .fa-minus
+      display: none
+#section-info
+  text-align: center
+  img
+    max-width: 145px
+  dl
+    margin-bottom: 0
+  dd
+    margin-bottom: $line-height-computed / 2
+    &:last-child
+      margin-bottom: 0
+#section-sponsor
+  .table
+    margin-bottom: 0
+    td
+      text-align: left
+    @media screen
+      th,
+      td
+        padding: 2px 8px 2px 0
+        border: none
+        font-size: 10px
+  a
+    color: $text-color
+  .map
+    position: relative
+    height: 0
+    padding-top: 56.25% // 16:9
+  iframe
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    border: none
+#section-entry-btn-fixed
+  position: fixed
+  bottom: 0
+  width: 100%
+  background: rgba(red($gray-darker), green($gray-darker), blue($gray-darker), .5)
+  z-index: 1
+  .disabled
+    color: $gray-light
+    opacity: 1
+  @media print
+    position: absolute
+
+// campaignview-entry
+// campaignview-entry-confirm
+// -------------------------
+
+#campaignview-entry
+  #section-step
+    + #section-fangate > .container > .separator-triangle:before,
+    + #section-form > .container > .separator-triangle:before
+      left: percentage(1 / 6)
+#section-fangate
+  color: #fff
+  .row
+    > div:first-child
+      img
+        max-height: 96px
+        margin-bottom: 3px
+        padding: 3px
+        background: #fff
+      a
+        color: #fff
+        font-size: $font-size-small
+        text-decoration: none
+#like-btn-wrapper
+  position: relative
+  background: #fff
+#section-form
+  img
+    max-height: 200px
+  form
+    > div:last-child
+      margin-top: 40px
+  #ItemImage
+    position: absolute
+    width: 150px
+    opacity: 0
+
+#campaignview-entry-confirm,
+#campaignview-vote-confirm
+  #section-form
+    .form-group
+      margin: 0
+    label
+      padding-top: ($padding-base-vertical + 1)
+      padding-bottom: ($padding-base-vertical + 1)
+    .form-control-static
+      word-wrap: break-word
+#campaignview-entry,
+#campaignview-entry-confirm,
+#campaignview-vote,
+#campaignview-vote-confirm
+  #section-form
+    .btn-shadow
+      margin-bottom: $line-height-computed
+
+// campaignview-questions
+// -------------------------
+
+#section-questions
+  > div:nth-child(even)
+    background-image: url(../img/common/bg-bg-stripe.png)
+    background-color: change-color($gray-bg, $lightness: 90%)
+  .lead
+    margin-bottom: 0
+    text-align: center
+  .radio
+    input
+      display: none
+    label
+      display: block
+      padding-left: 0
+    span
+      display: block
+      padding: $padding-large-vertical $padding-large-horizontal
+      background-color: #fff
+      border: 1px solid $btn-default-border
+      border-radius: $border-radius-large
+      text-align: center
+      @include user-select(none)
+    input:checked + span
+      background-color: darken(#fff, 8%)
+      border-color: darken($btn-default-border, 12%)
+
+// campaignview-finish
+// -------------------------
+
+#section-step
+  @media print
+    display: none
+#section-entried
+  .separator-triangle:before
+    left: percentage(5 / 6)
+    background: #fff
+  .lead
+    margin-bottom: $line-height-computed / 2
+#section-entried-message
+  @media print
+    display: none
+  .alert
+    position: relative
+  .text-danger
+    margin-bottom: 0
+    font-size: 20px
+    line-height: 1.2
+#section-coupon
+  position: relative
+  .container-xs
+    @media print
+      display: none
+#section-gift
+  position: relative
+  .panel
+    margin-bottom: 0
+  .panel-body
+    p
+      margin-bottom: 0
+#section-share,
+#section-btn-top
+  @media print
+    display: none
+
+// campaignview-result
+// -------------------------
+
+#section-result
+  .container + .container
+    margin-top: 15px
+  h2
+    margin-bottom: 0
+  .panel
+    margin-bottom: 0
+  .panel-body
+    h2
+      margin-bottom: 15px
+      font-size: 24px
+      line-height: 1.4
+    p
+      margin-bottom: 0
+.share-left
+  margin: 3px 0 0
+  font-size: 11px
+  text-align: right
+  > span
+    font-size: 13px
+
+// campaignview-items
+// -------------------------
+
+.campaign-contest .item
+  position: relative
+  width: 100%
+  height: 0
+  padding-top: 100%
+  a
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    // background-color: #000
+    // background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    overflow: hidden
+  img
+    display: none
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    max-width: 100%
+    max-height: 100%
+    margin: auto
+#campaignview-items
+  #section-header
+    background: #fff
+  .item-wrap
+    background: #fff
+    border: 1px solid #ccc
+    border-radius: 4px
+    margin-bottom: 20px
+    padding: 10px
+#section-items
+  background: #f0f0f0
+  .col-sm-3
+    padding: 0 5px
+  .section-sm
+    padding: 10px 0 0
+    p
+      font-size: 13px
+      margin: 2px 0
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      &:last-of-type
+        margin-bottom: 0
+  .sns-data
+    height: 24px
+    img
+      margin-right: 10px
+  .vote-count
+    margin-bottom: 4px
+    text-align: right
+    & > span:after
+      content: ' 票'
+#section-item
+  background: #f0f0f0
+  img
+    position: relative
+  h2
+    margin: 15px 0 20px
+    font-weight: bold
+  .container + .container
+    margin-top: 15px
+  .item-wrap
+    position: relative
+    margin-bottom: 0
+    padding: 20px
+  .panel
+    margin-bottom: 0
+    border-width: 0
+  .panel-body
+    p
+      margin-bottom: 0
+      word-wrap: break-word
+    .media-body
+      overflow: visible
+    .nickname
+      margin-bottom: $line-height-computed / 2
+      font-size: 16px
+    p:nth-of-type(2)
+      position: relative
+      border: 2px solid #808080
+      border-radius: 0 15px 15px 15px
+      background: #fff
+      margin-left: 75px
+      padding: 10px
+      &:after, &:before
+        right: 100%
+        top: 0
+        border: solid transparent
+        content: " "
+        height: 0
+        width: 0
+        position: absolute
+        pointer-events: none
+      &:after
+        border-color: rgba(255, 255, 255, 0)
+        border-right-color: #ffffff
+        border-top-color: #ffffff
+        border-width: 7px
+        margin-top: 0px
+      &:before
+        border-color: rgba(240, 240, 240, 0)
+        border-right-color: #808080
+        border-top-color: #808080
+        border-width: 9px
+        margin-top: -2px
+  #section-entry-btn
+    .vote-count
+      .lead
+        font-size: 36px
+        font-weight: bold
+        background: #f0f0f0
+        margin: 0 85px 20px
+        text-align: right
+        span:after
+          font-size: 15px
+          font-weight: normal
+          content: ' 票'
+          margin: 0 1em
+#section-share-btns
+  padding-top: 30px
+  .lead
+    margin-bottom: $line-height-computed / 2
+  .col-xs-2
+    padding: 0
+  .fa
+    position: relative
+    top: 4px
+    font-size: 47px
+  .fa-facebook-square
+    color: $brand-facebook
+    &:hover, &:focus, &:active
+      color: darken($brand-facebook, 8%)
+  .fa-twitter-square
+    color: $brand-twitter
+    &:hover, &:focus, &:active
+      color: darken($brand-twitter, 8%)
+  .fa-google-plus-square
+    color: $brand-gplus
+    &:hover, &:focus, &:active
+      color: darken($brand-gplus, 8%)
+
+//
+// theme colors
+// --------------------------------------------------
+
+@mixin theme-color-common($color1, $color2, $color3)
+  .navbar-inverse
+    border-color: $color1
+    background-color: $color1
+  .section-bg-dark
+    background-color: $color3
+  .btn-default
+    color: $color2
+  .btn-primary
+    @include button-variant(#fff, $color2, darken($color2, 5%))
+  .panel-default
+    border-color: $color1
+    > .panel-heading
+      background-color: $color1
+      border-color: $color1
+  .panel-primary
+    border-color: $color2
+    > .panel-heading
+      background-color: $color2
+      border-color: $color2
+  .breadcrumb
+    background-color: $color1
+    li
+      &:first-child
+        span
+          background-color: $color3
+        span:before
+          background-color: $color2
+          border-left-color: $color3
+      &:nth-child(2)
+        span
+          background-color: $color2
+        span:before
+          background-color: $color1
+          border-left-color: $color2
+  #section-footer
+    background-color: $color1
+    .pagetop
+      background-color: $color2
+  #section-sponsor
+    h2
+      color: $color1
+  #section-entry-btn-fixed
+    background: rgba(red($color1), green($color1), blue($color1), .5)
+  #section-questions
+    > div:nth-child(even)
+      background-color: change-color($color3, $lightness: 90%)
+    .radio
+      span
+        border-color: $color3
+      input:checked + span
+        background-color: $color3
+        border-color: $color3
+        color: #fff
+  #section-result
+    h2
+      color: $color1
+
+.theme-color-gray
+  @include theme-color-common(nth($theme-color-gray, 1), nth($theme-color-gray, 2), nth($theme-color-gray, 3))
+.theme-color-red
+  @include theme-color-common(nth($theme-color-red, 1), nth($theme-color-red, 2), nth($theme-color-red, 3))
+.theme-color-green
+  @include theme-color-common(nth($theme-color-green, 1), nth($theme-color-green, 2), nth($theme-color-green, 3))
+.theme-color-blue
+  @include theme-color-common(nth($theme-color-blue, 1), nth($theme-color-blue, 2), nth($theme-color-blue, 3))
+.theme-color-yellow
+  @include theme-color-common(nth($theme-color-yellow, 1), nth($theme-color-yellow, 2), nth($theme-color-yellow, 3))
+.theme-color-purple
+  @include theme-color-common(nth($theme-color-purple, 1), nth($theme-color-purple, 2), nth($theme-color-purple, 3))
+.theme-color-pink
+  @include theme-color-common(nth($theme-color-pink, 1), nth($theme-color-pink, 2), nth($theme-color-pink, 3))
+.theme-color-pastel
+  @include theme-color-common(nth($theme-color-pastel, 1), nth($theme-color-pastel, 2), nth($theme-color-pastel, 3))
+.theme-color-natural
+  @include theme-color-common(nth($theme-color-natural, 1), nth($theme-color-natural, 2), nth($theme-color-natural, 3))
+

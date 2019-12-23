@@ -1,0 +1,35 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- トップ画像
+- if($this->Soraps->isDisplay('top_image')):
+  #section-header.section.text-center
+    .container.container-img
+      !{$this->element('campaigns/top-image')}
+- endif;
+
+//- タイトル、概要
+#section-summary.section-lg.section-bg.separator-triangle
+  .container
+    .panel.panel-primary
+      .panel-heading
+        h2.panel-title
+          a.visible-xs(href="#js-panel-summary", data-toggle="collapse")
+            | キャンペーン概要
+            !{$this->Html->icon('plus')}
+            !{$this->Html->icon('minus')}
+          span.hidden-xs キャンペーン概要
+      #js-panel-summary.panel-body.panel-body-bg.in
+        p
+          strong !{$this->Soraps->text('title')}
+        p !{$this->Soraps->textarea('summary')}
+
+//- 挑戦ボタン
+#section-entry-btn.section
+  .container
+    .btn-shadow
+      !{$this->element('campaigns/btn-entry', ['type' => 'primary'])}
+

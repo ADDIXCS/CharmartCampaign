@@ -1,0 +1,21 @@
+- foreach($items as $key => $item):
+  div(class="col-sm-3 col-xs-4 text-center!{$key == 3 ? ' hidden-xs' : ''}")
+    .item
+      :php
+        | $imageUrl = $campaign['Campaign']['campaign_type'] == 'lancers'
+        |   ? current($item['Item']['image'])
+        |   : $this->S3->url($item, 'Item.image');
+        | echo $this->Html->link(
+        |   $this->Html->image($imageUrl),
+        |   $this->Soraps->isPreview() ? '#' : [
+        |     'action' => 'items',
+        |     'accountName' => $currentAccount['Account']['account_name'],
+        |     'id' => $campaign['Campaign']['id'],
+        |     'itemId' => $item['Item']['id'],
+        |   ],
+        |   [
+        |     'escape' => false,
+        |     'style' => 'background-image: url(' . $imageUrl . ')',
+        |   ]
+        | );
+

@@ -1,0 +1,6 @@
+- if($this->Soraps->isPreview()):
+  .js-CampaignTopImage-preview
+    !{$this->S3->image($campaign, 'Campaign.top_image')}
+- else:
+  !{$this->S3->image($campaign, 'Campaign.top_image')}
+- endif;

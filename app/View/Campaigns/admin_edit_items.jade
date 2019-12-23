@@ -1,0 +1,78 @@
+- $this->extend('admin_edit');
+
+!{$this->Form->create('Campaign', ['type' => 'file'])}
+:php
+  | echo $this->Form->input('Item.title', [
+  |   'type' => 'text',
+  |   'label' => 'タイトル',
+  | ]);
+  | echo $this->Form->input('Item.image', [
+  |   'type' => 'image',
+  |   'label' => [
+  |     'text' => '画像',
+  |     'required' => true,
+  |   ],
+  | ]);
+  | echo $this->Form->input('Item.description', [
+  |   'type' => 'textarea',
+  |   'label' => '説明文',
+  | ]);
+.form-group
+  .col-sm-offset-2.col-sm-10
+    !{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}
+
+- if($items):
+  h2 アイテム一覧
+  - if(array_key_exists('Item', $this->request->data)):
+    p
+      :php
+        | echo $this->Html->btn(
+        |   '新規作成',
+        |   [
+        |     'action' => 'edit',
+        |     'accountName' => $currentAccount['Account']['account_name'],
+        |     'id' => $campaign['Campaign']['id'],
+        |     'editType' => 'items',
+        |   ],
+        |   ['type' => 'primary', 'icon' => 'plus']
+        | );
+  - endif;
+  .row.items
+    - foreach($items as $item):
+      .col-sm-3
+        .thumbnail
+          !{$this->S3->image($item, 'Item.image')}
+          .caption
+            .h3 #{$item['Item']['title']}
+            p #{$item['Item']['vote_count']}票
+            - if($item['Item']['description']):
+              p !{nl2br(String::truncate($item['Item']['description'], 50))}
+            - endif;
+            div
+              :php
+                | echo $this->Html->btn(
+                |   '編集',
+                |   [
+                |     'action' => 'edit',
+                |     'accountName' => $currentAccount['Account']['account_name'],
+                |     'id' => $campaign['Campaign']['id'],
+                |     'editType' => 'items',
+                |     'objectId' => $item['Item']['id'],
+                |   ],
+                |   ['type' => 'warning', 'size' => 'sm', 'icon' => 'pencil']
+                | );
+                | if(!$item['Item']['vote_count']) {
+                |   echo $this->Form->postBtn(
+                |     '削除',
+                |     [
+                |       'action' => 'delete_item',
+                |       'accountName' => $currentAccount['Account']['account_name'],
+                |       'id' => $campaign['Campaign']['id'],
+                |       'itemId' => $item['Item']['id'],
+                |     ],
+                |     ['type' => 'danger', 'size' => 'sm', 'icon' => 'trash-o'],
+                |     ['confirm' => '削除しますか？']
+                |   );
+                | }
+- endif;

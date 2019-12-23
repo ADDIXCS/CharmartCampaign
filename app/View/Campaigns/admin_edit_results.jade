@@ -1,0 +1,50 @@
+- $this->extend('admin_edit');
+
+.row
+  .col-sm-6
+    !{$this->Form->create('Campaign', ['type' => 'file'])}
+    .object-base.hide
+      //- 雛形
+      - echo $this->element('admin/inputs-result', ['i' => '{{result}}']);
+    .object-result-wrapper
+      - foreach($this->request->data['Result'] as $i => $result):
+        !{$this->element('admin/inputs-result', ['i' => $i])}
+    .form-group.text-center
+      :php
+        | echo $this->Html->btn(
+        |   '',
+        |   '#',
+        |   ['type' => 'success', 'icon' => 'plus'],
+        |   [
+        |     'data-toggle' => 'add-object',
+        |     'data-target' => 'result',
+        |     'data-parent' => 'form'
+        |   ]
+        | );
+    .form-group
+      .col-sm-offset-4.col-sm-8
+        !{$this->element('admin/btn-campaigns-edit')}
+    !{$this->Form->end()}
+
+  .col-sm-6
+    table.object-result-table.table.table-bordered
+      tbody
+        - foreach($campaign['Question'] as $question):
+          tr
+            - if($question['image']):
+              td(colspan="2")
+                !{$this->S3->image($question, 'Question.image')}
+            - else:
+              td.active(colspan="2")
+                #{$question['text']}
+            - endif;
+          - foreach($question['Answer'] as $answer):
+            tr
+              td #{$answer['text']}
+              td #{$answer['point']}
+
+- $this->start('script');
+:javascript
+  | var editType = 'results';
+!{$this->Html->script('admin-edit-objects')}
+- $this->end();

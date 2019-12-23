@@ -1,0 +1,19 @@
+2017-11-16 10:00:56 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /admins/login
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-11-16 12:14:38 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 346]
+2017-11-16 12:14:38 Error: [InternalErrorException] Internal Server Error
+Request URL: /client_demo_wang/campaigns/5a0d624997ebd/finish
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/faro-c...', 346)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/faro-c...', 346, Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/faro-c...', 346, Array)
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Core/App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

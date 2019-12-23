@@ -1,0 +1,493 @@
+2019-10-30 06:17:39 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /index.html
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 07:57:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 07:57:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /latest/dynamic/instance-identity/document
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 10:02:55 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8e13feb4de.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 10:06:56 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8e23022ede.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 10:25:56 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8e6a4e5e44.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 10:31:57 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8e80d34c60.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 10:39:27 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8e9cf806a1.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 10:44:57 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8eb19c150c.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 11:04:28 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8efacae5f6.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 11:05:28 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8efe8b0137.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 11:10:28 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db8f114ed386.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 12:23:32 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db902345acdf.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 12:24:02 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db902525c7a7.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 12:27:32 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db9032484a8b.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 12:36:02 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db90522df25c.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 12:38:02 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db9059af4136.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 12:40:03 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db906131963d.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 13:42:35 Warning: Warning (2): include(/var/www/charmart/app/tmp/cache/views/jade_5db914bbb9d11.ctp): failed to open stream: No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929]
+Trace:
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 13:42:35 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/charmart/app/tmp/cache/views/jade_5db914bbb9d11.ctp' for inclusion (include_path='/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP:.:/usr/share/pear:/usr/share/php') in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929]
+Trace:
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+View::_evaluate() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 14:05:06 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db91a02b4a18.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 14:53:38 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db92562e548b.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 15:01:09 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db927253d221.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 16:03:10 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /img/common/ogp.jpg
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 16:44:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /sitemap.xml
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 16:44:08 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /.well-known/security.txt
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 17:02:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /sitemap.xml
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 17:02:20 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /.well-known/security.txt
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 19:48:50 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lp
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 19:48:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /lp/
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 19:50:34 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /campaign/lp
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 22:04:27 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db98a5bbbeb2.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 22:07:27 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db98b0fd8964.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 22:38:59 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db9927352f8d.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 22:39:29 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db992915aafc.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 22:40:59 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db992eb6b363.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 22:51:29 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db99561df63c.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 22:57:00 Warning: Warning (2): unlink(/var/www/charmart/app/tmp/cache/views/jade_5db996ac2ac2c.ctp): No such file or directory in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282]
+Trace:
+unlink - [internal], line ??
+File::delete() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/File.php, line 282
+IqueJadeView::_deleteRenderedView() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 48
+IqueJadeView::_evaluate() - /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php, line 61
+View::_render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 891
+View::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php, line 460
+SorapsView::render() - /var/www/faro-campaign/app/View/SorapsView.php, line 31
+Controller::render() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-10-30 23:23:40 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /sitemap.xml
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-10-30 23:23:41 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /.well-known/security.txt
+Stack Trace:
+#0 /var/www/charmart/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

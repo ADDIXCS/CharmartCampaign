@@ -1,0 +1,39 @@
+- $this->extend('admin_edit');
+
+!{$this->Form->create('Campaign')}
+//- 雛形
+.object-base.hide
+  :php
+    | echo $this->element(
+    |   'admin/inputs-enquete',
+    |   ['i' => '{{enquete}}', 'enqueteOptions' => []]
+    | );
+.object-enquete-wrapper
+  - foreach($this->request->data['Enquete'] as $i => $enquete):
+    :php
+      | echo $this->element(
+      |   'admin/inputs-enquete',
+      |   [
+      |     'i' => $i,
+      |     'enqueteOptions' => array_key_exists('EnqueteOption', $enquete)
+      |       ? $enquete['EnqueteOption']
+      |       : []
+      |   ]
+      | );
+.form-group.text-center
+  :php
+    | echo $this->Html->btn(
+    |   '',
+    |   '#',
+    |   ['type' => 'success', 'icon' => 'plus'],
+    |   ['data-toggle' => 'add-object', 'data-target' => 'enquete', 'data-parent' => 'form']
+    | );
+.form-group.text-center
+  !{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}
+
+- $this->start('script');
+:javascript
+  | var editType = 'enquetes';
+!{$this->Html->script('admin-edit-objects')}
+- $this->end();

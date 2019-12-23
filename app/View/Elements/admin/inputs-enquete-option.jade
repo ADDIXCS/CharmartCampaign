@@ -1,0 +1,44 @@
+:php
+  | $this->Form->inputDefaults([
+  |   'div' => false,
+  |   'class' => 'form-control',
+  |   'label' => false,
+  |   'wrapInput' => false,
+  |   'before' => '<td>',
+  |   'after' => '</td>',
+  | ]);
+  | $objectEnqueteOptionClass = 'object-enquete-option';
+  | if(!empty($this->request->data['Enquete'][$i]['EnqueteOption'][$j]['delete_flg'])) {
+  |   $objectEnqueteOptionClass .= ' hide';
+  | }
+tr(class="#{$objectEnqueteOptionClass}")
+  :php
+    | echo $this->Form->input('Enquete.' . $i . '.EnqueteOption.' . $j . '.text', [
+    |   'type' => 'text',
+    |   'before' => $this->Form->isFieldError('Enquete.' . $i . '.EnqueteOption.' . $j . '.text')
+    |     ? '<td class="has-error error">'
+    |     : '<td>',
+    | ]);
+  td
+    :php
+      | if(!empty($this->request->data['Enquete'][$i]['EnqueteOption'][$j]['id'])) {
+      |   echo $this->Form->hidden('Enquete.' . $i . '.EnqueteOption.' . $j . '.id');
+      | }
+      | echo $this->Form->input(
+      |   'Enquete.' . $i . '.EnqueteOption.' . $j . '.delete_flg',
+      |   [
+      |     'type' => 'hidden',
+      |     'class' => 'object-enquete-option-delete-flg',
+      |   ]
+      | );
+      | echo $this->Html->btn(
+      |   '',
+      |   '#',
+      |   ['type' => 'danger', 'icon' => 'minus'],
+      |   [
+      |     'data-toggle' => 'remove-object',
+      |     'data-target' => 'enquete-option',
+      |     'data-parent' => '.object-enquete'
+      |   ]
+      | );
+

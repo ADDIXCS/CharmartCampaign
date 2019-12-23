@@ -1,0 +1,128 @@
+@font-face {
+	font-family: CeraGR;
+	src: url(../fonts/Cera-GR.otf) format("opentype");
+	src: url(../fonts/Cera-GR.woff) format("woff");
+	font-style: normal
+ }
+
+@font-face {
+	font-family: CeraGRBold;
+	src: url(../fonts/Cera-GR-Bold.otf) format("opentype");
+	src: url(../fonts/Cera-GR-Bold.woff) format("woff");
+	font-style: normal
+ }
+
+@font-face {
+	font-family: CeraGRMedium;
+	src: url(../fonts/Cera-GR-Medium.otf) format("opentype");
+	src: url(../fonts/Cera-GR-Medium.woff) format("woff");
+	font-style: normal
+ }
+
+@font-face {
+	font-family: CeraGRLight;
+	src: url(../fonts/Cera-GR-Light.otf) format("opentype");
+	src: url(../fonts/Cera-GR-Light.woff) format("woff");
+	font-style: normal
+ }
+
+@font-face {
+	font-family: GothamBold;
+	src: url(../fonts/Gotham-Bold.otf) format("opentype");
+	font-style: normal
+ }
+
+@font-face {
+	font-family: HoeflerText-RegularItalic;
+	src: url(../fonts/HoeflerText-RegularItalic.otf) format("opentype");
+	font-style: normal
+ }
+
+.case-study-details>div .content-area p:first-of-type {
+    margin: 35px 0;
+    font-size: 24px;
+    color: #171f36;
+    font-family: CeraGRBold;
+    text-transform: uppercase;
+		font-weight: bold;
+}
+
+.case-study-details>div .content-area p {
+    position: relative;
+    padding-left: 0;
+    color: #91959d;
+    font-family: CeraGR;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.case-study-slide .case-study-details>div .content-area {
+
+    float: right;
+    width: 485px;
+    margin-right: 85px;
+
+}
+
+@media (max-width:767px){
+	.case-study-slide .case-study-details>div .content-area {
+	    float: right;
+	    width: auto;
+	    margin-right: 0px;
+	}
+
+	.case-study-details>div .content-area p:first-of-type {
+	    margin: 35px 0;
+	    font-size: 24px;
+	    color: #171f36;
+	    font-family: CeraGRBold;
+	    text-transform: uppercase;
+			font-weight: bold;
+	}
+
+	.case-study-details>div .content-area p {
+	    position: relative;
+	    padding-left: 0;
+	    color: #91959d;
+	    font-family: CeraGR;
+	    font-size: 16px;
+	    line-height: 24px;
+	}
+
+}
+
+
+@media (max-width:992px){
+	.case-study-slide .case-study-details>div .content-area {
+	    float: right;
+	    width: auto;
+	}
+}
+@media (max-width:1200px){
+.case-study-slide .case-study-details>div .content-area{
+	width:auto;
+	margin: 0 10px 0 10px;
+}
+}
+body .section1 .container-fluid .container {
+	padding-top: 155px;
+}
+.section1 .price {
+	margin-bottom: 20px;
+}
+.banner-area .sp {
+	display: none;
+}
+@media (max-width: 767px) {
+	.banner-area .sp {
+		display: inline-block;
+		width: 90%;
+	}
+	.banner-area .pc {
+		display: none;
+	}
+	.section1 .price img {
+		width: 90%;
+	}
+}

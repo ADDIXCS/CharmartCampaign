@@ -1,0 +1,133 @@
+- $this->extend('admin_edit_preview');
+
+:php
+  | echo $this->Form->create('Campaign', [
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  |   'angular' => true,
+  | ]);
+  | echo $this->Form->input('top_image_flg', [
+  |   'type' => 'checkbox',
+  |   'label' => false,
+  |   'div' => 'hide',
+  | ]);
+- if($campaign['Campaign']['campaign_type'] == 'contest'):
+  fieldset
+    :php
+      | echo $this->Form->input('entry_limit', [
+      |   'type' => 'radio',
+      |   'label' => '投稿回数',
+      |   'options' => [
+      |     0 => '1人1回',
+      |     1 => '無制限',
+      |   ],
+      |   'inline' => true,
+      | ]);
+      | echo $this->Form->input('contest_default_unpublished_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => '検閲してから公開する',
+      |   'class' => false,
+      | ]);
+- endif;
+- if($campaign['Campaign']['campaign_type'] == 'coupon'):
+  fieldset
+    :php
+      | echo $this->Form->input('coupon_used_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => 'もぎり機能を使う',
+      |   'class' => false,
+      | ]);
+      | echo $this->Form->input('entry_limit', [
+      |   'type' => 'radio',
+      |   'label' => 'クーポンの取得回数',
+      |   'options' => [
+      |     0 => '期間中1回',
+      |     1 => '1日1回',
+      |   ],
+      |   'div' => ['class' => 'form-group', 'ng-show' => 'coupon_used_flg'],
+      |   'inline' => true,
+      | ]);
+- endif;
+- if($campaign['Campaign']['campaign_type'] == 'lancers'):
+  fieldset
+    :php
+      | $entryTypes = $this->Form->input('facebook_entry_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => 'Facebook',
+      |   'div' => false,
+      |   'class' => false,
+      | ]) . $this->Form->input('twitter_entry_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => 'Twitter',
+      |   'div' => false,
+      |   'class' => false,
+      | ]);
+      | echo $this->Form->input('validate_entry_types', [
+      |   'type' => 'text',
+      |   'label' => '投票方法',
+      |   'class' => 'hide',
+      |   'afterInput' => $entryTypes,
+      |   'required' => false, //ブラウザのバリデーションを無効化する
+      | ]);
+      | echo $this->Form->input('item_per_page', [
+      |   'type' => 'text',
+      |   'label' => '1ページの表示件数',
+      |   'default' => '40',
+      |   'class' => 'form-control input-small text-right',
+      |   'helpInline' => '件',
+      | ]);
+      | echo $this->Form->input('vote_count_hidden_flg', [
+      |   'type' => 'checkbox',
+      |   'label' => '投票数を非表示にする',
+      |   'class' => false,
+      | ]);
+- endif;
+fieldset
+  :php
+    | // echo $this->Form->input('age_limit', [
+    | //   'type' => 'select',
+    | //   'label' => '年齢制限',
+    | //   'options' => [
+    | //     '17' => '17歳以上',
+    | //     '18' => '18歳以上',
+    | //     '19' => '19歳以上',
+    | //     '20' => '20歳以上',
+    | //     '21' => '21歳以上'
+    | //   ],
+    | //   'empty' => '制限なし',
+    | //   'inline' => true,
+    | // ]);
+    | echo $this->Form->input('theme_color', [
+    |   'type' => 'radio',
+    |   'label' => 'テーマカラー',
+    |   'options' => [
+    |     'black' => '黒',
+    |     'gray' => '灰',
+    |     'red' => '赤',
+    |     'green' => '緑',
+    |     'blue' => '青',
+    |     'yellow' => '黄',
+    |     'purple' => '紫',
+    |     'pink' => '桃',
+    |     'pastel' => 'パステル',
+    |     'natural' => 'ナチュラル',
+    |   ],
+    |   'default' => 'black',
+    |   'wrapInput' => ['tag' => 'div', 'class' => false],
+    | ]);
+    | //if($this->Soraps->isMasterLogin()) {
+    | //  echo $this->Form->input('original_design_flg', [
+    | //    'type' => 'checkbox',
+    | //    'label' => ['text' => '使用する', 'class' => 'checkbox-inline'],
+    | //    'class' => false,
+    | //    'wrapInput' => ['tag' => 'div', 'class' => false],
+    | //    'checkboxDiv' => false,
+    | //    'before' => '<label>オリジナルデザイン</label>',
+    | //    'helpBlock' => 'オリジナルデザインはプレビューに反映されません',
+    | //  ]);
+    | //}
+!{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}

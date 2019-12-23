@@ -1,0 +1,69 @@
+- $this->set('title_for_layout', 'オーディエンス');
+
+- $_audience = $audience;
+- $audience = $_audience['Audience'];
+.well.well-lg
+  .row
+    .col-sm-2
+      - if($audience['entry_type'] == 'facebook'):
+        img(src="//graph.facebook.com/#{$audience['facebook_id']}/picture?type=large")
+      - elseif($audience['entry_type'] == 'twitter'):
+        img(src="#{$Twitter->getProfileImageUrl($audience['twitter_id'], 'original')}")
+      - endif;
+    .col-sm-3
+      p.lead
+        | #{$audience['last_name']} #{$audience['first_name']}
+        - if($audience['gender']):
+          span(class="text-#{$audience['gender'] == 'male' ? 'primary' : 'danger'}")
+            !{$this->Html->icon($audience['gender'], 'lg', true)}
+        - endif;
+      p #{date('Y年n月j日', strtotime($audience['birthday']))}
+      p 最終応募日：#{date('Y年n月j日', strtotime($audience['modified']))}
+      p
+        - if($audience['entry_type'] == 'facebook'):
+          a(href="//www.facebook.com/#{$audience['facebook_username']}", target="_blank")
+            | #{$audience['facebook_username']}
+            !{$this->Html->icon('facebook-square')}
+            | (#{$audience['facebook_friend_count']})
+        - elseif($audience['entry_type'] == 'twitter'):
+          a(href="//twitter.com/#{$audience['twitter_screen_name']}", target="_blank")
+            | #{$audience['twitter_name']} (#{$audience['twitter_screen_name']})
+            !{$this->Html->icon('twitter')}
+            | (#{$audience['twitter_followers_count']})
+        - endif;
+    .col-sm-7
+      .pull-right
+        .tile.tile-success.tile-sm
+          p.tile-heading 参加
+          #{$audience['entry_count']}
+        .tile.tile-default.tile-sm
+          p.tile-heading シェア
+          #{$audience['shared_count']}
+        .tile.tile-default.tile-sm
+          p.tile-heading 投票
+          #{$audience['vote_count']}
+        .tile.tile-warning
+          p エンゲージメント
+          p.tile-heading #{$audience['engagement']}
+
+h2 参加履歴
+- foreach($_audience['Entry'] as $entry):
+  - $campaign = $entry['Campaign'];
+  .row
+    .col-sm-1
+      !{$this->Html->image('common/icon-' . $campaign['campaign_type'] . '.png')}
+    .col-sm-11
+      .well.clearfix
+        .pull-left
+          p #{date('Y/m/d', strtotime($entry['created']))}
+          p.lead
+            span.label.label-primary #{$campaign['campaign_type_ja']}
+            #{$campaign['title']}
+        .pull-right
+          .tile.tile-danger.tile-xs 参加
+          - if($entry[$entry['entry_type'] . '_shared']):
+            .tile.tile-danger.tile-xs シェア
+          - else:
+            .tile.tile-default.tile-xs シェア
+          - endif;
+

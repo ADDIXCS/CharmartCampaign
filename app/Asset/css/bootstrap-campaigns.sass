@@ -1,0 +1,23 @@
+@import "variables-campaigns"
+@import "bootstrap-common"
+
+//
+// Alerts
+// --------------------------------------------------
+
+.alert
+  position: relative
+  z-index: 1
+
+//
+// Modals
+// --------------------------------------------------
+
+.modal-content
+  opacity: 0
+  @include box-shadow(none)
+  @include translate3d(0, 5%, 0)
+  @include transition-transform(0.1s ease-out)
+  &.in
+    opacity: 1
+    @include translate3d(0, 0, 0)

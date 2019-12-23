@@ -1,0 +1,47 @@
+- $this->extend('admin_edit_preview');
+
+:php
+  | echo $this->Form->create('Campaign', [
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  |   'angular' => true,
+  | ]);
+  | echo $this->Form->input('item_name', [
+  |   'type' => 'text',
+  |   'label' => 'アイテム名',
+  |   'default' => 'アイテム',
+  |   'placeholder' => 'アイテム',
+  | ]);
+  | echo $this->Form->input('item_per_page', [
+  |   'type' => 'text',
+  |   'label' => '1ページの表示件数',
+  |   'default' => '40',
+  |   'class' => 'form-control input-small text-right',
+  |   'helpInline' => '件',
+  | ]);
+  | echo $this->Form->input('item_sort_default', [
+  |   'type' => 'radio',
+  |   'label' => 'デフォルトの並び順',
+  |   'options' => $campaign['Campaign']['campaign_type'] == 'contest'
+  |     ? ['created' => '新着順', 'vote_count' => '人気順', 'rand' => 'ランダム']
+  |     : ['vote_count' => '人気順', 'rand' => 'ランダム'],
+  |   'wrapInput' => ['tag' => 'div', 'class' => false],
+  | ]);
+  | if($campaign['Campaign']['campaign_type'] == 'contest') {
+  |   echo $this->Form->input('contest_vote_disabled_flg', [
+  |     'type' => 'checkbox',
+  |     'label' => '投票機能を使用しない',
+  |     'class' => false,
+  |   ]);
+  | }
+  | echo $this->Form->input('vote_count_hidden_flg', [
+  |   'type' => 'checkbox',
+  |   'label' => '投票数を非表示にする',
+  |   'class' => false,
+  |   'div' => ['class' => 'form-group', 'ng-hide' => 'contest_vote_disabled_flg'],
+  | ]);
+!{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}

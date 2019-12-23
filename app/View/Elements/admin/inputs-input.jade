@@ -1,0 +1,26 @@
+- $editType = $this->request->param('editType');
+table.input-table.table.table-condensed
+  thead
+    th
+    th 非表示
+    th 表示<br>（任意）
+    th 表示<br>（必須）
+  tbody
+    - foreach(CampaignValue::$inputs as $key => $label):
+      :php
+        | if($editType == 'page-entry' && $key == 'email') { continue; }
+        | echo $this->Form->input(
+        |   'Campaign.input_' . ($editType == 'page-vote' ? 'vote_' : '') . $key,
+        |   [
+        |     'type' => 'radio',
+        |     'options' => [0 => '', 1 => '', 2 => ''],
+        |     // angularを有効にしていると文字列にしないと効かない
+        |     'default' => $editType == 'page-entry' ? '1' : '0',
+        |     'before' => '<tr><th>' . $label . '</th><td>',
+        |     'after' => '</td></tr>',
+        |     'separator' => '</td><td>',
+        |     'div' => false,
+        |     'wrapInput' => false,
+        |   ]
+        | );
+

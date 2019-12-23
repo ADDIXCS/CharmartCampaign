@@ -1,0 +1,148 @@
+- $this->set('title_for_layout', '応募一覧');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+
+!{$this->element('admin/campaign-btn')}
+
+table.table
+  thead
+    tr
+      th ID
+      th
+      th.cell-w50 性別
+      th.cell-w50 年齢
+      th.cell-w70 都道府県
+      - if(in_array($campaign['campaign_type'], ['vote', 'lancers'])):
+        th.cell-w70.text-right 投票
+      - elseif($campaign['campaign_type'] == 'coupon' && $campaign['coupon_used_flg']):
+        th.cell-w70.text-center クーポン使用
+      - elseif($campaign['campaign_type'] == 'lottery'):
+        th.cell-w100 景品
+      - endif;
+      //- if($campaign['campaign_type'] != 'lancers'):
+      //  th.cell-w100.text-right 新規いいね！<br>フォロー
+      //  th.cell-w60.text-right シェア
+      //  th.cell-w90.text-right リファラー
+      //- endif;
+      //th.cell-w90.text-right 友達<br>フォロワー
+      th.cell-w140 応募日時
+      th アクション
+  tbody
+    - foreach($entries as $_entry):
+      - if($campaign['campaign_type'] == 'lancers'):
+        - $entry = $_entry['Audience'];
+      - else:
+        - $entry = $_entry['Entry'];
+        - $entryEnquete = $_entry['EntryEnquete'];
+      - endif;
+      tr
+        td #{$entry['id']}
+        td
+          .media
+            - if($entry['entry_type'] == 'facebook'):
+              img.pull-left(src="//graph.facebook.com/#{$entry['facebook_id']}/picture", width="48")
+            - elseif($entry['entry_type'] == 'twitter'):
+              img.pull-left(src="#{$entry['twitter_profile_image_url']}")
+            - endif;
+            .media-body
+              - if($entry['entry_type'] == 'facebook'):
+                | #{$entry['last_name']} #{$entry['first_name']}
+                br
+                | #{$entry['facebook_username']}
+                !{$this->Html->icon('facebook-square')}
+              //  a(href="//www.facebook.com/#{$entry['facebook_id']}", target="_blank")
+              //    | #{$entry['last_name']} #{$entry['first_name']}
+              //    br
+              //    | #{$entry['facebook_username']}
+              //    !{$this->Html->icon('facebook-square')}
+              - elseif($entry['entry_type'] == 'twitter'):
+                a(href="//twitter.com/#{$entry['twitter_screen_name']}", target="_blank")
+                  - if($entry['last_name'] || $entry['first_name']):
+                    | #{$entry['last_name']} #{$entry['first_name']}
+                    br
+                  - endif;
+                  | #{$entry['twitter_name']} (#{$entry['twitter_screen_name']})
+                  !{$this->Html->icon('twitter')}
+              - else:
+                | #{$entry['last_name']} #{$entry['first_name']}
+                !{$this->Html->icon('envelope')} #{$entry['email']}
+              - endif;
+        td #{$entry['gender_ja']}
+        td #{$entry['age']}
+        td #{$entry['state']}
+        - if($campaign['campaign_type'] == 'vote'):
+          td.text-right #{$entry['vote_count']}
+        - elseif($campaign['campaign_type'] == 'lancers'):
+          td.text-right #{$_entry['Vote']['count']}
+        - elseif($campaign['campaign_type'] == 'coupon' && $campaign['coupon_used_flg']):
+          td.text-center
+            - if($entry['coupon_used']):
+              !{$this->Html->icon('check')}
+            - endif;
+        - elseif($campaign['campaign_type'] == 'lottery'):
+          - if($_entry['Gift']['name']):
+            td.danger #{$_entry['Gift']['name']}
+          - else:
+            td
+          - endif;
+        - endif;
+        //- if($campaign['campaign_type'] != 'lancers'):
+        //  td.text-right !{$entry['new_fan'] ? $this->Html->icon('check') : ''}
+        //  td.text-right
+        //    - if($entry['shared']):
+        //      :php
+        //        | echo $this->Html->icon('check', 'lg', false, [
+        //        |   'data-content' => $entry[$entry['entry_type'] . '_shared_message'],
+        //        | ]);
+        //    - endif;
+        //  td.text-right= '0'
+        //- endif;
+        //td.text-right
+        //  - if($entry['entry_type'] == 'facebook'):
+        //    | #{$entry['facebook_friend_count']}
+        //  - elseif($entry['entry_type'] == 'twitter'):
+        //    | #{$entry['twitter_followers_count']}
+        //  - endif;
+        td #{date('Y-m-d H:i', strtotime($entry['created']))}
+        td.td-action
+          - if($_campaign['Enquete']):
+            :php
+              | echo $this->Html->btn(
+              |   'アンケート',
+              |   '#',
+              |   ['type' => 'success', 'size' => 'sm', 'icon' => 'pencil-square-o'],
+              |   [
+              |     'data-toggle' => 'modal',
+              |     'data-target' => '#js-modal-enquete' . $entry['id']
+              |   ]
+              | );
+            .modal(id="js-modal-enquete#{$entry['id']}")
+              .modal-dialog
+                .modal-content
+                  .modal-header
+                    button.close(data-dismiss="modal") &times;
+                    p.h4.modal-title アンケート結果
+                  .modal-body
+                    table.table.table-bordered.table-condensed
+                      - foreach($_campaign['Enquete'] as $enquete):
+                        tr
+                          th #{$enquete['text']}
+                          td
+                            - if(array_key_exists($enquete['id'], $entryEnquete)):
+                              - if($enquete['type'] != 'check'):
+                                !{nl2br($entryEnquete[$enquete['id']])}
+                              - else:
+                                #{implode(',', $entryEnquete[$enquete['id']])}
+                              - endif;
+                            - endif;
+          - endif;
+
+!{$this->Paginator->pagination()}
+
+- $this->start('script');
+  :javascript
+    | $('.fa-check').popover({
+    |   trigger: 'hover'
+    | });
+- $this->end();

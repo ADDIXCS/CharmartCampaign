@@ -1,0 +1,352 @@
+/* line 7, ../../app/Asset/css/admin.sass */
+body {
+  padding-top: 41px; }
+
+/* line 1, ../../app/Asset/css/_common.sass */
+img {
+  max-width: 100%; }
+
+/* line 4, ../../app/Asset/css/_common.sass */
+#loading {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9999; }
+
+/* line 13, ../../app/Asset/css/_common.sass */
+#loading-inner {
+  display: table;
+  width: 100%;
+  height: 100%; }
+  /* line 17, ../../app/Asset/css/_common.sass */
+  #loading-inner div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle; }
+
+/* line 16, ../../app/Asset/css/admin.sass */
+.navbar-brand {
+  padding-top: 7px;
+  padding-bottom: 6px; }
+  /* line 19, ../../app/Asset/css/admin.sass */
+  .navbar-brand img {
+    max-height: 100%; }
+
+/* line 26, ../../app/Asset/css/admin.sass */
+.breadcrumb-arrow {
+  background: none; }
+  /* line 28, ../../app/Asset/css/admin.sass */
+  .breadcrumb-arrow a {
+    border: 1px solid #e1e7e7; }
+    /* line 30, ../../app/Asset/css/admin.sass */
+    .breadcrumb-arrow a.current {
+      background: #3490d4;
+      color: #fff; }
+  /* line 33, ../../app/Asset/css/admin.sass */
+  .breadcrumb-arrow a.current:before {
+    border-left-color: #3490d4; }
+
+/* line 40, ../../app/Asset/css/admin.sass */
+#content {
+  margin-top: 22px; }
+
+/* line 46, ../../app/Asset/css/admin.sass */
+.section {
+  margin-bottom: 18px; }
+
+/* line 52, ../../app/Asset/css/admin.sass */
+.page-header {
+  margin: 0 0 20px;
+  padding: 20px 0; }
+  /* line 55, ../../app/Asset/css/admin.sass */
+  .page-header h1 {
+    margin: 0; }
+  /* line 57, ../../app/Asset/css/admin.sass */
+  .page-header span {
+    vertical-align: middle; }
+  /* line 59, ../../app/Asset/css/admin.sass */
+  .page-header small {
+    margin-right: 3px; }
+
+/* line 66, ../../app/Asset/css/admin.sass */
+tr.deleted td,
+tr.deleted th {
+  opacity: 0.1; }
+
+/* line 69, ../../app/Asset/css/admin.sass */
+.table td.td-action {
+  padding-top: 0; }
+  /* line 71, ../../app/Asset/css/admin.sass */
+  .table td.td-action .btn {
+    margin-top: 8px; }
+
+/* line 73, ../../app/Asset/css/admin.sass */
+.cell-w50 {
+  width: 50px; }
+
+/* line 75, ../../app/Asset/css/admin.sass */
+.cell-w60 {
+  width: 60px; }
+
+/* line 77, ../../app/Asset/css/admin.sass */
+.cell-w70 {
+  width: 70px; }
+
+/* line 79, ../../app/Asset/css/admin.sass */
+.cell-w80 {
+  width: 80px; }
+
+/* line 81, ../../app/Asset/css/admin.sass */
+.cell-w90 {
+  width: 90px; }
+
+/* line 83, ../../app/Asset/css/admin.sass */
+.cell-w100 {
+  width: 100px; }
+
+/* line 85, ../../app/Asset/css/admin.sass */
+.cell-w140 {
+  width: 140px; }
+
+/* line 87, ../../app/Asset/css/admin.sass */
+.cell-w200 {
+  width: 200px; }
+
+/* line 93, ../../app/Asset/css/admin.sass */
+.image-preview img {
+  max-height: 300px; }
+
+/* line 98, ../../app/Asset/css/admin.sass */
+form .table > tbody > tr > th {
+  background-color: #e6e6e6;
+  text-align: right;
+  vertical-align: middle; }
+/* line 102, ../../app/Asset/css/admin.sass */
+form .table > tbody > tr > th,
+form .table > tbody > tr > td {
+  border-color: #a6a6a6; }
+/* line 105, ../../app/Asset/css/admin.sass */
+form .table label {
+  margin-bottom: 0;
+  font-weight: normal; }
+/* line 108, ../../app/Asset/css/admin.sass */
+form .table .help-block {
+  margin-bottom: 0; }
+
+/* line 115, ../../app/Asset/css/admin.sass */
+.fa-lg {
+  vertical-align: -10%; }
+
+/* line 125, ../../app/Asset/css/admin.sass */
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 0 50px;
+  background: #fafbfb; }
+  /* line 130, ../../app/Asset/css/admin.sass */
+  .login-container h1 {
+    margin-bottom: 20px;
+    text-align: center; }
+  /* line 133, ../../app/Asset/css/admin.sass */
+  .login-container form {
+    padding: 0 60px; }
+  /* line 135, ../../app/Asset/css/admin.sass */
+  .login-container .form-group {
+    position: relative;
+    margin-bottom: 10px; }
+    /* line 138, ../../app/Asset/css/admin.sass */
+    .login-container .form-group i {
+      position: absolute;
+      right: 2px;
+      line-height: 28px; }
+  /* line 142, ../../app/Asset/css/admin.sass */
+  .login-container input {
+    padding-right: 30px; }
+  /* line 144, ../../app/Asset/css/admin.sass */
+  .login-container .alert {
+    margin-top: -20px; }
+
+/* line 153, ../../app/Asset/css/admin.sass */
+#accounts-add [ng-show] label:nth-of-type(n + 2),
+#accounts-edit [ng-show] label:nth-of-type(n + 2) {
+  margin-left: 10px; }
+
+/* line 161, ../../app/Asset/css/admin.sass */
+#audiences-index #content,
+#audiences-lists #content {
+  width: auto; }
+/* line 163, ../../app/Asset/css/admin.sass */
+#audiences-index .well h2,
+#audiences-lists .well h2 {
+  margin-top: 0; }
+/* line 165, ../../app/Asset/css/admin.sass */
+#audiences-index .nav-pills > li > a,
+#audiences-lists .nav-pills > li > a {
+  padding: 5px 10px;
+  color: #777; }
+  /* line 168, ../../app/Asset/css/admin.sass */
+  #audiences-index .nav-pills > li > a:hover, #audiences-index .nav-pills > li > a:focus,
+  #audiences-lists .nav-pills > li > a:hover,
+  #audiences-lists .nav-pills > li > a:focus {
+    background-color: #e6e6e6; }
+  /* line 171, ../../app/Asset/css/admin.sass */
+  #audiences-index .nav-pills > li > a.active,
+  #audiences-lists .nav-pills > li > a.active {
+    background-color: #a6a6a6;
+    color: #fff; }
+/* line 174, ../../app/Asset/css/admin.sass */
+#audiences-index hr,
+#audiences-lists hr {
+  border-color: #e1e7e7; }
+
+/* line 176, ../../app/Asset/css/admin.sass */
+#AudienceAdminIndexForm {
+  max-width: 600px;
+  margin: 10px auto 0; }
+
+/* line 179, ../../app/Asset/css/admin.sass */
+.audience-list-wrapper {
+  overflow-x: scroll; }
+
+/* line 181, ../../app/Asset/css/admin.sass */
+.audience-list {
+  min-width: 970px; }
+
+/* line 187, ../../app/Asset/css/admin.sass */
+.campaign-list {
+  margin-top: 15px;
+  border-top: solid 1px #fafbfb; }
+
+/* line 190, ../../app/Asset/css/admin.sass */
+.campaign-list-item {
+  padding: 30px 0;
+  border-bottom: solid 1px #fafbfb; }
+  /* line 193, ../../app/Asset/css/admin.sass */
+  .campaign-list-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px; }
+    /* line 197, ../../app/Asset/css/admin.sass */
+    .campaign-list-item h3 a, .campaign-list-item h3 small {
+      vertical-align: middle; }
+    /* line 199, ../../app/Asset/css/admin.sass */
+    .campaign-list-item h3 small {
+      margin-right: 3px; }
+
+/* line 202, ../../app/Asset/css/admin.sass */
+.campaign-list-item-url a {
+  color: #777; }
+
+/* line 208, ../../app/Asset/css/admin.sass */
+#chart-gender,
+#chart-age,
+#chart-time,
+#chart-facebook-friend,
+#chart-twitter-followers,
+#chart-env {
+  height: 270px; }
+
+/* line 220, ../../app/Asset/css/admin.sass */
+#campaigns-edit .well {
+  margin-top: 56px; }
+/* line 222, ../../app/Asset/css/admin.sass */
+#campaigns-edit fieldset {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e1e7e7; }
+/* line 226, ../../app/Asset/css/admin.sass */
+#campaigns-edit .items div:nth-child(4n + 1) {
+  clear: both; }
+/* line 230, ../../app/Asset/css/admin.sass */
+#campaigns-edit .input-table thead th, #campaigns-edit .input-table td {
+  text-align: center; }
+/* line 233, ../../app/Asset/css/admin.sass */
+#campaigns-edit .input-table tbody th, #campaigns-edit .input-table tbody td {
+  background: none;
+  border: none; }
+/* line 236, ../../app/Asset/css/admin.sass */
+#campaigns-edit .input-table td {
+  width: 65px; }
+/* line 238, ../../app/Asset/css/admin.sass */
+#campaigns-edit .input-table label {
+  width: 100%;
+  padding: 0; }
+/* line 241, ../../app/Asset/css/admin.sass */
+#campaigns-edit .input-table input {
+  position: static;
+  margin: 4px 0; }
+/* line 246, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-gift-table td:first-child {
+  width: 40%; }
+/* line 248, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-gift-table td:nth-child(2),
+#campaigns-edit .object-gift-table td:nth-child(3),
+#campaigns-edit .object-gift-table td:nth-child(4) {
+  width: 9%; }
+  /* line 252, ../../app/Asset/css/admin.sass */
+  #campaigns-edit .object-gift-table td:nth-child(2) input,
+  #campaigns-edit .object-gift-table td:nth-child(3) input,
+  #campaigns-edit .object-gift-table td:nth-child(4) input {
+    text-align: right; }
+/* line 254, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-gift-table td:nth-child(2) {
+  width: 15%; }
+  /* line 256, ../../app/Asset/css/admin.sass */
+  #campaigns-edit .object-gift-table td:nth-child(2) .control-label {
+    display: inline-block;
+    width: 50px;
+    padding-top: 0;
+    text-align: right; }
+/* line 263, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-enquete-option-table td:first-child {
+  width: 100%;
+  padding-left: 0; }
+/* line 266, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-enquete-option-table td:last-child {
+  padding-right: 0; }
+/* line 268, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-enquete-option-table td {
+  padding-top: 0;
+  border: none; }
+/* line 273, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-question .well {
+  margin-top: 0; }
+/* line 276, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-answer-table th:first-child {
+  width: 70%; }
+/* line 278, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-answer-table td {
+  border: none; }
+/* line 280, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-answer-table td:nth-child(2) input {
+  text-align: right; }
+/* line 282, ../../app/Asset/css/admin.sass */
+#campaigns-edit .input-question-image {
+  float: left;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px; }
+/* line 289, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-result-table td:first-child {
+  width: 85%; }
+/* line 291, ../../app/Asset/css/admin.sass */
+#campaigns-edit .object-result-table td:nth-child(2) {
+  text-align: right; }
+
+/* line 299, ../../app/Asset/css/admin.sass */
+#entries-index .modal-content .table {
+  margin-bottom: 0; }
+/* line 301, ../../app/Asset/css/admin.sass */
+#entries-index .modal-content th {
+  text-align: right; }
+/* line 303, ../../app/Asset/css/admin.sass */
+#entries-index .modal-content td {
+  width: 65%; }
+
+/* line 311, ../../app/Asset/css/admin.sass */
+#campaigns-results table img,
+#campaigns-votes table img {
+  max-height: 100px; }

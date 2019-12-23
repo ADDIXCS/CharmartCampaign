@@ -1,0 +1,393 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/bin/npm', 'install', '--no-bin-links' ]
+2 info using npm@1.3.6
+3 info using node@v0.10.48
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/vagrant',
+5 verbose install   [ 'grunt',
+5 verbose install     'matchdep',
+5 verbose install     'grunt-bower-task',
+5 verbose install     'grunt-contrib-clean',
+5 verbose install     'grunt-coffeelint',
+5 verbose install     'grunt-contrib-coffee',
+5 verbose install     'grunt-contrib-compass',
+5 verbose install     'grunt-contrib-watch' ] ]
+6 info preinstall faro-campaign@1.0.0
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'matchdep@~2.0.0', null ]
+9 verbose cache add name=undefined spec="matchdep@~2.0.0" args=["matchdep@~2.0.0",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'matchdep@~2.0.0',
+10 verbose parsed url   path: 'matchdep@~2.0.0',
+10 verbose parsed url   href: 'matchdep@~2.0.0' }
+11 verbose cache add name="matchdep" spec="~2.0.0" args=["matchdep","~2.0.0"]
+12 verbose parsed url { protocol: null,
+12 verbose parsed url   slashes: null,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: null,
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: null,
+12 verbose parsed url   hash: null,
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '~2.0.0',
+12 verbose parsed url   path: '~2.0.0',
+12 verbose parsed url   href: '~2.0.0' }
+13 verbose addNamed [ 'matchdep', '~2.0.0' ]
+14 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+15 verbose cache add [ 'grunt-bower-task@~0.5.0', null ]
+16 verbose cache add name=undefined spec="grunt-bower-task@~0.5.0" args=["grunt-bower-task@~0.5.0",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'grunt-bower-task@~0.5.0',
+17 verbose parsed url   path: 'grunt-bower-task@~0.5.0',
+17 verbose parsed url   href: 'grunt-bower-task@~0.5.0' }
+18 verbose cache add name="grunt-bower-task" spec="~0.5.0" args=["grunt-bower-task","~0.5.0"]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '~0.5.0',
+19 verbose parsed url   path: '~0.5.0',
+19 verbose parsed url   href: '~0.5.0' }
+20 verbose addNamed [ 'grunt-bower-task', '~0.5.0' ]
+21 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+22 verbose cache add [ 'grunt-contrib-clean@~1.1.0', null ]
+23 verbose cache add name=undefined spec="grunt-contrib-clean@~1.1.0" args=["grunt-contrib-clean@~1.1.0",null]
+24 verbose parsed url { protocol: null,
+24 verbose parsed url   slashes: null,
+24 verbose parsed url   auth: null,
+24 verbose parsed url   host: null,
+24 verbose parsed url   port: null,
+24 verbose parsed url   hostname: null,
+24 verbose parsed url   hash: null,
+24 verbose parsed url   search: null,
+24 verbose parsed url   query: null,
+24 verbose parsed url   pathname: 'grunt-contrib-clean@~1.1.0',
+24 verbose parsed url   path: 'grunt-contrib-clean@~1.1.0',
+24 verbose parsed url   href: 'grunt-contrib-clean@~1.1.0' }
+25 verbose cache add name="grunt-contrib-clean" spec="~1.1.0" args=["grunt-contrib-clean","~1.1.0"]
+26 verbose parsed url { protocol: null,
+26 verbose parsed url   slashes: null,
+26 verbose parsed url   auth: null,
+26 verbose parsed url   host: null,
+26 verbose parsed url   port: null,
+26 verbose parsed url   hostname: null,
+26 verbose parsed url   hash: null,
+26 verbose parsed url   search: null,
+26 verbose parsed url   query: null,
+26 verbose parsed url   pathname: '~1.1.0',
+26 verbose parsed url   path: '~1.1.0',
+26 verbose parsed url   href: '~1.1.0' }
+27 verbose addNamed [ 'grunt-contrib-clean', '~1.1.0' ]
+28 verbose addNamed [ null, '>=1.1.0-0 <1.2.0-0' ]
+29 verbose cache add [ 'grunt-coffeelint@~0.0.16', null ]
+30 verbose cache add name=undefined spec="grunt-coffeelint@~0.0.16" args=["grunt-coffeelint@~0.0.16",null]
+31 verbose parsed url { protocol: null,
+31 verbose parsed url   slashes: null,
+31 verbose parsed url   auth: null,
+31 verbose parsed url   host: null,
+31 verbose parsed url   port: null,
+31 verbose parsed url   hostname: null,
+31 verbose parsed url   hash: null,
+31 verbose parsed url   search: null,
+31 verbose parsed url   query: null,
+31 verbose parsed url   pathname: 'grunt-coffeelint@~0.0.16',
+31 verbose parsed url   path: 'grunt-coffeelint@~0.0.16',
+31 verbose parsed url   href: 'grunt-coffeelint@~0.0.16' }
+32 verbose cache add name="grunt-coffeelint" spec="~0.0.16" args=["grunt-coffeelint","~0.0.16"]
+33 verbose parsed url { protocol: null,
+33 verbose parsed url   slashes: null,
+33 verbose parsed url   auth: null,
+33 verbose parsed url   host: null,
+33 verbose parsed url   port: null,
+33 verbose parsed url   hostname: null,
+33 verbose parsed url   hash: null,
+33 verbose parsed url   search: null,
+33 verbose parsed url   query: null,
+33 verbose parsed url   pathname: '~0.0.16',
+33 verbose parsed url   path: '~0.0.16',
+33 verbose parsed url   href: '~0.0.16' }
+34 verbose addNamed [ 'grunt-coffeelint', '~0.0.16' ]
+35 verbose addNamed [ null, '>=0.0.16-0 <0.1.0-0' ]
+36 verbose cache add [ 'grunt-contrib-coffee@~1.0.0', null ]
+37 verbose cache add name=undefined spec="grunt-contrib-coffee@~1.0.0" args=["grunt-contrib-coffee@~1.0.0",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'grunt-contrib-coffee@~1.0.0',
+38 verbose parsed url   path: 'grunt-contrib-coffee@~1.0.0',
+38 verbose parsed url   href: 'grunt-contrib-coffee@~1.0.0' }
+39 verbose cache add name="grunt-contrib-coffee" spec="~1.0.0" args=["grunt-contrib-coffee","~1.0.0"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '~1.0.0',
+40 verbose parsed url   path: '~1.0.0',
+40 verbose parsed url   href: '~1.0.0' }
+41 verbose addNamed [ 'grunt-contrib-coffee', '~1.0.0' ]
+42 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+43 verbose cache add [ 'grunt-contrib-compass@~1.1.1', null ]
+44 verbose cache add name=undefined spec="grunt-contrib-compass@~1.1.1" args=["grunt-contrib-compass@~1.1.1",null]
+45 verbose parsed url { protocol: null,
+45 verbose parsed url   slashes: null,
+45 verbose parsed url   auth: null,
+45 verbose parsed url   host: null,
+45 verbose parsed url   port: null,
+45 verbose parsed url   hostname: null,
+45 verbose parsed url   hash: null,
+45 verbose parsed url   search: null,
+45 verbose parsed url   query: null,
+45 verbose parsed url   pathname: 'grunt-contrib-compass@~1.1.1',
+45 verbose parsed url   path: 'grunt-contrib-compass@~1.1.1',
+45 verbose parsed url   href: 'grunt-contrib-compass@~1.1.1' }
+46 verbose cache add name="grunt-contrib-compass" spec="~1.1.1" args=["grunt-contrib-compass","~1.1.1"]
+47 verbose parsed url { protocol: null,
+47 verbose parsed url   slashes: null,
+47 verbose parsed url   auth: null,
+47 verbose parsed url   host: null,
+47 verbose parsed url   port: null,
+47 verbose parsed url   hostname: null,
+47 verbose parsed url   hash: null,
+47 verbose parsed url   search: null,
+47 verbose parsed url   query: null,
+47 verbose parsed url   pathname: '~1.1.1',
+47 verbose parsed url   path: '~1.1.1',
+47 verbose parsed url   href: '~1.1.1' }
+48 verbose addNamed [ 'grunt-contrib-compass', '~1.1.1' ]
+49 verbose addNamed [ null, '>=1.1.1-0 <1.2.0-0' ]
+50 verbose cache add [ 'grunt-contrib-watch@~1.0.0', null ]
+51 verbose cache add name=undefined spec="grunt-contrib-watch@~1.0.0" args=["grunt-contrib-watch@~1.0.0",null]
+52 verbose parsed url { protocol: null,
+52 verbose parsed url   slashes: null,
+52 verbose parsed url   auth: null,
+52 verbose parsed url   host: null,
+52 verbose parsed url   port: null,
+52 verbose parsed url   hostname: null,
+52 verbose parsed url   hash: null,
+52 verbose parsed url   search: null,
+52 verbose parsed url   query: null,
+52 verbose parsed url   pathname: 'grunt-contrib-watch@~1.0.0',
+52 verbose parsed url   path: 'grunt-contrib-watch@~1.0.0',
+52 verbose parsed url   href: 'grunt-contrib-watch@~1.0.0' }
+53 verbose cache add name="grunt-contrib-watch" spec="~1.0.0" args=["grunt-contrib-watch","~1.0.0"]
+54 verbose parsed url { protocol: null,
+54 verbose parsed url   slashes: null,
+54 verbose parsed url   auth: null,
+54 verbose parsed url   host: null,
+54 verbose parsed url   port: null,
+54 verbose parsed url   hostname: null,
+54 verbose parsed url   hash: null,
+54 verbose parsed url   search: null,
+54 verbose parsed url   query: null,
+54 verbose parsed url   pathname: '~1.0.0',
+54 verbose parsed url   path: '~1.0.0',
+54 verbose parsed url   href: '~1.0.0' }
+55 verbose addNamed [ 'grunt-contrib-watch', '~1.0.0' ]
+56 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+57 verbose cache add [ 'grunt@~1.0.0', null ]
+58 verbose cache add name=undefined spec="grunt@~1.0.0" args=["grunt@~1.0.0",null]
+59 verbose parsed url { protocol: null,
+59 verbose parsed url   slashes: null,
+59 verbose parsed url   auth: null,
+59 verbose parsed url   host: null,
+59 verbose parsed url   port: null,
+59 verbose parsed url   hostname: null,
+59 verbose parsed url   hash: null,
+59 verbose parsed url   search: null,
+59 verbose parsed url   query: null,
+59 verbose parsed url   pathname: 'grunt@~1.0.0',
+59 verbose parsed url   path: 'grunt@~1.0.0',
+59 verbose parsed url   href: 'grunt@~1.0.0' }
+60 verbose cache add name="grunt" spec="~1.0.0" args=["grunt","~1.0.0"]
+61 verbose parsed url { protocol: null,
+61 verbose parsed url   slashes: null,
+61 verbose parsed url   auth: null,
+61 verbose parsed url   host: null,
+61 verbose parsed url   port: null,
+61 verbose parsed url   hostname: null,
+61 verbose parsed url   hash: null,
+61 verbose parsed url   search: null,
+61 verbose parsed url   query: null,
+61 verbose parsed url   pathname: '~1.0.0',
+61 verbose parsed url   path: '~1.0.0',
+61 verbose parsed url   href: '~1.0.0' }
+62 verbose addNamed [ 'grunt', '~1.0.0' ]
+63 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+64 silly lockFile cb415dd0-matchdep-2-0-0 matchdep@~2.0.0
+65 verbose lock matchdep@~2.0.0 /root/.npm/cb415dd0-matchdep-2-0-0.lock
+66 silly lockFile 08e28dfe-grunt-contrib-coffee-1-0-0 grunt-contrib-coffee@~1.0.0
+67 verbose lock grunt-contrib-coffee@~1.0.0 /root/.npm/08e28dfe-grunt-contrib-coffee-1-0-0.lock
+68 silly lockFile 2e86945e-grunt-contrib-compass-1-1-1 grunt-contrib-compass@~1.1.1
+69 verbose lock grunt-contrib-compass@~1.1.1 /root/.npm/2e86945e-grunt-contrib-compass-1-1-1.lock
+70 silly lockFile f4f50bf9-grunt-contrib-watch-1-0-0 grunt-contrib-watch@~1.0.0
+71 verbose lock grunt-contrib-watch@~1.0.0 /root/.npm/f4f50bf9-grunt-contrib-watch-1-0-0.lock
+72 silly lockFile ed9b8877-grunt-1-0-0 grunt@~1.0.0
+73 verbose lock grunt@~1.0.0 /root/.npm/ed9b8877-grunt-1-0-0.lock
+74 silly lockFile b6efc3b7-grunt-bower-task-0-5-0 grunt-bower-task@~0.5.0
+75 verbose lock grunt-bower-task@~0.5.0 /root/.npm/b6efc3b7-grunt-bower-task-0-5-0.lock
+76 silly lockFile 2fa4b8c9-grunt-contrib-clean-1-1-0 grunt-contrib-clean@~1.1.0
+77 verbose lock grunt-contrib-clean@~1.1.0 /root/.npm/2fa4b8c9-grunt-contrib-clean-1-1-0.lock
+78 silly lockFile 526a5155-grunt-coffeelint-0-0-16 grunt-coffeelint@~0.0.16
+79 verbose lock grunt-coffeelint@~0.0.16 /root/.npm/526a5155-grunt-coffeelint-0-0-16.lock
+80 silly addNameRange { name: 'matchdep', range: '>=2.0.0-0 <2.1.0-0', hasData: false }
+81 silly addNameRange { name: 'grunt', range: '>=1.0.0-0 <1.1.0-0', hasData: false }
+82 silly addNameRange { name: 'grunt-contrib-coffee',
+82 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+82 silly addNameRange   hasData: false }
+83 silly addNameRange { name: 'grunt-contrib-compass',
+83 silly addNameRange   range: '>=1.1.1-0 <1.2.0-0',
+83 silly addNameRange   hasData: false }
+84 silly addNameRange { name: 'grunt-contrib-watch',
+84 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+84 silly addNameRange   hasData: false }
+85 silly addNameRange { name: 'grunt-bower-task',
+85 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+85 silly addNameRange   hasData: false }
+86 silly addNameRange { name: 'grunt-contrib-clean',
+86 silly addNameRange   range: '>=1.1.0-0 <1.2.0-0',
+86 silly addNameRange   hasData: false }
+87 silly addNameRange { name: 'grunt-coffeelint',
+87 silly addNameRange   range: '>=0.0.16-0 <0.1.0-0',
+87 silly addNameRange   hasData: false }
+88 verbose url raw matchdep
+89 verbose url resolving [ 'https://registry.npmjs.org/', './matchdep' ]
+90 verbose url resolved https://registry.npmjs.org/matchdep
+91 info trying registry request attempt 1 at 12:19:53
+92 http GET https://registry.npmjs.org/matchdep
+93 verbose url raw grunt
+94 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+95 verbose url resolved https://registry.npmjs.org/grunt
+96 info trying registry request attempt 1 at 12:19:53
+97 http GET https://registry.npmjs.org/grunt
+98 verbose url raw grunt-contrib-coffee
+99 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-coffee' ]
+100 verbose url resolved https://registry.npmjs.org/grunt-contrib-coffee
+101 info trying registry request attempt 1 at 12:19:53
+102 http GET https://registry.npmjs.org/grunt-contrib-coffee
+103 verbose url raw grunt-contrib-compass
+104 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-compass' ]
+105 verbose url resolved https://registry.npmjs.org/grunt-contrib-compass
+106 info trying registry request attempt 1 at 12:19:53
+107 http GET https://registry.npmjs.org/grunt-contrib-compass
+108 verbose url raw grunt-contrib-watch
+109 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-watch' ]
+110 verbose url resolved https://registry.npmjs.org/grunt-contrib-watch
+111 info trying registry request attempt 1 at 12:19:53
+112 http GET https://registry.npmjs.org/grunt-contrib-watch
+113 verbose url raw grunt-bower-task
+114 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-bower-task' ]
+115 verbose url resolved https://registry.npmjs.org/grunt-bower-task
+116 info trying registry request attempt 1 at 12:19:53
+117 http GET https://registry.npmjs.org/grunt-bower-task
+118 verbose url raw grunt-contrib-clean
+119 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-clean' ]
+120 verbose url resolved https://registry.npmjs.org/grunt-contrib-clean
+121 info trying registry request attempt 1 at 12:19:53
+122 http GET https://registry.npmjs.org/grunt-contrib-clean
+123 verbose url raw grunt-coffeelint
+124 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-coffeelint' ]
+125 verbose url resolved https://registry.npmjs.org/grunt-coffeelint
+126 info trying registry request attempt 1 at 12:19:53
+127 http GET https://registry.npmjs.org/grunt-coffeelint
+128 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+129 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+130 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+131 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+132 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+133 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+134 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+135 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+136 info trying registry request attempt 2 at 12:20:03
+137 http GET https://registry.npmjs.org/grunt-contrib-compass
+138 info trying registry request attempt 2 at 12:20:03
+139 http GET https://registry.npmjs.org/matchdep
+140 info trying registry request attempt 2 at 12:20:03
+141 http GET https://registry.npmjs.org/grunt-contrib-watch
+142 info trying registry request attempt 2 at 12:20:03
+143 http GET https://registry.npmjs.org/grunt
+144 info trying registry request attempt 2 at 12:20:03
+145 http GET https://registry.npmjs.org/grunt-contrib-coffee
+146 info trying registry request attempt 2 at 12:20:03
+147 http GET https://registry.npmjs.org/grunt-contrib-clean
+148 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+149 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+150 info trying registry request attempt 2 at 12:20:03
+151 http GET https://registry.npmjs.org/grunt-bower-task
+152 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+153 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+154 info trying registry request attempt 2 at 12:20:03
+155 http GET https://registry.npmjs.org/grunt-coffeelint
+156 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+157 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+158 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+159 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+160 info trying registry request attempt 3 at 12:21:03
+161 http GET https://registry.npmjs.org/matchdep
+162 info trying registry request attempt 3 at 12:21:03
+163 http GET https://registry.npmjs.org/grunt-contrib-compass
+164 info trying registry request attempt 3 at 12:21:03
+165 http GET https://registry.npmjs.org/grunt-contrib-watch
+166 info trying registry request attempt 3 at 12:21:03
+167 http GET https://registry.npmjs.org/grunt
+168 info trying registry request attempt 3 at 12:21:03
+169 http GET https://registry.npmjs.org/grunt-bower-task
+170 info trying registry request attempt 3 at 12:21:03
+171 http GET https://registry.npmjs.org/grunt-contrib-coffee
+172 silly lockFile ed9b8877-grunt-1-0-0 grunt@~1.0.0
+173 silly lockFile ed9b8877-grunt-1-0-0 grunt@~1.0.0
+174 error Error: CERT_UNTRUSTED
+174 error     at SecurePair.<anonymous> (tls.js:1430:32)
+174 error     at SecurePair.emit (events.js:92:17)
+174 error     at SecurePair.maybeInitFinished (tls.js:1029:10)
+174 error     at CleartextStream.read [as _read] (tls.js:521:13)
+174 error     at CleartextStream.Readable.read (_stream_readable.js:341:10)
+174 error     at EncryptedStream.write [as _write] (tls.js:418:25)
+174 error     at doWrite (_stream_writable.js:226:10)
+174 error     at writeOrBuffer (_stream_writable.js:216:5)
+174 error     at EncryptedStream.Writable.write (_stream_writable.js:183:11)
+174 error     at write (_stream_readable.js:602:24)
+174 error     at flow (_stream_readable.js:611:7)
+174 error     at Socket.pipeOnReadable (_stream_readable.js:643:5)
+175 error If you need help, you may report this log at:
+175 error     <http://github.com/isaacs/npm/issues>
+175 error or email it to:
+175 error     <npm-@googlegroups.com>
+176 error System Linux 2.6.32-642.3.1.el6.x86_64
+177 error command "node" "/usr/bin/npm" "install" "--no-bin-links"
+178 error cwd /vagrant
+179 error node -v v0.10.48
+180 error npm -v 1.3.6
+181 verbose exit [ 1, true ]

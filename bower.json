@@ -1,0 +1,23 @@
+{
+  "name": "soraps",
+  "version": "0.21.10",
+  "authors": [
+    "ique <develop@ique.co.jp>"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3",
+    "font-awesome": "~4.0.3",
+    "bootstrap-sass-official": "~3.2.0",
+    "respond": "~1.4.2"
+  },
+  "exportsOverride": {
+    "jquery": {},
+    "bootstrap-sass-official": {},
+    "font-awesome": {
+      "./": "fonts/"
+    },
+    "respond": {
+      "./": "dest/respond.min.js"
+    }
+  }
+}

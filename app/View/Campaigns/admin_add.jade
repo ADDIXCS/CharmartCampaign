@@ -1,0 +1,60 @@
+- $this->set('title_for_layout', CampaignValue::${$this->request->params['campaignType']}['name'] . '新規作成');
+
+.section(ng-app="soraps")
+  !{$this->Form->create('Campaign', ['angular' => true])}
+
+  fieldset
+    legend キャンペーン情報
+    :php
+      | echo $this->Form->input('title', [
+      |   'type' => 'text',
+      |   'label' => 'キャンペーンタイトル',
+      | ]);
+    - if($this->request->params['campaignType'] == 'lancers'):
+      :php
+        | echo $this->Form->input('lancers_url', [
+        |   'type' => 'text',
+        |   'label' => 'ランサーズURL',
+        | ]);
+    - endif;
+    :php
+      | echo $this->Form->input('start_date', [
+      |   'type' => 'datetime',
+      |   'label' => '開始日時',
+      | ]);
+      | echo $this->Form->input('end_date', [
+      |   'type' => 'datetime',
+      |   'label' => '終了日時',
+      |   'default' => date('Y-m-d 23:59', strtotime('+13 day')),
+      |   'div' => ['class' => 'form-group', 'ng-hide' => 'end_date_flg'],
+      | ]);
+    - if($this->request->params['campaignType'] == 'shindan'):
+      :php
+        | echo $this->Form->input('end_date_flg', [
+        |   'type' => 'checkbox',
+        |   'label' => ['text' => '終了日時を指定しない', 'class' => false],
+        |   'class' => false,
+        |   'wrapInput' => 'col-sm-10 col-sm-offset-2',
+        | ]);
+    - endif;
+  .form-group
+    .col-sm-offset-2.col-sm-10
+      :php
+        | echo $this->Form->button($this->Html->icon('save', 'lg', true) . '保存', [
+        |   'type' => 'submit',
+        |   'class' => 'btn btn-primary',
+        | ]);
+        | echo $this->Html->btn(
+        |   'キャンセル',
+        |   [
+        |     'controller' => 'campaigns',
+        |     'action' => 'index',
+        |     'accountName' => $currentAccount['Account']['account_name'],
+        |   ]
+        | );
+  !{$this->Form->end()}
+
+- $this->start('script');
+  !{$this->Html->script('//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js')}
+  !{$this->Html->script('angular-filters')}
+- $this->end();

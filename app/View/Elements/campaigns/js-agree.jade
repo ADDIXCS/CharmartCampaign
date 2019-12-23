@@ -1,0 +1,10 @@
+- $this->start('script');
+  :javascript
+    | $("#agree").change(function() {
+    |   if($(this).prop("checked")) {
+    |     $("#js-btn-submit").removeAttr("disabled");
+    |   } else {
+    |     $("#js-btn-submit").attr("disabled", "disabled");
+    |   }
+    | });
+- $this->end();

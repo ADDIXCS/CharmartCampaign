@@ -1,0 +1,100 @@
+:php
+  | $this->Form->inputDefaults([
+  |   'div' => 'form-group',
+  |   'class' => 'form-control',
+  |   'label' => ['class' => 'col-sm-2 control-label'],
+  |   'wrapInput' => 'col-sm-4',
+  | ]);
+  | $objectEnqueteClass = 'object-enquete';
+  | if(!empty($this->request->data['Enquete'][$i]['delete_flg'])) {
+  |   $objectEnqueteClass .= ' hide';
+  | }
+fieldset(class="#{$objectEnqueteClass}")
+  :php
+    | if(!empty($this->request->data['Enquete'][$i]['id'])) {
+    |   echo $this->Form->hidden('Enquete.' . $i . '.id');
+    | }
+    | echo $this->Form->input('Enquete.' . $i . '.delete_flg', [
+    |   'type' => 'hidden',
+    |   'class' => 'object-enquete-delete-flg',
+    | ]);
+    | echo $this->Form->input('Enquete.' . $i . '.text', [
+    |   'type' => 'text',
+    |   'label' => '項目名',
+    | ]);
+    | echo $this->Form->input('Enquete.' . $i . '.help', [
+    |   'type' => 'text',
+    |   'label' => '説明文',
+    | ]);
+    | echo $this->Form->input('Enquete.' . $i . '.type', [
+    |   'type' => 'radio',
+    |   'label' => 'タイプ',
+    |   'options' => [
+    |     'text' => '一行テキスト',
+    |     'textarea' => '複数行テキスト',
+    |     'select' => 'ドロップダウン',
+    |     'radio' => 'ラジオボタン',
+    |     'check' => 'チェックボックス',
+    |   ],
+    |   'default' => 'text',
+    |   'inline' => true,
+    | ]);
+    | echo $this->Form->input('Enquete.' . $i . '.required_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => ['text' => '入力を必須にする', 'class' => false],
+    |   'class' => false,
+    |   'wrapInput' => 'col-sm-4 col-sm-offset-2',
+    | ]);
+  .form-group
+    label.col-sm-2.control-label 選択肢
+    .col-sm-4
+      //- 雛形
+      .object-base.hide
+        table
+          tbody
+            :php
+              | echo $this->element(
+              |   'admin/inputs-enquete-option',
+              |   ['i' => $i, 'j' => '{{enquete-option}}']
+              | );
+      table.object-enquete-option-table.table.table-condensed
+        tbody.object-enquete-option-wrapper
+          - foreach($enqueteOptions as $j => $enqueteOption):
+            !{$this->element('admin/inputs-enquete-option', ['i' => $i, 'j' => $j])}
+      .text-center
+        :php
+          | echo $this->Html->btn(
+          |   '',
+          |   '#',
+          |   ['type' => 'success', 'icon' => 'plus'],
+          |   [
+          |     'data-toggle' => 'add-object',
+          |     'data-target' => 'enquete-option',
+          |     'data-parent' => '.object-enquete'
+          |   ]
+          | );
+  :php
+    | $this->Form->inputDefaults([
+    |   'div' => 'form-group',
+    |   'class' => 'form-control',
+    |   'label' => ['class' => 'col-sm-2 control-label'],
+    |   'wrapInput' => 'col-sm-4',
+    | ]);
+    | echo $this->Form->input('Enquete.' . $i . '.order', [
+    |   'type' => 'radio',
+    |   'label' => '選択肢の表示順',
+    |   'options' => ['static' => '固定', 'random' => 'ランダム'],
+    |   'default' => 'static',
+    | ]);
+  .form-group.text-center
+    :php
+      | echo $this->Html->btn(
+      |   '',
+      |   '#',
+      |   ['type' => 'danger', 'icon' => 'minus'],
+      |   [
+      |     'data-toggle' => 'remove-object',
+      |     'data-target' => 'enquete',
+      |     'data-parent' => 'form'
+      |   ]
+      | );

@@ -1,0 +1,86 @@
+2017-11-15 23:01:38 Warning: Warning (2): PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/Database/Mysql.php, line 175]
+Trace:
+PDO::__construct() - [internal], line ??
+Mysql::connect() - CORE/Cake/Model/Datasource/Database/Mysql.php, line 175
+DboSource::__construct() - CORE/Cake/Model/Datasource/DboSource.php, line 260
+ConnectionManager::getDataSource() - CORE/Cake/Model/ConnectionManager.php, line 105
+Model::setDataSource() - CORE/Cake/Model/Model.php, line 3476
+Model::setSource() - CORE/Cake/Model/Model.php, line 1126
+Model::getDataSource() - CORE/Cake/Model/Model.php, line 3498
+Model::schema() - CORE/Cake/Model/Model.php, line 1355
+Model::hasField() - CORE/Cake/Model/Model.php, line 1447
+SoftDeleteBehavior::setup() - APP/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php, line 52
+BehaviorCollection::load() - CORE/Cake/Model/BehaviorCollection.php, line 145
+BehaviorCollection::init() - CORE/Cake/Model/BehaviorCollection.php, line 66
+Model::__construct() - CORE/Cake/Model/Model.php, line 747
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 168
+AccountService::__construct() - APP/Model/Service/AccountService.php, line 4
+ReflectionClass::newInstance() - [internal], line ??
+ClassRegistry::init() - CORE/Cake/Utility/ClassRegistry.php, line 168
+Controller::loadModel() - CORE/Cake/Controller/Controller.php, line 738
+Controller::__isset() - CORE/Cake/Controller/Controller.php, line 367
+Controller::__get() - CORE/Cake/Controller/Controller.php, line 405
+AppController::beforeFilter() - APP/Controller/AppController.php, line 47
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 674
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 182
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-11-15 23:01:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RootController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2017-11-15 23:01:58 Warning: Warning (2): PDO::__construct() [<a href='http://php.net/pdo.construct'>pdo.construct</a>]: php_network_getaddresses: getaddrinfo failed: Temporary failure in name resolution in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/Database/Mysql.php, line 175]
+Trace:
+PDO::__construct() - [internal], line ??
+Mysql::connect() - CORE/Cake/Model/Datasource/Database/Mysql.php, line 175
+DboSource::__construct() - CORE/Cake/Model/Datasource/DboSource.php, line 260
+ConnectionManager::getDataSource() - CORE/Cake/Model/ConnectionManager.php, line 105
+Model::getDataSource() - CORE/Cake/Model/Model.php, line 3501
+Model::_readDataSource() - CORE/Cake/Model/Model.php, line 2902
+Model::find() - CORE/Cake/Model/Model.php, line 2874
+AccountService::setOemInfo() - APP/Model/Service/AccountService.php, line 65
+AppController::beforeFilter() - APP/Controller/AppController.php, line 47
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 674
+ExceptionRenderer::_getController() - CORE/Cake/Error/ExceptionRenderer.php, line 154
+ExceptionRenderer::__construct() - CORE/Cake/Error/ExceptionRenderer.php, line 92
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 119
+SorapsErrorHandler::handleException() - APP/Lib/Error/SorapsErrorHandler.php, line 21
+[main] - [internal], line ??
+

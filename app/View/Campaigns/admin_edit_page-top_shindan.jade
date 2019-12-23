@@ -1,0 +1,99 @@
+- $this->extend('admin_edit_preview');
+
+:php
+  | echo $this->Form->create('Campaign', [
+  |   'type' => 'file',
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  |   'angular' => true,
+  | ]);
+fieldset
+  :php
+    | echo $this->Form->input('title', [
+    |   'type' => 'text',
+    |   'label' => '診断タイトル',
+    | ]);
+    | echo $this->Form->input('summary', [
+    |   'type' => 'textarea',
+    |   'label' => '診断説明文',
+    | ]);
+    | echo $this->Form->input('top_image', [
+    |   'type' => 'image',
+    |   'label' => '診断トップ画像',
+    |   'preview' => false,
+    | ]);
+    | echo $this->Form->input('start_date', [
+    |   'type' => 'datetime',
+    |   'label' => '開始日時',
+    |   'multiLines' => true,
+    | ]);
+    | echo $this->Form->input('end_date', [
+    |   'type' => 'datetime',
+    |   'label' => '終了日時',
+    |   'multiLines' => true,
+    |   'div' => ['class' => 'form-group', 'ng-hide' => 'end_date_flg'],
+    | ]);
+    | echo $this->Form->input('end_date_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => '終了日時を指定しない',
+    |   'class' => false,
+    | ]);
+fieldset
+  :php
+    | echo $this->Form->input('entry_btn_label_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => '診断ボタンのテキストを変更する',
+    |   'class' => false,
+    | ]);
+    | echo $this->Form->input('entry_btn_label', [
+    |   'type' => 'text',
+    |   'label' => false,
+    |   'div' => ['class' => 'form-group', 'ng-show' => 'entry_btn_label_flg'],
+    |   'default' => CampaignValue::$shindan['entryBtnDefaultText'],
+    |   'placeholder' => CampaignValue::$shindan['entryBtnDefaultText'],
+    | ]);
+fieldset
+  :php
+    | $entryTypes = $this->Form->input('email_entry_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => 'ソーシャルアカウントなし',
+    |   'div' => false,
+    |   'class' => false,
+    | ]);
+    | if($currentAccount['Account']['facebook_id']) {
+    |   $entryTypes .= $this->Form->input('facebook_entry_flg', [
+    |     'type' => 'checkbox',
+    |     'label' => 'Facebook',
+    |     'div' => false,
+    |     'class' => false,
+    |   ]);
+    | }
+    | if($currentAccount['Account']['twitter_id']) {
+    |   $entryTypes .= $this->Form->input('twitter_entry_flg', [
+    |     'type' => 'checkbox',
+    |     'label' => 'Twitter',
+    |     'div' => false,
+    |     'class' => false,
+    |   ]);
+    | }
+    | echo $this->Form->input('validate_entry_types', [
+    |   'type' => 'text',
+    |   'label' => '参加方法',
+    |   'class' => 'hide',
+    |   'afterInput' => $entryTypes,
+    |   'required' => false, //ブラウザのバリデーションを無効化する
+    | ]);
+fieldset(ng-show="facebook_entry_flg || twitter_entry_flg")
+  :php
+    | echo $this->Form->input('twitter_fangate_flg', [
+    |   'type' => 'checkbox',
+    |   'label' => 'Twitterファンゲートを有効にする',
+    |   'class' => false,
+    |   'default' => true,
+    |   'div' => ['class' => 'form-group', 'ng-show' => 'twitter_entry_flg'],
+    | ]);
+!{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}

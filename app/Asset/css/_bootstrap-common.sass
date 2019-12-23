@@ -1,0 +1,318 @@
+// Core variables and mixins
+// @import "variables"
+@import "mixins"
+
+@mixin table-row-variant($state, $background)
+  .table > thead > tr,
+  .table > tbody > tr,
+  .table > tfoot > tr
+    > td.#{$state},
+    > th.#{$state},
+    &.#{$state} > td,
+    &.#{$state} > th
+      background-color: $background
+      @if $state != active
+        color: #fff
+
+// Reset
+@import "normalize"
+// @import "print"
+
+// Core CSS
+@import "scaffolding"
+@import "type"
+// @import "code"
+@import "grid"
+@import "tables"
+@import "forms"
+@import "buttons"
+
+// Components
+@import "component-animations"
+// @import "glyphicons"
+@import "dropdowns"
+@import "button-groups"
+@import "input-groups"
+@import "navs"
+@import "navbar"
+@import "breadcrumbs"
+@import "pagination"
+@import "pager"
+@import "labels"
+@import "badges"
+// @import "jumbotron"
+@import "thumbnails"
+@import "alerts"
+// @import "progress-bars"
+@import "media"
+// @import "list-group"
+@import "panels"
+@import "wells"
+@import "close"
+
+// Components w/ JavaScript
+@import "modals"
+// @import "tooltip"
+@import "popovers"
+// @import "carousel"
+
+// Utility classes
+@import "utilities"
+@import "responsive-utilities"
+
+//
+// Typography
+// --------------------------------------------------
+
+// ウィンドウ幅が狭い場合に文字が小さくなるのを上書き
+.lead
+  font-size: ($font-size-base * 1.5)
+
+//
+// Buttons
+// --------------------------------------------------
+
+.btn-facebook
+  @include button-variant(#fff, $brand-facebook, darken($brand-facebook, 5%))
+.btn-twitter
+  @include button-variant(#fff, $brand-twitter, darken($brand-twitter, 5%))
+.btn-gplus
+  @include button-variant(#fff, $brand-gplus, darken($brand-gplus, 5%))
+.btn-default-facebook
+  @include button-variant($brand-facebook, $btn-default-bg, $btn-default-border)
+.btn-default-twitter
+  @include button-variant($brand-twitter, $btn-default-bg, $btn-default-border)
+.btn-default-gplus
+  @include button-variant($brand-gplus, $btn-default-bg, $btn-default-border)
+
+//
+// Forms
+// --------------------------------------------------
+
+// インラインフォームをブラウザの幅を狭めても適用させる
+// _forms.scssの.form-inlineが@media内に指定されているのでまるまるコピペ
+.form-inline
+  .form-group
+    display: inline-block
+    margin-bottom: 0
+    vertical-align: middle
+  .form-control
+    display: inline-block
+    width: auto
+    vertical-align: middle
+  .input-group
+    display: inline-table
+    vertical-align: middle
+    .input-group-addon,
+    .input-group-btn,
+    .form-control
+      width: auto
+  .input-group > .form-control
+    width: 100%
+  .control-label
+    margin-bottom: 0
+    vertical-align: middle
+  .radio,
+  .checkbox
+    display: inline-block
+    margin-top: 0
+    margin-bottom: 0
+    vertical-align: middle
+    label
+      padding-left: 0
+  .radio input[type="radio"],
+  .checkbox input[type="checkbox"]
+    position: relative
+    margin-left: 0
+  .has-feedback .form-control-feedback
+    top: 0
+  // form-inlineが並んでいる場合に余白をとる
+  + .form-inline
+    margin-top: 5px
+// form-group-smのラベルの文字サイズが変わらないのを上書き
+.form-horizontal
+  .form-group-sm
+    .control-label
+      padding-top: 4px
+      font-size: $font-size-small
+    .radio,
+    .checkbox,
+    .radio-inline,
+    .checkbox-inline
+      font-size: $font-size-small
+      padding-top: 0
+    input[type="radio"],
+    input[type="checkbox"]
+      margin-top: 2px
+    .help-block
+      margin-bottom: 0
+      font-size: $font-size-small
+
+// inputの幅を指定（bootstrap2系から）
+form,
+.form-inline
+  .input-mini
+    width: 70px
+  .input-small
+    width: 100px
+  .input-medium
+    width: 160px
+  .input-large
+    width: 220px
+  .input-xlarge
+    width: 280px
+  .input-xxlarge
+    width: 540px
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb
+  border-radius: 0
+  a
+    color: $link-black-color
+    &:hover
+      color: $link-black-hover-color
+
+// 参考
+// Breadcrumb-Bootflat
+// http://www.flathemes.com/extensions/breadcrumb.html
+
+.breadcrumb-arrow
+  padding: 0
+  // bootstrapのseparatorを無効化
+  li + li:before
+    display: none
+  a, span
+    display: inline-block
+    position: relative
+    padding: 0 10px 0 20px
+    background: $gray-lighter
+    line-height: 34px
+    text-decoration: none
+    &.current
+      background: darken($gray-lighter, 2%)
+  // 余白調整
+  li
+    &:first-child a,
+    &:first-child span
+      padding-left: 10px
+    &:last-child
+      padding-left: 20px
+  // 三角
+  a:before,
+  a:after,
+  span:before,
+  span:after
+    position: absolute
+    top: 0
+    width: 0
+    height: 0
+    border-top: 17px solid transparent
+    border-bottom: 17px solid transparent
+    content: ''
+  // 矢印背景
+  a:before,
+  span:before
+    right: -10px
+    border-left: 10px solid $gray-lighter
+    z-index: 3
+  a.current:before
+    border-left-color: darken($gray-lighter, 2%)
+  // 線
+  a:after,
+  span:after
+    right: -11px
+    border-left: 10px solid darken($gray-lighter, 9%)
+    z-index: 2
+
+//
+// Pager pagination
+// --------------------------------------------------
+
+.pager
+  a
+    color: $link-black-color
+    &:hover,
+    &:focus
+      color: $link-black-hover-color
+
+//
+// Panels
+// --------------------------------------------------
+
+.panel
+  @include box-shadow(none)
+.panel-title
+  font-size: $font-size-base
+.panel-body-bg
+  background: #fff
+
+//
+// Wells
+// --------------------------------------------------
+
+.well
+  @include box-shadow(none)
+
+//
+// Popovers
+// --------------------------------------------------
+
+.popover-content
+  word-wrap: break-word
+
+//
+// Tiles
+// --------------------------------------------------
+
+.tile
+  display: inline-block
+  text-align: center
+  vertical-align: top
+  width: 150px
+  height: 150px
+  margin: 0 10px 10px 0
+  padding-top: 47px
+  font-size: $font-size-large
+
+@mixin tile-variant($color, $background)
+  color: $color
+  background-color: $background
+.tile-default
+  @include tile-variant(#fff, $gray)
+.tile-primary
+  @include tile-variant($btn-primary-color, $btn-primary-bg)
+.tile-success
+  @include tile-variant($btn-success-color, $btn-success-bg)
+.tile-info
+  @include tile-variant($btn-info-color, $btn-info-bg)
+.tile-warning
+  @include tile-variant($btn-warning-color, $btn-warning-bg)
+.tile-danger
+  @include tile-variant($btn-danger-color, $btn-danger-bg)
+.tile-facebook
+  @include tile-variant(#fff, $brand-facebook)
+.tile-twitter
+  @include tile-variant(#fff, $brand-twitter)
+.tile-gplus
+  @include tile-variant(#fff, $brand-gplus)
+
+.tile-xs
+  width: 60px
+  height: 60px
+  padding-top: 10px
+  font-size: $font-size-base
+.tile-sm
+  width: 120px
+  height: 120px
+  padding-top: 25px
+.tile-block
+  display: block
+  width: 100%
+  margin-right: 0
+
+.tile-heading
+  font-size: 24px
+

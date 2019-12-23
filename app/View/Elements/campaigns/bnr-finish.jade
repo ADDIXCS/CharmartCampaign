@@ -1,0 +1,9 @@
+- if($this->Soraps->isPreview()):
+  a(href="!{$this->Soraps->text('finish_bnr_url')}", target="_blank")
+    span.js-CampaignFinishBnr-preview
+      !{$this->S3->image($campaign, 'Campaign.finish_bnr')}
+- else:
+  a(href="!{$this->Soraps->text('finish_bnr_url')}", target="_blank")
+    !{$this->S3->image($campaign, 'Campaign.finish_bnr')}
+- endif;
+

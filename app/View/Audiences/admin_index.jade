@@ -1,0 +1,169 @@
+- $this->set('title_for_layout', $this->fetch('title_for_layout', 'オーディエンス一覧'));
+
+- $this->startIfEmpty('audienceCounts');
+  .container
+    .row.section
+      .col-sm-3
+        .tile.tile-facebook.tile-block
+          p.tile-heading
+            !{$this->Html->icon('facebook-square')}
+            | Facebook
+          #{$currentAccount['Account']['facebook_audience_count']}
+      .col-sm-3
+        .tile.tile-twitter.tile-block
+          p.tile-heading
+            !{$this->Html->icon('twitter')}
+            | Twitter
+          #{$currentAccount['Account']['twitter_audience_count']}
+      .col-sm-6
+        .tile.tile-warning.tile-block
+          p.tile-heading TOTAL
+          #{$currentAccount['Account']['facebook_audience_count'] + $currentAccount['Account']['twitter_audience_count']}
+- $this->end();
+!{$this->fetch('audienceCounts')}
+
+.row
+  .col-sm-2
+    .well
+      h2 表示件数
+      ul.nav.nav-pills.nav-stacked
+        - foreach([50, 100, 200] as $limit):
+          li !{$this->Paginator->limit($limit . '件', $limit)}
+      hr
+      h2 ソート
+      ul.nav.nav-pills.nav-stacked
+        li !{$this->Paginator->sort('entry_count', '参加')}
+        li !{$this->Paginator->sort('share_count', 'シェア')}
+        li !{$this->Paginator->sort('vote_count', '投票')}
+        li !{$this->Paginator->sort('friend_count', '友達／フォロワー')}
+        li !{$this->Paginator->sort('modified', '最終参加日時')}
+        li !{$this->Paginator->sort('engagement', 'エンゲージメント')}
+      hr
+      h2 リスト
+      ul.nav.nav-pills.nav-stacked
+        - foreach($audienceLists as $_audienceList):
+          - $audienceList = $_audienceList['AudienceList'];
+          li
+            :php
+              | echo $this->html->link(
+              |   $audienceList['name'],
+              |   [
+              |     'action' => 'lists',
+              |     'accountName' => $currentAccount['Account']['account_name'],
+              |     'listId' => $audienceList['id'],
+              |   ],
+              |   [
+              |     'class' => isset($list) && $list['AudienceList']['id'] == $audienceList['id']
+              |       ? 'active'
+              |       : '',
+              |   ]
+              | );
+
+  .col-sm-10
+    - $this->startIfEmpty('search');
+    - if(!empty($this->request->data['Audience'])):
+      .pull-right
+        :php
+          | echo $this->Html->btn(
+          |   '現在の検索条件からリストを作成',
+          |   '#',
+          |   ['type' => 'success', 'icon' => 'plus'],
+          |   ['data-toggle' => 'modal', 'data-target' => '#modal-list-form']
+          | );
+      p.lead
+        | 検索結果: #{$this->request->params['paging']['Audience']['count']}件
+        br
+        | 検索条件: #{$this->element('admin/search-criteria')}
+    - endif;
+    .well
+      .clearfix
+        .text-right
+          :php
+            | echo $this->Html->btn(
+            |   '絞り込み検索',
+            |   '#js-search-area',
+            |   ['type' => 'primary', 'icon' => 'navicon'],
+            |   ['data-toggle' => 'collapse']
+            | );
+      #js-search-area.collapse
+        :php
+          | echo $this->Form->create(null, [
+          |   'inputDefaults' => [
+          |     'label' => ['class' => false],
+          |     'div' => false,
+          |     'wrapInput' => false,
+          |     'before' => '<tr><th>',
+          |     'between' => '</th><td>',
+          |     'after' => '</td></tr>',
+          |   ],
+          |   'class' => false,
+          | ]);
+        table.table.table-bordered.table-condensed
+          !{$this->element('admin/audience-search-inputs')}
+        .text-center
+          :php
+            | echo $this->Form->button($this->Html->icon('search', 'lg', true) . '検索', [
+            |   'type' => 'submit',
+            |   'class' => 'btn btn-primary',
+            | ]);
+            | echo $this->Form->button('クリア', [
+            |   'type' => 'reset',
+            |   'class' => 'btn btn-default',
+            | ]);
+        !{$this->Form->end()}
+    - $this->end();
+    !{$this->fetch('search')}
+
+    !{$this->element('admin/audience-list')}
+
+#modal-list-form.modal
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss="modal") &times;
+        h2.modal-title リスト追加
+      .modal-body
+        - $this->startIfEmpty('modalListFormCreate');
+        :php
+          | echo $this->Form->create('Audience', [
+          |   'url' => [
+          |     'action' => 'add_list',
+          |     'accountName' => $currentAccount['Account']['account_name'],
+          |   ],
+          |   'inputDefaults' => [
+          |     'label' => ['class' => 'col-sm-3 control-label'],
+          |     'wrapInput' => 'col-sm-5',
+          |   ],
+          | ]);
+        - $this->end();
+        !{$this->fetch('modalListFormCreate')}
+        :php
+          | echo $this->Form->input('AudienceList.name', [
+          |   'type' => 'text',
+          |   'label' => 'リスト名',
+          |   'default' => $this->element('admin/search-criteria'),
+          | ]);
+        fieldset
+          legend 検索条件
+          - if($this->Form->isFieldError('AudienceList.criteria')):
+            .form-group
+              :php
+                | echo $this->Form->error('AudienceList.criteria', [
+                |   'attributes' => ['class' => 'col-sm-4 col-sm-offset-2 text-danger'],
+                | ]);
+          - endif;
+          !{$this->element('admin/audience-search-inputs')}
+        .form-group
+          .col-sm-offset-3.col-sm-9
+            :php
+              | echo $this->Form->button($this->Html->icon('save', 'lg', true) . '保存', [
+              |   'type' => 'submit',
+              |   'class' => 'btn btn-primary',
+              | ]);
+              | echo $this->Html->btn(
+              |   'キャンセル',
+              |   '#',
+              |   [],
+              |   ['data-dismiss' => 'modal']
+              | );
+        !{$this->Form->end()}

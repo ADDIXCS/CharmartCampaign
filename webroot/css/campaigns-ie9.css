@@ -1,0 +1,14 @@
+/* line 3, ../../app/Asset/css/campaigns-ie9.sass */
+#ItemImage {
+  position: relative !important;
+  display: inline !important;
+  width: auto !important;
+  opacity: 1 !important;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/* line 10, ../../app/Asset/css/campaigns-ie9.sass */
+.btn-file,
+.btn-file-delete {
+  display: none; }

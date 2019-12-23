@@ -1,0 +1,49 @@
+2017-10-11 05:51:06 Warning: Warning (4096): Argument 1 passed to Hash::filter() must be of the type array, null given, called in /var/www/faro-campaign/app/Controller/CampaignViewController.php on line 653 and defined in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 499]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 499
+CampaignViewController::vote() - APP/Controller/CampaignViewController.php, line 653
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-11 05:51:06 Warning: Warning (2): Invalid argument supplied for foreach() in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 500]
+Trace:
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 500
+CampaignViewController::vote() - APP/Controller/CampaignViewController.php, line 653
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-11 05:51:06 Warning: Warning (2): array_filter() expects parameter 1 to be array, null given in [/var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/Hash.php, line 505]
+Trace:
+array_filter - [internal], line ??
+Hash::filter() - CORE/Cake/Utility/Hash.php, line 505
+CampaignViewController::vote() - APP/Controller/CampaignViewController.php, line 653
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-11 06:05:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /d425bf/edit/%3Ciframe%20src=%22https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3240.66786490061%212d139.75061081480348%213d35.68517933736376%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7%212z55qH5bGF%215e0%213m2%211sja%212sjp%214v1507701858209%22+width%3D%22600%22+height%3D%22450%22+frameborder%3D%220%22+style%3D%22border%3A0%22+allowfullscreen%3E%3C%2Fiframe%3E
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-10-11 06:05:18 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /d425bf/edit/%3Ciframe%20src=%22https://www.google.com/maps/embed?pb=%211m18%211m12%211m3%211d3240.66786490061%212d139.75061081480348%213d35.68517933736376%212m3%211f0%212f0%213f0%213m2%211i1024%212i768%214f13.1%213m3%211m2%211s0x60188c0d02d8064d%3A0xd11a5f0b379e6db7%212z55qH5bGF%215e0%213m2%211sja%212sjp%214v1507701858209%22+width%3D%22600%22+height%3D%22450%22+frameborder%3D%220%22+style%3D%22border%3A0%22+allowfullscreen%3E%3C%2Fiframe%3E
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

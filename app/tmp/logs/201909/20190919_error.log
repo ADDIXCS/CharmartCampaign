@@ -1,0 +1,319 @@
+2019-09-19 16:57:04 Error: [Exception] Invalid indentation found. Got 4, but expected 3.
+Request URL: /admin/kodama_cli/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(130): Jade\Lexer->scanIndentation()
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(65): Jade\Lexer->getNextToken()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(150): Jade\Lexer->predictToken()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#8 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#9 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#11 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#12 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#13 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#15 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#19 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2019-09-19 17:02:30 Error: [Exception] Invalid indentation found. Got 4, but expected 3.
+Request URL: /admin/kodama_cli/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(130): Jade\Lexer->scanIndentation()
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(65): Jade\Lexer->getNextToken()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(150): Jade\Lexer->predictToken()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#8 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#9 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#11 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#12 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#13 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#15 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#19 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2019-09-19 17:12:51 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /wp-login.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 17:12:51 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /wp-login.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 17:12:51 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /wp-login.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 17:17:40 Error: [Exception] Invalid indentation found. Got 4, but expected 3.
+Request URL: /admin/a_kodamaya/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(130): Jade\Lexer->scanIndentation()
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(65): Jade\Lexer->getNextToken()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(150): Jade\Lexer->predictToken()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#8 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#9 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#11 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#12 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#13 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#15 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#19 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2019-09-19 17:23:17 Error: [Exception] Invalid indentation found. Got 4, but expected 3.
+Request URL: /admin/c_kodamaya/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(130): Jade\Lexer->scanIndentation()
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Lexer.php(65): Jade\Lexer->getNextToken()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(150): Jade\Lexer->predictToken()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#8 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#9 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#11 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#12 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#13 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#15 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#19 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 {main}
+2019-09-19 18:38:48 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cm/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 18:57:35 Error: [Exception] Expected outdent, but got indent
+Request URL: /admin/c_kodamaya/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(157): Jade\Parser->expectTokenType('outdent')
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#8 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#9 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#11 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#13 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#17 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2019-09-19 18:58:12 Error: [Exception] Expected outdent, but got indent
+Request URL: /admin/kodama_cli/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(157): Jade\Parser->expectTokenType('outdent')
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#8 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#9 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#11 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#13 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#17 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2019-09-19 18:58:50 Error: [Exception] Expected outdent, but got indent
+Request URL: /admin/kodama_cli/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(157): Jade\Parser->expectTokenType('outdent')
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#8 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#9 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#11 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#13 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#17 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2019-09-19 18:59:03 Error: [Exception] Expected outdent, but got indent
+Request URL: /admin/kodama_cli/campaigns
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(157): Jade\Parser->expectTokenType('outdent')
+#1 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(135): Jade\Parser->parseTextBlock()
+#2 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(58): Jade\Parser->parseFilter()
+#3 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(172): Jade\Parser->parseExpression()
+#4 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(228): Jade\Parser->parseBlock()
+#5 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(54): Jade\Parser->parseTag()
+#6 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Parser.php(28): Jade\Parser->parseExpression()
+#7 /var/www/faro-campaign/vendor/dz0ny/jade.php/src/Jade/Jade.php(22): Jade\Parser->parse('/var/www/faro-c...')
+#8 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(23): Jade\Jade->render('/var/www/faro-c...')
+#9 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(35): IqueJadeView->_renderJade('/var/www/faro-c...')
+#10 /var/www/faro-campaign/app/Plugin/Ique/View/IqueJadeView.php(59): IqueJadeView->_createRenderedView('/var/www/faro-c...')
+#11 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(891): IqueJadeView->_evaluate('/var/www/faro-c...', Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/View/View.php(460): View->_render('/var/www/faro-c...')
+#13 /var/www/faro-campaign/app/View/SorapsView.php(31): View->render(NULL, NULL)
+#14 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(952): SorapsView->render(NULL, NULL)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(192): Controller->render()
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(CampaignsController), Object(CakeRequest), Object(CakeResponse))
+#17 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#18 {main}
+2019-09-19 20:21:54 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /TP/public/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 20:21:57 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /TP/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 20:34:12 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /sitemap.xml
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 20:34:13 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /ads.txt
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:49 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /TP/public/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:50 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /TP/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:52 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /thinkphp/html/public/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:53 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /html/public/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:55 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /public/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:56 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /TP/html/public/index.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-19 21:23:58 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /elrekt.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

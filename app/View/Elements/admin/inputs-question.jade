@@ -1,0 +1,103 @@
+:php
+  | $this->Form->inputDefaults([
+  |   'div' => 'form-group',
+  |   'class' => 'form-control',
+  |   'label' => ['class' => 'col-sm-4 control-label'],
+  |   'wrapInput' => 'col-sm-8',
+  | ]);
+  | $objectQuestionClass = 'object-question';
+  | if(!empty($this->request->data['Question'][$i]['delete_flg'])) {
+  |   $objectQuestionClass .= ' hide';
+  | }
+fieldset(class="#{$objectQuestionClass}")
+  .row
+    :php
+      | if(!empty($this->request->data['Question'][$i]['id'])) {
+      |   echo $this->Form->hidden('Question.' . $i . '.id');
+      | }
+      | echo $this->Form->input('Question.' . $i . '.delete_flg', [
+      |   'type' => 'hidden',
+      |   'class' => 'object-question-delete-flg',
+      | ]);
+      | echo $this->Form->input('Question.' . $i . '.image', [
+      |   'type' => 'image',
+      |   'label' => [
+      |     'text' => '設問画像',
+      |     'class' => 'col-sm-2 control-label',
+      |   ],
+      |   'div' => ['class' => false],
+      |   'wrapInput' => 'input-question-image',
+      | ]);
+    .col-sm-6.pull-right
+      .well
+        //- 雛形
+        .object-base.hide
+          table
+            tbody
+              - echo $this->element('admin/inputs-answer', ['i' => $i, 'j' => '{{answer}}']);
+        table.object-answer-table.table.table-condensed
+          thead
+            tr
+              th 回答テキスト
+              th 配点
+              th
+          tbody.object-answer-wrapper
+            //- 編集時はフォームが出力される
+            - foreach($answers as $j => $answer):
+              !{$this->element('admin/inputs-answer', ['i' => $i, 'j' => $j])}
+        .text-center
+          :php
+            | echo $this->Html->btn(
+            |   '',
+            |   '#',
+            |   ['type' => 'success', 'icon' => 'plus'],
+            |   [
+            |     'data-toggle' => 'add-object',
+            |     'data-target' => 'answer',
+            |     'data-parent' => '.object-question'
+            |   ]
+            | );
+    .col-sm-6
+      :php
+        | $this->Form->inputDefaults([
+        |   'div' => 'form-group',
+        |   'class' => 'form-control',
+        |   'label' => ['class' => 'col-sm-4 control-label'],
+        |   'wrapInput' => 'col-sm-8',
+        | ]);
+        | echo $this->Form->input('Question.' . $i . '.text', [
+        |   'type' => 'textarea',
+        |   'label' => '設問テキスト',
+        | ]);
+        | // echo $this->Form->input('Question.' . $i . '.type', [
+        | //   'type' => 'radio',
+        | //   'label' => '選択肢の種類',
+        | //   'options' => [
+        | //     'radio' => 'ラジオボタン（単一選択）',
+        | //     'checkbox' => 'チェックボックス（複数選択）',
+        | //   ],
+        | //   'default' => 'radio',
+        | //   'class' => false,
+        | //   'beforeInput' => '<div class="radio">',
+        | //   'separator' => '</div><div class="radio">',
+        | //   'afterInput' => '</div>',
+        | // ]);
+        | echo $this->Form->hidden('Question.' . $i . '.type', ['value' => 'radio']);
+        | echo $this->Form->input('Question.' . $i . '.order', [
+        |   'type' => 'radio',
+        |   'label' => '選択肢の表示順',
+        |   'options' => ['static' => '固定', 'random' => 'ランダム'],
+        |   'default' => 'static',
+        | ]);
+  .form-group.text-center
+    :php
+      | echo $this->Html->btn(
+      |   '',
+      |   '#',
+      |   ['type' => 'danger', 'icon' => 'minus'],
+      |   [
+      |     'data-toggle' => 'remove-object',
+      |     'data-target' => 'question',
+      |     'data-parent' => 'form'
+      |   ]
+      | );

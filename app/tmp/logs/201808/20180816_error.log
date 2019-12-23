@@ -1,0 +1,11 @@
+2018-08-16 15:46:31 Error: [Exception] To get the authenticate URL, the OAuth token must be set.
+Request URL: /twitteroauth?redirect_uri=https%3A%2F%2Fstaging.faro-campaign.com%2Fterashiclient%2Fcampaigns%2F5b751d701cf3b%2Fentry%2Ftwitter
+Stack Trace:
+#0 /var/www/faro-campaign/app/Plugin/Ique/Lib/IqueTwitter.php(143): Codebird\Codebird->oauth_authenticate()
+#1 /var/www/faro-campaign/app/Controller/RootController.php(21): IqueTwitter->getLoginUrl('https://staging...')
+#2 [internal function]: RootController->twitteroauth()
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(RootController), Array)
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RootController), Object(CakeRequest), Object(CakeResponse))
+#6 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}

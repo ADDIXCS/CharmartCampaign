@@ -1,0 +1,25 @@
+- $this->extend('admin_edit');
+
+.section.row(ng-app="soraps")
+  .col-sm-4
+    .well
+      !{$this->fetch('content')}
+  .col-sm-8
+    ul.nav.nav-pills.nav-pills-right.section
+      li
+        a(href="#js-tab-sp", data-toggle="tab") スマホ
+      li.active
+        a(href="#js-tab-pc", data-toggle="tab") PC
+    .tab-content
+      #js-tab-pc.design-preview-pc.tab-pane.fade.in.active
+        .design-preview-content.design-preview-pc-content
+          !{$this->renderPreview()}
+      #js-tab-sp.design-preview-sp.tab-pane.fade
+        .design-preview-content.design-preview-sp-content
+          !{$this->renderPreview()}
+
+- $this->start('script');
+  !{$this->Html->script('//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js')}
+  !{$this->Html->script('angular-filters')}
+- $this->end();
+

@@ -1,0 +1,226 @@
+/etc/httpd/conf/httpd.conf:#DocumentRoot "/var/www/faro-campaign/webroot"
+/etc/httpd/conf/httpd.conf:#<Directory /var/www/faro-campaign/webroot>
+/home/ec2-user/.viminfo:'7  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,55,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:'8  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,56,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:'9  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,57,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  22  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,22,0,1534402949,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1534402381,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  23  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,23,0,1529050915,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1529050907,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1519107765,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1519107765,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:-'  20  0  /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:|4,39,20,0,1519107765,"/var/www/faro-campaign/app/Config/settings.php"
+/home/ec2-user/.viminfo:> /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.viminfo:> /var/www/faro-campaign/app/Config/core.php
+/home/ec2-user/.viminfo:> /var/www/faro-campaign/webroot/.htaccess
+/home/ec2-user/.viminfo:> /var/www/faro-campaign/app/Config/database.php
+/home/ec2-user/.viminfo:> /var/www/faro-campaign/app/Config/variables.php
+Binary file /home/ec2-user/.gem/specs/rubygems.org%443/specs.4.8 matches
+Binary file /home/ec2-user/.gem/specs/rubygems.org%443/latest_specs.4.8 matches
+/home/ec2-user/.bash_history:mysql -u faro_campaign -h faro-campaign-rds-staging.cpo4nquscz7x.us-east-1.rds.amazonaws.com -p
+/home/ec2-user/.bash_history:mkdir faro-campaign
+/home/ec2-user/.bash_history:sudo mkdir faro-campaign
+/home/ec2-user/.bash_history:sudo chown ec2-user faro-campaign
+/home/ec2-user/.bash_history:cd faro-campaign/
+/home/ec2-user/.bash_history:git clone git@github.com:ADDIX/faro-campaign.git .
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd faro-campaign/app/
+/home/ec2-user/.bash_history:sudo vim staging.faro-campaign.com.conf
+/home/ec2-user/.bash_history:cd faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:vim /var/www/faro-campaign/app/Config/core.php
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/webroot/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app/Config/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app/Config/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app//Config/
+/home/ec2-user/.bash_history:mysql -h faro-campaign-rds.cpo4nquscz7x.us-east-1.rds.amazonaws.com -u faro_campaign -p
+/home/ec2-user/.bash_history:mysql -h faro-campaign-rds.cpo4nquscz7x.us-east-1.rds.amazonaws.com -u faro_campaign -p
+/home/ec2-user/.bash_history:rm myapp_cake_model_default_faro_campaign_accounts  myapp_cake_model_default_faro_campaign_list  myapp_cake_model_default_faro_campaign_schema_migrations
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd ../faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app/Config/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app/Config/
+/home/ec2-user/.bash_history:cat /var/www/faro-campaign/app/Config/settings.php
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app/tmp
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/app/Config/
+/home/ec2-user/.bash_history:cd /var/www/faro-campaign/
+/home/ec2-user/.bash_history:cd faro-campaign/
+/home/ec2-user/.bash_history:diff ./index.php /var/www/faro-campaign/webroot/index.php 
+/home/ec2-user/.bash_history:diff -q ./index.php /var/www/faro-campaign/webroot/index.php 
+/home/ec2-user/.bash_history:diff ./index.php /var/www/faro-campaign/webroot/index.php 
+/home/ec2-user/.bash_history:diff -c ./index.php /var/www/faro-campaign/webroot/index.php 
+/home/ec2-user/.bash_history:diff -c ./index_bk.php /var/www/faro-campaign/webroot/index.php 
+/home/ec2-user/.bash_history:diff -c ./index.php /var/www/faro-campaign/webroot/index.php 

@@ -1,0 +1,21 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+- $entried = !empty($entried) ? $entried['Entry'] : false;
+
+!{$this->element('campaigns/content-finish')}
+
+//- トップへ戻るボタン
+#section-btn-top.section.text-center
+  //- アイテム一覧へのボタン
+  - if(in_array($campaign['campaign_type'], ['contest', 'vote'])):
+    !{$this->element('campaigns/btn-items')}
+  - endif;
+  !{$this->element('campaigns/btn-top')}
+
+// クーポンの使用のjs
+- if($campaign['campaign_type'] == 'coupon'):
+  !{$this->element('campaigns/js-coupon')}
+- endif;

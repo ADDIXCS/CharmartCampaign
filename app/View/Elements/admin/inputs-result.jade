@@ -1,0 +1,64 @@
+:php
+  | $this->Form->inputDefaults([
+  |   'div' => 'form-group',
+  |   'class' => 'form-control',
+  |   'label' => ['class' => 'col-sm-4 control-label'],
+  |   'wrapInput' => 'col-sm-8',
+  | ]);
+  | $objectResultClass = 'object-result';
+  | if(!empty($this->request->data['Result'][$i]['delete_flg'])) {
+  |   $objectResultClass .= ' hide';
+  | }
+fieldset(class="#{$objectResultClass}")
+  :php
+    | if(!empty($this->request->data['Result'][$i]['id'])) {
+    |   echo $this->Form->hidden('Result.' . $i . '.id');
+    | }
+    | echo $this->Form->input('Result.' . $i . '.delete_flg', [
+    |   'type' => 'hidden',
+    |   'class' => 'object-result-delete-flg',
+    | ]);
+    | echo $this->Form->input('Result.' . $i . '.validate_points', [
+    |   'type' => 'text',
+    |   'label' => '配点',
+    |   'class' => 'hide',
+    |   'inline' => true,
+    |   'afterInput' => $this->Form->input('Result.' . $i . '.point_min', [
+    |     'type' => 'text',
+    |     'label' => false,
+    |     'class' => 'form-control input-mini text-right',
+    |     'wrapInput' => false,
+    |     'div' => false,
+    |   ]) . ' &le; 合計点 &le; ' .  $this->Form->input('Result.' . $i . '.point_max', [
+    |     'type' => 'text',
+    |     'label' => false,
+    |     'class' => 'form-control input-mini text-right',
+    |     'wrapInput' => false,
+    |     'div' => false,
+    |   ]),
+    | ]);
+    | echo $this->Form->input('Result.' . $i . '.image', [
+    |   'type' => 'image',
+    |   'label' => '画像',
+    | ]);
+    | echo $this->Form->input('Result.' . $i . '.title', [
+    |   'type' => 'text',
+    |   'label' => 'タイトル',
+    | ]);
+    | echo $this->Form->input('Result.' . $i . '.description', [
+    |   'type' => 'textarea',
+    |   'label' => '本文',
+    | ]);
+  .form-group.text-center
+    :php
+      | echo $this->Html->btn(
+      |   '',
+      |   '#',
+      |   ['type' => 'danger', 'icon' => 'minus'],
+      |   [
+      |     'data-toggle' => 'remove-object',
+      |     'data-target' => 'result',
+      |     'data-parent' => 'form'
+      |   ]
+      | );
+

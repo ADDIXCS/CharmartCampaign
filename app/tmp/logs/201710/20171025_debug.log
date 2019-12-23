@@ -1,0 +1,324 @@
+2017-10-25 10:55:15 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06d9347490.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06d9347490.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06d93443ad.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06d933c0e3.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:55:15 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06d939a62e.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06d939a62e.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06d9397505.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06d933c0e3.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:56:04 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06dc3eaf0d.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06dc3eaf0d.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06dc3e7ef9.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06dc3dfaf1.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:56:04 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06dc43de7f.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06dc43de7f.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06dc43aac8.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06dc3dfaf1.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:56:45 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06ded1854f.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06ded1854f.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06ded115ca.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06ded0926e.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:56:45 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06ded5cfdc.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06ded5cfdc.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06ded59651.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06ded0926e.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:56:55 Notice: Notice (8): Undefined variable: entried in [/var/www/faro-campaign/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06df7795be.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06df774ac3.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06df773fe8.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:56:55 Notice: Notice (8): Undefined variable: entried in [/var/www/faro-campaign/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06df786ffc.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06df78258a.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06df773fe8.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:57:36 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06e1fd932e.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06e1fd932e.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06e1fd6295.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06e1fcdee0.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:57:36 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06e209689b.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06e209689b.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06e209379e.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06e1fcdee0.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:58:20 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06e4c23d6e.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06e4c23d6e.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06e4c20e3d.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06e4c18b08.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2017-10-25 10:58:20 Notice: Notice (8): Undefined index: link in [/var/www/faro-campaign/app/tmp/cache/views/jade_59f06e4c73f7f.ctp, line 25]
+Trace:
+include - APP/tmp/cache/views/jade_59f06e4c73f7f.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_59f06e4c70f1b.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_59f06e4c18b08.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+

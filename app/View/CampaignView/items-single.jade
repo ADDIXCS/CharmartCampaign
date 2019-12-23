@@ -1,0 +1,128 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- ヘッダ画像
+- if($this->Soraps->isDisplay('top_image_flg') && $this->Soraps->isDisplay('top_image')):
+  #section-header.section.section-bg.text-center(ng-show="top_image_flg")
+    .container.container-img
+      !{$this->element('campaigns/top-image')}
+- endif;
+
+//- アイテム
+- $_item = $item;
+- $item = $item['Item'];
+#section-item.section.separator-triangle
+  .container
+    - if($campaign['campaign_type'] == 'contest'):
+      ul.pager
+        - if($neighbors['prev']):
+          li.previous
+            :php
+              | echo $this->Html->link(
+              |   '前へ',
+              |   [
+              |     'action' => 'items',
+              |     'accountName' => $currentAccount['Account']['account_name'],
+              |     'id' => $campaign['id'],
+              |     'itemId' => $neighbors['prev']['Item']['id'],
+              |   ]
+              | );
+        - endif;
+        - if($neighbors['next']):
+          li.next
+            :php
+              | echo $this->Html->link(
+              |   '次へ',
+              |   [
+              |     'action' => 'items',
+              |     'accountName' => $currentAccount['Account']['account_name'],
+              |     'id' => $campaign['id'],
+              |     'itemId' => $neighbors['next']['Item']['id'],
+              |   ]
+              | );
+        - endif;
+    - endif;
+    .item-wrap
+      .text-center !{$this->S3->image($item, 'Item.image')}
+      h2.text-center #{$item['title']}
+      - if($campaign['campaign_type'] == 'contest'):
+        - $entry = $_item['Entry'];
+        .panel.panel-default
+          .panel-body
+            .media
+              - if($entry['entry_type'] == 'facebook'):
+                img.pull-left(src="//graph.facebook.com/#{$entry['facebook_id']}/picture", width="48")
+              - elseif($entry['entry_type'] == 'twitter'):
+                img.pull-left(src="#{$entry['twitter_profile_image_url']}")
+              - endif;
+              .media-body
+                p.nickname #{$item['nickname']}
+                - if($item['description']):
+                  p !{nl2br($item['description'])}
+                - endif;
+      - elseif($item['description']):
+        .container.container-sm
+          .panel.panel-default
+            .panel-body
+              p !{nl2br($item['description'])}
+      - endif;
+      //- 応募ボタン
+      #section-entry-btn
+        - if(!$campaign['contest_vote_disabled_flg']):
+          .js-vote.vote-count
+            - if(!$campaign['vote_count_hidden_flg']):
+              p.lead.text-center <span class="js-vote-count">#{$item['vote_count']}</span>
+            - endif;
+            .btn-shadow
+              :php
+                | echo $this->element('campaigns/btn-entry', [
+                |   'item' => $_item,
+                |   'type' => 'primary',
+                | ] + ($campaign['campaign_type'] == 'contest' ? ['vote' => true] : []));
+        - endif;
+  #section-share-btns
+    .container.container-xs.text-center
+      p.lead 友達にシェアしよう！
+      - $shareUrl = rawurlencode($this->Html->url(null, true));
+      - $shareTitle = rawurlencode($this->Soraps->title());
+      .row
+        .col-sm-2.col-sm-offset-3.col-xs-2.col-xs-offset-2
+          a.js-btn-share(href="http://www.facebook.com/share.php?u=#{$shareUrl}")
+            !{$this->Html->icon('facebook-square')}
+        .col-sm-2.col-xs-2
+          a.js-btn-share(href="https://twitter.com/share?text=#{$shareTitle}&url=#{$shareUrl}")
+            !{$this->Html->icon('twitter-square')}
+        //- .col-sm-2.col-xs-2
+        //-   a.js-btn-share(href="https://plus.google.com/share?url=#{$shareUrl}")
+        //-     !{$this->Html->icon('google-plus-square')}
+        .col-sm-2.col-xs-2.visible-xs
+          a(href="line://msg/text/#{$shareTitle}%0D%0A#{$shareUrl}")
+            !{$this->Html->image('campaigns/btn_line.png', ['width' => 40])}
+
+//- ピックアップアイテム
+#section-pickupitems.section.section-items
+  .container
+    .page-header
+      h2.text-center ピックアップ
+    .row
+      !{$this->element('campaigns/content-pickupitems')}
+
+//- 一覧とトップへ戻るボタン
+#section-btn-top.section.text-center
+  !{$this->element('campaigns/btn-items')}
+  !{$this->element('campaigns/btn-top')}
+
+//- 応募ボタン
+- if($campaign['campaign_type'] == 'contest'):
+  #section-entry-btn-fixed.section-sm
+    .container
+      a.pagetop.hidden-xs(href="#top") !{$this->Html->icon('arrow-circle-up', '3x')}
+      .btn-shadow
+        !{$this->element('campaigns/btn-entry')}
+- endif;
+
+//- 投票用のjs
+!{$this->element('campaigns/js-vote')}

@@ -1,0 +1,9 @@
+2017-10-11 05:51:06 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 653]
+Trace:
+CampaignViewController::vote() - APP/Controller/CampaignViewController.php, line 653
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+

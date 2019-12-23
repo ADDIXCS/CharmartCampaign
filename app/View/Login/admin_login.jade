@@ -1,0 +1,28 @@
+- $this->set('title_for_layout', 'ログイン');
+
+.login-container
+  !{$this->Session->flash()}
+  h1 !{$this->Html->image(Configure::read('service.logo'))}
+  :php
+    | echo $this->Form->create('Account', [
+    |   'inputDefaults' => [
+    |     'label' => false,
+    |     'wrapInput' => false,
+    |   ],
+    |   'class' => false,
+    | ]);
+    | echo $this->Form->input('account_name', [
+    |   'type' => 'text',
+    |   'placeholder' => 'ログインID',
+    |   'beforeInput' => $this->Html->icon('user', 'lg', true),
+    | ]);
+    | echo $this->Form->input('password', [
+    |   'type' => 'password',
+    |   'placeholder' => 'パスワード',
+    |   'beforeInput' => $this->Html->icon('key', 'lg', true),
+    | ]);
+    | echo $this->Form->button($this->Html->icon('lock', 'lg', true) . 'ログイン', [
+    |   'type' => 'submit',
+    |   'class' => 'btn btn-primary btn-block',
+    | ]);
+    | echo $this->Form->end();

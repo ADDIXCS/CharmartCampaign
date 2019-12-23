@@ -1,0 +1,146 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- ヘッダ画像
+- if($this->Soraps->isDisplay('top_image_flg') && $this->Soraps->isDisplay('top_image')):
+  #section-header.section.section-bg.text-center(ng-show="top_image_flg")
+    .container.container-img
+      !{$this->element('campaigns/top-image')}
+- endif;
+
+//- 基本情報
+#section-info.section-lg.separator-triangle
+  .container
+    .row
+      - if($this->Soraps->isDisplay('gift_image_flg') && $this->Soraps->isDisplay('gift_image')):
+        .col-sm-4(ng-show="gift_image_flg")
+          - if($this->Soraps->isPreview()):
+            .js-CampaignGiftImage-preview
+              - if($giftImage = $this->S3->image($campaign, 'Campaign.gift_image')):
+                !{$giftImage}
+              - else:
+                img(src="//placehold.it/320x320")
+              - endif;
+          - else:
+            !{$this->S3->image($campaign, 'Campaign.gift_image')}
+          - endif;
+      - endif;
+      .col-sm-8
+        dl.dl-horizontal
+          dt 開催期間
+          dd
+            | #{$this->Soraps->date('start_date')} 〜
+            span #{$this->Soraps->date('end_date')}
+          - if($this->Soraps->isDisplay('gift_name')):
+            dt(ng-show="gift_name")
+              #{$campaign['campaign_type'] !== 'coupon' ? '景品名' : 'クーポン名'}
+            dd(ng-show="gift_name") !{$this->Soraps->textarea('gift_name')}
+          - endif;
+          - if($this->Soraps->isDisplay('win_count')):
+            dt(ng-show="win_count") 当選数
+            dd(ng-show="win_count") !{$this->Soraps->textarea('win_count')}
+          - endif;
+          - if($this->Soraps->isDisplay('coupon_limit')):
+            dt(ng-show="coupon_limit") 配布枚数
+            dd(ng-show="coupon_limit") !{$this->Soraps->textarea('coupon_limit')}枚
+          - endif;
+          - if($this->Soraps->isDisplay('announce_date_flg')):
+            dt(ng-show="announce_date_flg") 当選発表日
+            dd(ng-show="announce_date_flg") #{$this->Soraps->date('announce_date')}
+          - endif;
+
+//- タイトル、概要
+#section-summary.section-lg.section-bg.separator-triangle
+  .container
+    .panel.panel-primary
+      .panel-heading
+        h2.panel-title
+          a.visible-xs(href="#js-panel-summary", data-toggle="collapse")
+            | キャンペーン概要
+            !{$this->Html->icon('plus')}
+            !{$this->Html->icon('minus')}
+          span.hidden-xs キャンペーン概要
+      #js-panel-summary.panel-body.panel-body-bg.in
+        p
+          strong !{$this->Soraps->text('title')}
+        p !{$this->Soraps->textarea('summary')}
+
+//- ピックアップアイテム
+- if(in_array($campaign['campaign_type'], ['contest', 'vote', 'lancers']) && $items):
+  #section-pickupitems.section-lg.section-items.separator-triangle
+    .container
+      .page-header
+        h2.text-center ピックアップ
+      .row
+        !{$this->element('campaigns/content-pickupitems')}
+      - if($campaign['campaign_type'] == 'contest'):
+        .section-sm.text-center
+          !{$this->element('campaigns/btn-items')}
+      - endif;
+- endif;
+
+//- 注意事項
+- if($this->Soraps->isDisplay('notice')):
+  #section-notice.section-lg.section-bg.separator-triangle(ng-show="notice")
+    .container
+      .panel.panel-primary
+        .panel-heading
+          h2.panel-title
+            - if($this->Soraps->isPreview()):
+              a.visible-xs(href="#js-panel-notice", data-toggle="collapse")
+                | 注意事項
+                !{$this->Html->icon('plus')}
+                !{$this->Html->icon('minus')}
+            - else:
+              a.collapsed.visible-xs(href="#js-panel-notice", data-toggle="collapse")
+                | 注意事項
+                !{$this->Html->icon('plus')}
+                !{$this->Html->icon('minus')}
+            - endif;
+            span.hidden-xs 注意事項
+        - if($this->Soraps->isPreview()):
+          #js-panel-notice.panel-body.panel-body-bg.flap
+            p !{$this->Soraps->textarea('notice')}
+        - else:
+          #js-panel-notice.panel-body.panel-body-bg.flap.collapse
+            p !{$this->Soraps->textarea('notice')}
+        - endif;
+- endif;
+
+//- 主催者情報
+!{$this->element('campaigns/section-sponsor')}
+
+//- シェアボタン
+#section-share-btns.section
+  .container.container-xs.text-center
+    p.lead 友達にシェアしよう！
+    - $shareUrl = rawurlencode($this->Html->url(null, true));
+    - $shareTitle = rawurlencode($this->Soraps->title());
+    .row
+      .col-sm-2.col-sm-offset-3.col-xs-2.col-xs-offset-2
+        a.js-btn-share(href="http://www.facebook.com/share.php?u=#{$shareUrl}")
+          !{$this->Html->icon('facebook-square')}
+      .col-sm-2.col-xs-2
+        a.js-btn-share(href="https://twitter.com/share?text=#{$shareTitle}&url=#{$shareUrl}")
+          !{$this->Html->icon('twitter-square')}
+      //- .col-sm-2.col-xs-2
+      //-   a.js-btn-share(href="https://plus.google.com/share?url=#{$shareUrl}")
+      //-     !{$this->Html->icon('google-plus-square')}
+      .col-sm-2.col-xs-2.visible-xs
+        a(href="line://msg/text/#{$shareTitle}%0D%0A#{$shareUrl}")
+          !{$this->Html->image('campaigns/btn_line.png', ['width' => 40])}
+
+//- 応募ボタン
+#section-entry-btn-fixed.section-sm
+  .container
+    a.pagetop.hidden-xs(href="#top") !{$this->Html->icon('arrow-circle-up', '3x')}
+    .btn-shadow
+      - if(in_array($campaign['campaign_type'], ['vote', 'lancers'])):
+        !{$this->element('campaigns/btn-items', ['block' => true])}
+      - else:
+        !{$this->element('campaigns/btn-entry')}
+      - endif;
+

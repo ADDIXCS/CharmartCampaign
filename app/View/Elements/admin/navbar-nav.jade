@@ -1,0 +1,36 @@
+- if($currentAccount['Account']['role'] == 'client'):
+  li(class="#{$this->Soraps->pageId() == 'dashboard-index' ? 'active' : ''}")
+    :php
+      | echo $this->Html->link(
+      |   'ダッシュボード',
+      |   [
+      |     'controller' => 'dashboard',
+      |     'action' => 'index',
+      |     'accountName' => $currentAccount['Account']['account_name']
+      |   ],
+      |   ['icon' => 'dashboard']
+      | );
+  li(class="#{$this->Soraps->pageId() == 'audiences-index' ? 'active' : ''}")
+    :php
+      | echo $this->Html->link(
+      |   'オーディエンス',
+      |   [
+      |     'controller' => 'audiences',
+      |     'action' => 'index',
+      |     'accountName' => $currentAccount['Account']['account_name']
+      |   ],
+      |   ['icon' => 'users']
+      | );
+  li(class="#{$this->Soraps->pageId() == 'campaigns-index' ? 'active' : ''}")
+    :php
+      | echo $this->Html->link(
+      |   'キャンペーン',
+      |   [
+      |     'controller' => 'campaigns',
+      |     'action' => 'index',
+      |     'accountName' => $currentAccount['Account']['account_name']
+      |   ],
+      |   ['icon' => 'gift']
+      | );
+- endif;
+

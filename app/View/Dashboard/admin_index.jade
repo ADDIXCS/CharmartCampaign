@@ -1,0 +1,29 @@
+- $this->set('title_for_layout', 'ダッシュボード');
+
+.row.section
+  .col-sm-3
+    .tile.tile-facebook.tile-block
+      p.tile-heading
+        !{$this->Html->icon('facebook-square')}
+        | Facebook
+      !{$this->Html->icon('users', '')} #{$currentAccount['Account']['facebook_audience_count']}
+      | /
+      !{$this->Html->icon('thumbs-up', '')} #{$currentAccount['Account']['facebook_new_fan_count']}
+  .col-sm-3
+    .tile.tile-twitter.tile-block
+      p.tile-heading
+        !{$this->Html->icon('twitter')}
+        | Twitter
+      !{$this->Html->icon('users', '')} #{$currentAccount['Account']['twitter_audience_count']}
+      | /
+      !{$this->Html->icon('thumbs-up', '')} #{$currentAccount['Account']['twitter_new_fan_count']}
+  .col-sm-6
+    .tile.tile-warning.tile-block
+      p.tile-heading TOTAL
+      !{$this->Html->icon('users', '')} #{$currentAccount['Account']['facebook_audience_count'] + $currentAccount['Account']['twitter_audience_count']}
+      | /
+      !{$this->Html->icon('thumbs-up', '')} #{$currentAccount['Account']['facebook_new_fan_count'] + $currentAccount['Account']['twitter_new_fan_count']}
+
+h2 開催中のキャンペーン
+
+!{$this->element('admin/campaign-list')}

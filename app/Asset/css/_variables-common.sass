@@ -1,0 +1,81 @@
+//
+// オリジナル
+// --------------------------------------------------
+
+//== テーマカラー
+$theme-color-gray   : #5f6a6b, #7b949b, #8aa6ad
+$theme-color-red    : #bf0101, #d91212, #f24b2b
+$theme-color-green  : #04a084, #1bb05e, #1fce6e
+$theme-color-blue   : #3490d4, #34b3dd, #34bfdd
+$theme-color-yellow : #f39e00, #f1b000, #f1c700
+$theme-color-purple : #732cb4, #903faf, #c14cc8
+$theme-color-pink   : #ff5997, #fa7496, #ff9ea6
+$theme-color-pastel : #72d2ff, #f6d45f, #ffbdce
+$theme-color-natural: #936050, #7f9452, #c1bd61
+
+//== 黒系のリンク色（bootstrapのnavbarのリンク色）
+$link-black-color: #777
+$link-black-hover-color: #333
+
+//== SNSの色
+$brand-facebook : #4e69a2
+$brand-twitter  : #55acee
+$brand-gplus    : #df4a32
+
+//
+// Bootstrap
+// --------------------------------------------------
+
+//== Colors
+$gray-lighter : #fafbfb // chrome web labを参考にした値
+$gray-light   : darken(#fbfbfb, 33.5%)
+$gray         : darken(#fbfbfb, 60%)
+$gray-dark    : darken(#fbfbfb, 73.5%)
+$gray-darker  : darken(#fbfbfb, 80%)
+
+$brand-primary: nth($theme-color-blue, 1)
+$brand-warning: nth($theme-color-yellow, 1)
+$brand-danger : nth($theme-color-red, 1)
+$brand-success: nth($theme-color-green, 1)
+$brand-info   : nth($theme-color-purple, 1)
+
+//== Typography
+$font-family-sans-serif: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif
+$font-size-base: 13px
+$font-size-large: 18px
+$font-size-small: 12px
+
+//== Components
+$padding-base-vertical: 4px
+$padding-small-vertical: 2px
+
+//== Pagination
+$pagination-color: $link-black-color
+$pagination-hover-color: $link-black-hover-color
+
+//== Form states and alerts
+$state-success-bg   : $brand-success
+$state-info-bg      : $brand-info
+$state-warning-bg   : $brand-warning
+$state-danger-bg    : $brand-danger
+
+$state-danger-text  : $brand-danger
+$state-danger-border: darken(adjust-hue($state-danger-text, -10), 5%)
+
+//== Alerts
+$alert-border-radius: 0
+
+$alert-success-text: #fff
+$alert-danger-text : #fff
+
+//== Panels
+$panel-bg: transparent
+
+//== Wells
+$well-bg: $gray-lighter
+$well-border: transparent
+
+//== Breadcrumbs
+$breadcrumb-bg: $gray-lighter
+$breadcrumb-separator: "\00a0/"
+

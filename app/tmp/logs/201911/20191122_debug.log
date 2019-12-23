@@ -1,0 +1,90 @@
+2019-11-22 15:38:11 Notice: Notice (8): Undefined index: Voted in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 632]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 632
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:13 Notice: Notice (8): Undefined index: Voted in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 632]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 632
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:13 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:22 Notice: Notice (8): Undefined index: Voted in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 632]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 632
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:45 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:38:51 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:13 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:39:25 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:40:00 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-11-22 15:46:48 Notice: Notice (8): Undefined index: Vote in [/var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678]
+Trace:
+CampaignViewController::vote() - /var/www/faro-campaign/app/Controller/CampaignViewController.php, line 678
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 185
+Dispatcher::dispatch() - /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+

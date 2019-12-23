@@ -1,0 +1,312 @@
+@import "variables-admin"
+
+//
+// common
+// --------------------------------------------------
+
+body
+  padding-top: $navbar-height + 1px
+
+@import "common"
+
+//
+// navbar
+// --------------------------------------------------
+
+.navbar-brand
+  padding-top: 7px
+  padding-bottom: 6px
+  img
+    max-height: 100%
+
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb-arrow
+  background: none
+  a
+    border: 1px solid darken($gray-lighter, 9%)
+    &.current
+      background: $brand-primary
+      color: #fff
+  a.current:before
+    border-left-color: $brand-primary
+
+//
+// content
+// --------------------------------------------------
+
+#content
+  margin-top: 40px - $line-height-computed
+
+// section
+// -------------------------
+
+.section
+  margin-bottom: $line-height-computed
+
+// page-header
+// -------------------------
+
+.page-header
+  margin: 0 0 20px
+  padding: 20px 0
+  h1
+    margin: 0
+  span
+    vertical-align: middle
+  small
+    margin-right: 3px
+
+// table
+// -------------------------
+
+tr.deleted
+  td,
+  th
+    opacity: .1
+.table td.td-action
+  padding-top: 0
+  .btn
+    margin-top: $table-cell-padding
+.cell-w50
+  width: 50px
+.cell-w60
+  width: 60px
+.cell-w70
+  width: 70px
+.cell-w80
+  width: 80px
+.cell-w90
+  width: 90px
+.cell-w100
+  width: 100px
+.cell-w140
+  width: 140px
+.cell-w200
+  width: 200px
+
+// form
+// -------------------------
+
+.image-preview img
+  max-height: 300px
+
+form .table
+  > tbody > tr
+    > th
+      background-color: change-color($gray, $lightness: 90%)
+      text-align: right
+      vertical-align: middle
+    > th,
+    > td
+      border-color: $gray-light
+  label
+    margin-bottom: 0
+    font-weight: normal
+  .help-block
+    margin-bottom: 0
+
+// Font Awesome
+// -------------------------
+
+// ちょっと下寄りになるのを調整
+.fa-lg
+  vertical-align: -10%
+
+//
+// individual
+// --------------------------------------------------
+
+// login
+// -------------------------
+
+.login-container
+  width: 300px
+  margin: 0 auto
+  padding: 20px 0 50px
+  background: $gray-lighter
+  h1
+    margin-bottom: 20px
+    text-align: center
+  form
+    padding: 0 60px
+  .form-group
+    position: relative
+    margin-bottom: 10px
+    i
+      position: absolute
+      right: 2px
+      line-height: $input-height-base
+  input
+    padding-right: 30px
+  .alert
+    margin-top: -20px
+
+// アカウント追加、編集
+// -------------------------
+
+#accounts-add,
+#accounts-edit
+  [ng-show]
+    label:nth-of-type(n + 2)
+      margin-left: 10px
+
+// オーディエンス一覧
+// -------------------------
+
+#audiences-index,
+#audiences-lists
+  #content
+    width: auto
+  .well h2
+    margin-top: 0
+  .nav-pills > li > a
+    padding: 5px 10px
+    color: $link-black-color
+    &:hover,
+    &:focus
+      background-color: change-color($gray, $lightness: 90%)
+    &.active
+      background-color: $gray-light
+      color: #fff
+  hr
+    border-color: darken($gray-lighter, 9%)
+#AudienceAdminIndexForm
+  max-width: 600px
+  margin: $padding-large-vertical auto 0
+.audience-list-wrapper
+  overflow-x: scroll
+.audience-list
+  min-width: 970px
+
+// キャンペーン一覧
+// -------------------------
+
+.campaign-list
+  margin-top: 15px
+  border-top: solid 1px $gray-lighter
+.campaign-list-item
+  padding: 30px 0
+  border-bottom: solid 1px $gray-lighter
+  h3
+    margin-top: 0
+    margin-bottom: 5px
+    font-size: 20px
+    a, small
+      vertical-align: middle
+    small
+      margin-right: 3px
+.campaign-list-item-url
+  a
+    color: $link-black-color
+
+// キャンペーントップ
+// -------------------------
+
+#chart-gender,
+#chart-age,
+#chart-time,
+#chart-facebook-friend,
+#chart-twitter-followers,
+#chart-env
+  height: 270px
+
+// キャンペーン編集
+// -------------------------
+
+#campaigns-edit
+  .well
+    margin-top: 56px
+  fieldset
+    margin-bottom: 15px
+    border-bottom: 1px solid darken($gray-lighter, 9%)
+  .items
+    div:nth-child(4n + 1)
+      clear: both
+  // 応募ページデフォルト入力項目
+  .input-table
+    thead th, td
+      text-align: center
+    tbody
+      th, td
+        background: none
+        border: none
+    td
+      width: 65px
+    label
+      width: 100%
+      padding: 0
+    input
+      position: static
+      margin: 4px 0
+  // 景品編集
+  .object-gift-table
+    td:first-child
+      width: 40%
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4)
+      width: 9%
+      input
+        text-align: right
+    td:nth-child(2),
+      width: 15%
+      .control-label
+        display: inline-block
+        width: 50px
+        padding-top: 0
+        text-align: right
+  // アンケート編集
+  .object-enquete-option-table
+    td:first-child
+      width: 100%
+      padding-left: 0
+    td:last-child
+      padding-right: 0
+    td
+      padding-top: 0
+      border: none
+  // 設問・回答編集
+  .object-question
+    .well
+      margin-top: 0
+  .object-answer-table
+    th:first-child
+      width: 70%
+    td
+      border: none
+    td:nth-child(2) input
+      text-align: right
+  .input-question-image
+    float: left
+    margin-bottom: 15px
+    padding-left: 15px
+    padding-right: 15px
+  // 結果編集
+  .object-result-table
+    td:first-child
+      width: 85%
+    td:nth-child(2)
+      text-align: right
+
+// 応募一覧
+// -------------------------
+
+#entries-index
+  .modal-content
+    .table
+      margin-bottom: 0
+    th
+      text-align: right
+    td
+      width: 65%
+
+// 診断結果、投票数
+// -------------------------
+
+#campaigns-results,
+#campaigns-votes
+  table img
+    max-height: 100px

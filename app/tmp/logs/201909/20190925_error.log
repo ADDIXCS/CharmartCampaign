@@ -1,0 +1,468 @@
+2019-09-25 02:21:45 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /cm/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 06:08:58 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /webdav/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 10:09:00 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /wp-login.php
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 10:22:03 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: //wp-content/plugins/WP_Estimation_Form/assets/css/lfb_frontendPackedLibs.min.css
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 14:49:34 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /photo.zip
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:08:29 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /forum/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:08:30 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /forums/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:08:30 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vb/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:08:31 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vbulletin/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:08:31 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vb5/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:08:32 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vbulletin5/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:34:05 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /forum/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:34:05 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /forums/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:34:06 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vb/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:34:06 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vbulletin/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:34:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vb5/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 16:34:07 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /vbulletin5/
+Stack Trace:
+#0 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2019-09-25 18:51:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin/login
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 18:52:11 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin/login
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:10:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin/login
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:15:18 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin/login
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:17:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RootController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:28:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin/login
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:31:20 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin/login
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:35:32 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /admin
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(AdminController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}
+2019-09-25 19:49:58 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] Connection timed out',
+  'enabled' => true,
+)
+Request URL: /?page_id=13
+Stack Trace:
+#0 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3476): ConnectionManager::getDataSource('default')
+#3 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1126): Model->setDataSource('default')
+#4 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(3498): Model->setSource('accounts')
+#5 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1355): Model->getDataSource()
+#6 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(1447): Model->schema()
+#7 /var/www/faro-campaign/app/Plugin/Utils/Model/Behavior/SoftDeleteBehavior.php(52): Model->hasField('deleted')
+#8 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Account), Array)
+#9 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('Utils.SoftDelet...', Array)
+#10 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Model/Model.php(747): BehaviorCollection->init('Account', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#13 /var/www/faro-campaign/app/Model/Service/AccountService.php(4): ClassRegistry::init('Account')
+#14 [internal function]: AccountService->__construct(Array)
+#15 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Utility/ClassRegistry.php(168): ReflectionClass->newInstance(Array)
+#16 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#17 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(367): Controller->loadModel('AccountService')
+#18 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(405): Controller->__isset('AccountService')
+#19 /var/www/faro-campaign/app/Controller/AppController.php(47): Controller->__get('AccountService')
+#20 [internal function]: AppController->beforeFilter(Object(CakeEvent))
+#21 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Event/CakeEventManager.php(247): call_user_func(Array, Object(CakeEvent))
+#22 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Controller/Controller.php(674): CakeEventManager->dispatch(Object(CakeEvent))
+#23 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(182): Controller->startupProcess()
+#24 /var/www/faro-campaign/vendor/pear-pear.cakephp.org/CakePHP/Cake/Routing/Dispatcher.php(160): Dispatcher->_invoke(Object(RootController), Object(CakeRequest), Object(CakeResponse))
+#25 /var/www/faro-campaign/webroot/index.php(99): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#26 {main}

@@ -1,0 +1,124 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- ヘッダ画像
+- if($this->Soraps->isDisplay('top_image_flg') && $this->Soraps->isDisplay('top_image')):
+  #section-header.section.section-bg.text-center(ng-show="top_image_flg")
+    .container.container-img
+      !{$this->element('campaigns/top-image')}
+- endif;
+
+//- アイテム一覧
+#section-items.section.section-items.separator-triangle
+  .container
+    .page-header.text-center
+      h2
+        - if($campaign['campaign_type'] == 'lancers'):
+          | 提案一覧
+        - else:
+          #{$this->Soraps->text('item_name')}一覧
+        - endif;
+    - if($campaign['campaign_type'] != 'lancers'):
+      .page-header.text-right
+        - if($campaign['campaign_type'] == 'contest'):
+          !{$this->Paginator->sort('created', '新着順', ['class' => 'btn btn-default'])}
+        - endif;
+        :php
+          | if(
+          |   $this->Soraps->isDisplay('vote_count_hidden_flg', true) &&
+          |   $this->Soraps->isDisplay('contest_vote_disabled_flg', true)
+          | ) {
+          |   echo $this->Paginator->sort('vote_count', '人気順', [
+          |     'class' => 'btn btn-default',
+          |     'ng-hide' => 'vote_count_hidden_flg || contest_vote_disabled_flg',
+          |   ]);
+          | }
+        :php
+          | echo $this->Html->btn(
+          |   'ランダム',
+          |   [
+          |     'action' => 'items',
+          |     'accountName' => $currentAccount['Account']['account_name'],
+          |     'id' => $campaign['id'],
+          |     '?' => ['sort' => 'rand'],
+          |   ],
+          |   [],
+          |   $this->request->query('sort') == 'rand' ? ['class' => 'active'] : []
+          | );
+    - endif;
+    .row
+      - foreach($items as $item):
+        .col-sm-3.col-xs-6
+          .item-wrap
+            .item.text-center
+              :php
+                | $imageUrl = $campaign['campaign_type'] == 'lancers'
+                |   ? current($item['Item']['image'])
+                |   : $this->S3->url($item, 'Item.image');
+                | echo $this->Html->link(
+                |   $this->Html->image($imageUrl),
+                |   [
+                |     'action' => 'items',
+                |     'accountName' => $currentAccount['Account']['account_name'],
+                |     'id' => $campaign['id'],
+                |     'itemId' => $item['Item']['id'],
+                |   ],
+                |   ['escape' => false, 'style' => 'background-image: url(' . $imageUrl . ')']
+                | );
+            .section-sm.js-vote
+              p
+                #{$item['Item']['title']}
+              - if($campaign['campaign_type'] == 'contest'):
+                p.clearfix.sns-data
+                  - if($item['Entry']['entry_type'] == 'facebook'):
+                    img.pull-left(src="//graph.facebook.com/#{$item['Entry']['facebook_id']}/picture", width="24")
+                  - elseif($item['Entry']['entry_type'] == 'twitter'):
+                    img.pull-left(src="#{$item['Entry']['twitter_profile_image_url']}", width="24")
+                  - endif;
+                  #{$item['Item']['nickname']}
+              - endif;
+              p.vote-count
+                :php
+                  | if(
+                  |   $this->Soraps->isDisplay('vote_count_hidden_flg', true) &&
+                  |   $this->Soraps->isDisplay('contest_vote_disabled_flg', true)
+                  | ):
+                span(ng-hide="vote_count_hidden_flg || contest_vote_disabled_flg")
+                  - if($campaign['campaign_type'] == 'lancers'):
+                    | <span class="js-vote-count">#{count($item['Vote'])}</span>
+                  - else:
+                    | <span class="js-vote-count">#{$item['Item']['vote_count']}</span>
+                  - endif;
+                - endif;
+              - if($this->Soraps->isDisplay('contest_vote_disabled_flg', true)):
+                p.text-center
+                  span(ng-hide="contest_vote_disabled_flg")
+                    :php
+                      | echo $this->element('campaigns/btn-entry', [
+                      |   'item' => $item,
+                      |   'type' => 'primary',
+                      |   'size' => '',
+                      |   'block' => true,
+                      | ] + ($campaign['campaign_type'] == 'contest' ? ['vote' => true] : []));
+              - endif;
+    .text-center
+      !{$this->Paginator->pagination()}
+
+//- トップへ戻るボタン
+.section.text-center
+  !{$this->element('campaigns/btn-top')}
+
+//- 応募ボタン
+- if($campaign['campaign_type'] == 'contest'):
+  #section-entry-btn-fixed.section-sm
+    .container
+      a.pagetop.hidden-xs(href="#top") !{$this->Html->icon('arrow-circle-up', '3x')}
+      .btn-shadow
+        !{$this->element('campaigns/btn-entry')}
+- endif;
+
+//- 投票用のjs
+!{$this->element('campaigns/js-vote')}

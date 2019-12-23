@@ -1,0 +1,141 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- 投票フォーム
+#section-form
+  .container
+    .section-lg.separator-triangle
+      :php
+        | $inputs = [];
+        | foreach(CampaignValue::$inputs as $key => $label) {
+        |   if($campaign['input_vote_' . $key]) {
+        |     $inputs[$key] = $label;
+        |   }
+        | }
+      - if($inputs && !empty($isConfirm)):
+        .page-header
+          h2.text-center 入力内容をご確認ください
+      - endif;
+      #section-form-inner.flap
+        - if($inputs && empty($isConfirm)):
+          p.text-center 下記項目を入力して下さい。<br>※必須項目は必ず入力して下さい。
+        - endif;
+        - if($item):
+          .section-sm.text-center
+            - if($campaign['campaign_type'] == 'lancers'):
+              .row
+                .col-sm-10.col-sm-offset-1
+                  - foreach($item['Item']['image'] as $image):
+                    !{$this->Html->image($image)}
+            - else:
+              !{$this->S3->image($item, 'Item.image')}
+            - endif;
+          p.lead.text-center 「#{$item['Item']['title']}」に投票する
+        - endif;
+        :php
+          | echo $this->Form->create('Vote', [
+          |   'inputDefaults' => [
+          |     'div' => empty($isConfirm) ? 'form-group form-group-sm' : 'form-group',
+          |     'label' => ['class' => 'col-sm-4 control-label'],
+          |     'wrapInput' => 'col-sm-7',
+          |    ],
+          | ]);
+        - foreach($inputs as $key => $label):
+          !{$this->element('campaigns/input-entry', ['key' => $key, 'label' => $label])}
+        :php
+          | // シェア用の入力欄
+          | $displayShare = false;
+          | if($this->Soraps->isPreview()) {
+          |   $displayShare = true;
+          | } elseif(in_array($this->request->param('entryType'), ['facebook', 'twitter'])) {
+          |   $displayShare = true;
+          | }
+        - if($displayShare):
+          .form-group
+            .col-sm-12
+              .row
+                :php
+                  | $value = '';
+                  | $afterInput = '';
+                  | if($this->request->param('entryType') == 'twitter') {
+                  |   if($campaign['campaign_type'] == 'lancers') {
+                  |     $value = '私は' . $item['Item']['title'] . 'さんの、この作品に投票しました！';
+                  |     $value .= 'みなさんもこの作品に投票をして応援をお願いします！' . "\n";
+                  |   } else {
+                  |     $value = $campaign['title'] . 'で' . $item['Item']['title'] . 'に投票しました！' . "\n";
+                  |   }
+                  |   $value .= $this->Html->url([
+                  |     'action' => 'items',
+                  |     'accountName' => $currentAccount['Account']['account_name'],
+                  |     'id' => $campaign['id'],
+                  |     'itemId' => $item['Item']['id'],
+                  |   ], true);
+                  |   $afterInput = '<p id="js-share-left" class="share-left"><span></span> /140</p>';
+                  | }
+                  | echo $this->Form->input('share_message', [
+                  |   'type' => 'textarea',
+                  |   'label' => false,
+                  |   'id' => 'js-share-message-twitter',
+                  |   'placeholder' => 'シェアするコメントを入力ください。',
+                  |   'value' => $value,
+                  |   'afterInput' => $afterInput,
+                  |   'div' => false,
+                  |   'wrapInput' => $inputs ? 'col-sm-7 col-sm-offset-4' : 'col-sm-8 col-sm-offset-2',
+                  | ]);
+                  | echo $this->Form->input('share_flg', [
+                  |   'type' => 'checkbox',
+                  |   'label' => ['text' => 'シェアしない', 'class' => false],
+                  |   'class' => false,
+                  |   'div' => false,
+                  |   'wrapInput' => $inputs
+                  |     ? 'col-sm-7 col-sm-offset-4'
+                  |     : 'col-sm-8 col-sm-offset-2',
+                  | ]);
+        - endif;
+        .row.text-center
+          .col-sm-12
+            - if($this->Soraps->isPreview()):
+              .btn-shadow
+                a.btn.btn-primary.btn-lg.btn-block(href="#") 投票する
+            - else:
+              .btn-shadow
+                :php
+                  | echo $this->Form->button(
+                  |   empty($isConfirm) && $inputs ? '確認へ進む' : '投票する',
+                  |   [
+                  |     'type' => 'submit',
+                  |     'class' => 'btn btn-primary btn-lg btn-block',
+                  |     'id' => 'js-btn-submit',
+                  |     'name' => empty($isConfirm) && $inputs ? 'confirm' : 'submit',
+                  |   ]
+                  | );
+            - endif;
+            :php
+              | if(empty($isConfirm)) {
+              |   echo $this->Html->btn(
+              |     '戻る',
+              |     $this->Soraps->isPreview() ? '#' : [
+              |       'action' => 'items',
+              |       'accountName' => $currentAccount['Account']['account_name'],
+              |       'id' => $campaign['id'],
+              |       'itemId' =>  $item['Item']['id'],
+              |     ]
+              |   );
+              |   echo $this->Html->btn(
+              |     '一覧に戻る',
+              |     $this->Soraps->isPreview() ? '#' : [
+              |       'action' => 'items',
+              |       'accountName' => $currentAccount['Account']['account_name'],
+              |       'id' => $campaign['id'],
+              |     ]
+              |   );
+              | } else {
+              |   echo $this->Form->button('戻る', [
+              |     'type' => 'submit',
+              |     'class' => 'btn btn-default',
+              |   ]);
+              | }
+        !{$this->Form->end()}

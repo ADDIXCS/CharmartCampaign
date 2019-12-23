@@ -1,0 +1,13 @@
+#loading
+  #loading-inner
+    div
+      p
+        | <i class="fa fa-spinner fa-spin fa-5x"></i>
+      :php
+        | if(
+        |   $this->Soraps->pageId() == 'campaignview-entry-confirm' &&
+        |   $campaign['Campaign']['campaign_type'] == 'lottery'
+        | ):
+      p 抽選中
+      - endif;
+

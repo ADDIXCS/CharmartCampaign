@@ -1,0 +1,399 @@
+@import "compass/css3/transform"
+
+//
+// campaignsでは@mediaで、adminでは.design-previw-pc-content以下で適用される
+// --------------------------------------------------
+
+//
+// navbar
+// --------------------------------------------------
+
+.navbar-brand
+  padding-top: $font-size-large
+  padding-bottom: $font-size-large
+  font-size: $font-size-large
+
+//
+// content
+// --------------------------------------------------
+
+// container
+// -------------------------
+
+.container-sm
+  width: $container-sm
+.container-xs
+  width: 520px // facebookの昔のタブの幅
+
+// headings
+// -------------------------
+
+h2, .h2
+  font-size: 18px
+h3, .h3
+  font-size: 18px
+
+// section
+// -------------------------
+
+.section
+  padding: 30px 0
+  .page-header
+    margin-bottom: 30px
+.section-lg
+  padding: 45px 0
+  .page-header
+    margin-bottom: 45px
+.section-sm
+  padding: 20px 0
+  .page-header
+    margin-bottom: 20px
+.section-content
+  .panel-body
+    padding: 30px
+
+// separator
+// -------------------------
+
+.separator-triangle
+  &:before
+    top: -20px
+    width: 50px
+    height: 50px
+
+// flap
+// -------------------------
+
+.flap
+  position: relative
+  &:after
+    position: absolute
+    bottom: -1px
+    right: -1px
+    border-width: 0 0 25px 25px
+    border-style: solid
+    border-color: $gray-dark #fff #fff $gray-dark
+    content: ''
+
+// form
+// -------------------------
+
+.form-horizontal
+  .control-label
+    margin-bottom: 0
+  .form-control-name
+    display: inline-block
+    .control-label
+      padding-top: 0
+
+// btn
+// -------------------------
+
+.btn-lg
+  font-size: 30px
+.btn-shadow
+  .btn:before
+    background-image: url(../img/common/bg-btn-stripe-pc.png)
+
+// footer
+// -------------------------
+
+#section-footer
+  padding-bottom: 55px
+  p
+    font-size: $font-size-small
+
+// modal-btns-entry
+// -------------------------
+
+.modal-btns-entry
+  .modal-dialog
+    width: 400px
+  .modal-content
+    padding: 15px
+  .modal-body
+    padding: 15px 30px
+
+//
+// individual
+// --------------------------------------------------
+
+#campaignview-top.campaign-prize,
+#campaignview-top.campaign-contest,
+#campaignview-top.campaign-vote,
+#campaignview-top.campaign-coupon,
+#campaignview-top.campaign-lottery,
+#campaignview-top.campaign-lancers,
+#campaignview-items
+  #section-header
+    padding-bottom: 60px
+#campaignview-entry #section-fangate .section
+  padding-bottom: 60px
+#section-info,
+#section-summary,
+#section-notice,
+#campaignview-top #section-pickupitems
+  padding-bottom: 75px
+#section-pickupitems + #section-notice
+  margin-top: -30px
+  padding-top: 0
+#campaignview-top.campaign-prize,
+#campaignview-top.campaign-contest,
+#campaignview-top.campaign-vote,
+#campaignview-top.campaign-coupon,
+#campaignview-top.campaign-lottery,
+#campaignview-top.campaign-lancers,
+#campaignview-items.campaign-contest
+  #section-footer
+    padding-bottom: 100px
+
+#section-step + #section-form > .container,
+#section-fangate > .container,
+#section-entried
+  > .separator-triangle
+    &:before
+      top: -10px
+      width: 25px
+      height: 25px
+
+// campaignview-top
+// -------------------------
+
+#section-info
+  // 画像を右寄せに
+  .col-sm-4
+    padding-right: 0
+    text-align: right
+  img
+    max-width: 220px
+  // 画像がない場合に真ん中寄せにする
+  .col-sm-8
+    float: none
+    margin: 0 auto
+    overflow: hidden
+  dl
+    margin-top: $line-height-computed / 2
+    font-size: 18px
+  dt
+    width: 120px
+    font-weight: normal
+  dd
+    margin-left: 150px
+    text-align: left
+    font-weight: bold
+  // 開催期間のcss
+  dt:first-of-type
+    margin-top: 10px
+  dd:first-of-type
+    font-size: 36px
+    line-height: 1.2
+    span
+      display: block
+      padding-left: 45px
+      font-size: 50px
+#section-summary,
+#section-notice
+  .panel-heading
+    margin-bottom: 40px
+    background: transparent
+    text-align: center
+    a
+      padding: 0
+    .fa-plus,
+    .fa-minus
+      display: none
+  .panel-title
+    font-size: $font-size-large
+  .panel-body
+    display: block
+    padding: 30px 45px
+    p:last-child
+      margin-bottom: 0
+      padding-left: 30px
+      background: url(../img/common/bg-text-stripe.png) -4px top repeat-y
+#section-summary
+  background: $gray
+  .panel-body
+    p:first-child
+      margin-bottom: $line-height-computed
+      font-size: $font-size-large
+      text-align: center
+#section-notice
+  background: #fff
+  .panel-heading
+    color: $text-color
+  .panel-body
+    background: $gray-bg
+#section-sponsor
+  // 上三角がない分つめる
+  position: relative
+  padding-bottom: 45px
+  background: $gray-bg
+  h2
+    margin-bottom: $line-height-computed
+    text-align: center
+  .table
+    width: auto
+    margin: 0 auto
+    th,
+    td
+      padding: 5px 15px
+      font-size: $font-size-base
+    th
+      text-align: right
+#campaignview-top #section-sponsor
+  margin-top: -30px
+#section-entry-btn
+  .btn-shadow
+    padding: 0 85px
+#section-entry-btn-fixed
+  .container
+    position: relative
+  .btn-shadow
+    padding: 0 85px
+  .pagetop
+    position: absolute
+    top: 11px
+    right: -4px
+    color: #fff
+    opacity: .8
+
+#section-entried-message
+  .text-danger
+    font-size: 24px
+    font-weight: bold
+    span
+      display: block
+      font-size: 48px
+#section-gift
+  .panel-body
+    padding: 30px 45px
+    p
+      padding-left: 30px
+      background: url(../img/common/bg-text-stripe.png) -4px top repeat-y
+
+// campaignview-entry
+// campaignview-entry-confirm
+// -------------------------
+
+.campaign-shindan
+  #section-fangate
+    margin-top: 30px
+#like-btn-wrapper
+  height: 96px
+  padding-top: 38px
+  &:before
+    // .separator-triangleの指定を上書きする必要あり
+    @include transform2d(translateX(0) rotate(0))
+    top: 0
+    left: -48px
+    width: 0
+    height: 0
+    background: transparent
+    border-top: solid 48px transparent
+    border-bottom: solid 48px transparent
+    border-right: solid 48px #fff
+#section-form-inner
+  padding: 30px 84px
+  border: solid 1px $panel-default-border
+  > p:first-child
+    margin-bottom: $line-height-computed
+
+#campaignview-entry-confirm,
+#campaignview-vote-confirm
+  #section-form
+    form
+      > div:nth-child(even)
+        background: rgba(red($gray-dark), green($gray-dark), blue($gray-dark), .1)
+    // themeのnth-child(even)で上書きされないように
+    #section-form-inner form > div.row
+      background: transparent
+
+// campaignview-questions
+// -------------------------
+
+#section-questions
+  padding-top: 10px
+  .radio
+    span
+      font-size: 16px
+    + .radio
+      margin-top: -2px
+
+// campaignview-result
+// -------------------------
+
+#section-result
+  .container + .container
+    margin-top: 30px
+  .panel-body
+    padding: 30px 45px
+    h2
+      margin-bottom: 30px
+      font-size: 48px
+    p
+      padding-left: 30px
+      background: url(../img/common/bg-text-stripe.png) -4px top repeat-y
+    h2 + p
+      margin-bottom: 15px
+
+// campaignview-items
+// -------------------------
+
+#section-items
+  .row > div:nth-child(4n + 1)
+    clear: both
+#section-item
+  .panel-body
+    padding: 0 85px 20px
+    p
+      padding-left: 30px
+      background: url(../img/common/bg-text-stripe.png) -4px top repeat-y
+    .nickname
+      padding-left: 0
+      background: none
+  .pull-left
+    margin-right: 25px
+
+//
+// theme colors
+// --------------------------------------------------
+
+@mixin theme-color-pc($color1, $color2, $color3)
+  .flap:after
+    border-color: $color2 #fff #fff $color2
+  #section-info
+    dt:first-of-type,
+    dd:first-of-type
+      color: $color2
+  #section-summary
+    background: $color3
+  #section-notice .panel-heading,
+  #section-pickupitems h2
+    color: $color2
+  &#campaignview-entry-confirm,
+  &#campaignview-vote-confirm
+    #section-form
+      form
+        > div:nth-child(even)
+          background: rgba(red($color2), green($color2), blue($color2), .1)
+
+.theme-color-gray
+  @include theme-color-pc(nth($theme-color-gray, 1), nth($theme-color-gray, 2), nth($theme-color-gray, 3))
+.theme-color-red
+  @include theme-color-pc(nth($theme-color-red, 1), nth($theme-color-red, 2), nth($theme-color-red, 3))
+.theme-color-green
+  @include theme-color-pc(nth($theme-color-green, 1), nth($theme-color-green, 2), nth($theme-color-green, 3))
+.theme-color-blue
+  @include theme-color-pc(nth($theme-color-blue, 1), nth($theme-color-blue, 2), nth($theme-color-blue, 3))
+.theme-color-yellow
+  @include theme-color-pc(nth($theme-color-yellow, 1), nth($theme-color-yellow, 2), nth($theme-color-yellow, 3))
+.theme-color-purple
+  @include theme-color-pc(nth($theme-color-purple, 1), nth($theme-color-purple, 2), nth($theme-color-purple, 3))
+.theme-color-pink
+  @include theme-color-pc(nth($theme-color-pink, 1), nth($theme-color-pink, 2), nth($theme-color-pink, 3))
+.theme-color-pastel
+  @include theme-color-pc(nth($theme-color-pastel, 1), nth($theme-color-pastel, 2), nth($theme-color-pastel, 3))
+.theme-color-natural
+  @include theme-color-pc(nth($theme-color-natural, 1), nth($theme-color-natural, 2), nth($theme-color-natural, 3))
+

@@ -1,0 +1,95 @@
+!!! 5
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title #{$this->Soraps->title()}
+    meta(name="description", content="")
+    meta(name="viewport", content="width=device-width")
+    meta(name="robots", content="noindex, nofollow")
+    !{$this->Html->css('bootstrap-admin')}
+    !{$this->Html->css('//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css')}
+    !{$this->Html->css('admin')}
+    - if($this->Soraps->isPreview()):
+      !{$this->Html->css('admin-preview')}
+    - endif
+    link(rel="shortcut icon", href="#{$this->Html->url(Configure::read('service.favicon'))}")
+    link(rel="apple-touch-icon-precomposed", href="#{$this->Html->url(Configure::read('service.touchIcon'))}")
+  body(id="#{$this->Soraps->pageId()}")
+    #fb-root
+    - if($this->action != 'admin_login'):
+      .navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            :php
+              | echo $this->Html->link(
+              |   $this->Html->image(Configure::read('service.logo')),
+              |   ['controller' => 'admin', 'action' => 'index'],
+              |   ['class' => 'navbar-brand', 'escape' => false]
+              | );
+          ul.nav.navbar-nav.navbar-right
+            !{$this->element('admin/navbar-nav')}
+            li.dropdown
+              a.dropdown-toggle(href="#", data-toggle="dropdown")
+                !{$this->Html->icon('user')}
+                #{$loginAccount['screen_name']}
+                b.caret
+              ul.dropdown-menu
+                - if($this->Soraps->isMasterLogin()):
+                  li
+                    :php
+                      | echo $this->Html->link(
+                      |   '開催中のキャンペーン',
+                      |   ['controller' => 'admin', 'action' => 'campaigns']
+                      | );
+                  li
+                    :php
+                      | echo $this->Html->link(
+                      |   '更新履歴',
+                      |   ['controller' => 'admin', 'action' => 'changelog']
+                      | );
+                  li.divider
+                - endif;
+                li
+                  :php
+                    | echo $this->Html->link(
+                    |   'ログアウト',
+                    |   ['controller' => 'login', 'action' => 'logout']
+                    | );
+      .page-header
+        .container
+          !{$this->Session->flash()}
+          h1
+            - if($this->Soraps->pageId() == 'campaigns-view'):
+              small
+                - if($campaign['Campaign']['status'] == 'published'):
+                  span.label.label-success #{$campaign['Campaign']['status_ja']}
+                - else:
+                  span.label.label-default #{$campaign['Campaign']['status_ja']}
+                - endif;
+                span.label.label-primary #{$campaign['Campaign']['campaign_type_ja']}
+            - endif;
+            span #{$title_for_layout}
+    - endif;
+    - if($this->action != 'admin_login'):
+      .container
+        !{$this->element('admin/breadcrumb')}
+    - endif;
+    #content.container
+      !{$this->fetch('content')}
+      - if(isset($debug)):
+        - debug($debug);
+      - endif;
+    !{$this->Html->script('//code.jquery.com/jquery-1.8.3.min.js')}
+    !{$this->Html->script('/vendor/bootstrap/bootstrap')}
+    :javascript
+      | var facebookAppId = '#{Configure::read('facebook.appId')}';
+    !{$this->Html->script('facebook')}
+    !{$this->Html->script('twitter')}
+    !{$this->Html->script('common')}
+    !{$this->Html->script('admin')}
+    !{$this->fetch('script')}
+

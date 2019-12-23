@@ -1,0 +1,64 @@
+2019-09-20 15:43:06 Notice: Notice (8): Undefined variable: entried in [/var/www/faro-campaign/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5d8474faf2c97.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5d8474faee1bb.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_5d8474faed686.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+
+2019-09-20 15:43:07 Notice: Notice (8): Undefined variable: entried in [/var/www/faro-campaign/app/View/Elements/campaigns/btn-coupon.ctp, line 5]
+Trace:
+include - APP/View/Elements/campaigns/btn-coupon.ctp, line 5
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 56
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5d8474fb0c661.ctp, line 20
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_renderElement() - CORE/Cake/View/View.php, line 1189
+View::element() - CORE/Cake/View/View.php, line 406
+include - APP/tmp/cache/views/jade_5d8474fb07b88.ctp, line 6
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::renderPreview() - APP/View/SorapsView.php, line 52
+include - APP/tmp/cache/views/jade_5d8474faed686.ctp, line 25
+View::_evaluate() - CORE/Cake/View/View.php, line 929
+IqueJadeView::_evaluate() - APP/Plugin/Ique/View/IqueJadeView.php, line 60
+View::_render() - CORE/Cake/View/View.php, line 891
+View::_render() - CORE/Cake/View/View.php, line 903
+View::render() - CORE/Cake/View/View.php, line 460
+SorapsView::render() - APP/View/SorapsView.php, line 28
+Controller::render() - CORE/Cake/Controller/Controller.php, line 952
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 192
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 160
+[main] - ROOT/webroot/index.php, line 99
+

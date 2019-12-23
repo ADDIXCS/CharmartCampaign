@@ -1,0 +1,170 @@
+- if($this->action == 'admin_add'):
+  - $this->set('title_for_layout', $currentAccount['Account']['child_role_ja'] . '追加');
+- else:
+  - $this->set('title_for_layout', $currentAccount['Account']['role_ja'] . '編集');
+- endif;
+
+!{$this->Form->create('Account', ['type' => 'file', 'angular' => true, 'ng-app' => 'soraps'])}
+
+fieldset
+  legend アカウント情報
+  :php
+    | echo $this->Form->input('screen_name', [
+    |   'type' => 'text',
+    |   'label' => 'アカウント名',
+    | ]);
+    | echo $this->Form->input('account_name', [
+    |   'type' => 'text',
+    |   'label' => 'ログインID',
+    | ]);
+    | echo $this->Form->input('password', [
+    |   'type' => 'password',
+    |   'label' => [
+    |     'text' => 'パスワード',
+    |     'required' => $this->action == 'admin_add' ? true : false,
+    |    ],
+    | ]);
+//  - if($this->Soraps->getEditingAccountType() == 'agent'):
+//    :php
+//      | echo $this->Form->input('oem_flg', [
+//      |   'type' => 'checkbox',
+//      |   'label' => ['text' => 'OEM提供する', 'class' => false],
+//      |   'class' => false,
+//      |   'wrapInput' => 'col-sm-4 col-sm-offset-2',
+//      | ]);
+//  - endif;
+- if($this->Soraps->getEditingAccountType() == 'agent'):
+  fieldset(ng-show="oem_flg")
+    legend OEM情報
+    :php
+      | echo $this->Form->input('oem_domain', [
+      |   'type' => 'text',
+      |   'label' => 'ドメイン',
+      | ]);
+      | echo $this->Form->input('oem_service_name', [
+      |   'type' => 'text',
+      |   'label' => 'サービス名',
+      | ]);
+      | echo $this->Form->input('oem_logo', [
+      |   'type' => 'image',
+      |   'label' => 'ロゴ',
+      | ]);
+      | echo $this->Form->input('oem_og_image', [
+      |   'type' => 'image',
+      |   'label' => 'OG画像',
+      | ]);
+      | echo $this->Form->input('oem_favicon', [
+      |   'type' => 'image',
+      |   'label' => 'ファビコン',
+      | ]);
+      | echo $this->Form->input('oem_touch_icon', [
+      |   'type' => 'image',
+      |   'label' => 'タッチ・アイコン',
+      | ]);
+      | echo $this->Form->input('oem_company_name', [
+      |   'type' => 'text',
+      |   'label' => '会社名',
+      | ]);
+      | echo $this->Form->input('oem_company_name_en', [
+      |   'type' => 'text',
+      |   'label' => '会社名（英語）',
+      | ]);
+      | echo $this->Form->input('oem_twitter_account', [
+      |   'type' => 'text',
+      |   'label' => 'Twitterアカウント',
+      | ]);
+      | echo $this->Form->input('oem_facebook_app_id', [
+      |   'type' => 'text',
+      |   'label' => 'Facebook App ID',
+      | ]);
+      | echo $this->Form->input('oem_facebook_secret', [
+      |   'type' => 'text',
+      |   'label' => 'Facebook App Secret',
+      | ]);
+      | echo $this->Form->input('oem_twitter_consumer_key', [
+      |   'type' => 'text',
+      |   'label' => 'Twitter Consumer Key',
+      | ]);
+      | echo $this->Form->input('oem_twitter_consumer_secret', [
+      |   'type' => 'text',
+      |   'label' => 'Twitter Consumer Secret',
+      | ]);
+- endif;
+- if($this->Soraps->getEditingAccountType() == 'client'):
+  fieldset
+    legend ソーシャルアカウント情報
+    :php
+      | echo $this->Form->input('facebook_page_url', [
+      |   'type' => 'text',
+      |   'label' => 'FacebookページURL',
+      | ]);
+      | echo $this->Form->input('twitter_screen_name', [
+      |   'type' => 'text',
+      |   'label' => 'Twitterユーザ名',
+      |   'beforeInput' => '<div class="input-group"><span class="input-group-addon">@</span>',
+      |   'afterInput' => '</div>',
+      | ]);
+  fieldset
+    legend 契約プラン
+    :php
+      | echo $this->Form->input('plan', [
+      |   'type' => 'radio',
+      |   'label' => 'プラン',
+      |   'options' => array_combine(
+      |     array_keys(AccountValue::$plans),
+      |     Hash::extract(AccountValue::$plans, '{s}.name')
+      |   ),
+      |   'default' => 'shop',
+      |   'inline' => true,
+      | ]);
+    .form-group(ng-show="plan == 'custom' ")
+      .col-sm-10.col-sm-offset-2
+        :php
+          | foreach(CampaignValue::$types as $type) {
+          |   echo $this->Form->input('plan_' . $type . '_flg', [
+          |     'type' => 'checkbox',
+          |     'label' => [
+          |       'text' => CampaignValue::${$type}['name'],
+          |       'class' => 'checkbox-inline',
+          |     ],
+          |     'div' => false,
+          |     'class' => false,
+          |     'wrapInput' => false,
+          |     'checkboxDiv' => false,
+          |   ]);
+          | }
+- endif;
+
+.form-group
+  .col-sm-offset-2.col-sm-10
+    :php
+      | echo $this->Form->button($this->Html->icon('save', 'lg', true) . '保存', [
+      |   'type' => 'submit',
+      |   'class' => 'btn btn-primary',
+      | ]);
+      | if($this->action == 'admin_add') {
+      |   echo $this->Html->btn(
+      |     'キャンセル',
+      |     [
+      |       'controller' => 'accounts',
+      |       'action' => 'index',
+      |       'accountName' => $currentAccount['Account']['account_name']
+      |     ]
+      |   );
+      | } else {
+      |   echo $this->Html->btn(
+      |     'キャンセル',
+      |     [
+      |       'controller' => 'accounts',
+      |       'action' => 'index',
+      |       'accountName' => $parentAccount['Account']['account_name']
+      |     ]
+      |   );
+      | }
+
+!{$this->Form->end()}
+
+- $this->start('script');
+  !{$this->Html->script('//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js')}
+  !{$this->Html->script('angular-filters')}
+- $this->end();

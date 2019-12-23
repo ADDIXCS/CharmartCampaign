@@ -1,0 +1,611 @@
+@charset "utf-8";
+
+@charset "UTF-8";
+body {
+  font-size: 16px;
+line-height: 1.6; }
+
+/*
+h1, h2, h3, h4, p, li, dt, dd, button {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg);
+  letter-spacing: .1em; }
+*/
+h2,h3,p {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+    -webkit-transform: rotate(0.001deg);
+            transform: rotate(0.001deg);
+    /*letter-spacing: .1em;*/ }
+
+h1, h2, h3 {
+  line-height: 1.4;
+  color: #162A4B; }
+h3 {
+  margin-top: 0;
+  font-size: 1.2em; }
+[class*='col-'] p,
+[class*='col-'] ul li{
+/*  text-align: justify;*/
+font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif; }
+[class*='col-'] p {
+/*margin-bottom: 1em;*/ }
+#yohosi em.voteLimit {
+  font-style: normal;
+  color: #A23E2F;
+  font-weight: 800; }
+#yohosi .navbar {
+  background: none; }
+#yohosi .navbar .active:after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top-width: 0px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-style: solid;
+    border-color: #162A4B transparent;
+    height: 0;
+    width: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin: -8px auto; }
+#yohosi .navbar .active a {
+    background: none;
+    color: #162A4B;
+    font-weight: 600; }
+#yohosi .navbar-brand {
+  color: #999;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg);
+  font-weight: 400; }
+#yohosi .navbar-default .navbar-toggle {
+  border-color: #A23E2F; }
+#yohosi .navbar-default .navbar-toggle .icon-bar {
+  background-color: #A23E2F; }
+#yohosi .navbar-default .navbar-toggle:focus, #yohosi .navbar-default .navbar-toggle:hover {
+  background-color: #A23E2F;
+  border-color: #A23E2F; }
+#yohosi .navbar-default .navbar-toggle:focus .icon-bar, #yohosi .navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #fff; }
+#yohosi #nav-menu .lnkVote a:after {
+  color: #fff;
+  background: #a23e2f;
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 5px;
+  margin-top: 3px;
+  margin-left: 3px;
+  display: inline-block;
+  letter-spacing: 0px;
+  font-weight: 400;
+  vertical-align: top;
+  content: "2/28 まで!"; }
+#yohosi .sns .sns-tw, #yohosi .sns .sns-fb {
+  height: 20px;
+  display: inline-block;
+  display: hidden; }
+#yohosi .sns .sns-fb .fb-like {
+  display: inline-block;
+  height: 20px;
+  overflow: hidden; }
+#yohosi .sns .sns-fb .fb_iframe_widget > span {
+  vertical-align: baseline !important; }
+#yohosi .modal-toggle {
+  cursor: pointer; }
+#yohosi .vote .modal-toggle {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  color: #1798A5; }
+#yohosi .vote .modal-toggle:before {
+    content: ' ';
+    background: url(http://yohosi.ranking-japan.top/img/ico-speech-bubble.png) 0 0 no-repeat;
+    background-size: 18px;
+    padding-left: 24px; }
+#yohosi .modal button.close, #yohosi .modal h4.modal-title {
+  -webkit-transform: none;
+          transform: none; }
+#yohosi .modal h4.modal-title span {
+  display: inline-block;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg); }
+.custom {
+  margin-bottom: 20px; }
+.custom .arrow {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 16px;
+    color: #fff; }
+.custom .arrow:before, .custom .arrow:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      content: "";
+      vertical-align: middle; }
+.custom .arrow:after {
+      right: 20px;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg); }
+.custom .btn.btn-primary {
+    background: #1d4c98;
+    border-color: #1d4c98;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px; }
+.custom .btn.btn-primary:hover {
+      background: #709DE4;
+      border-color: #709DE4;
+      color: #162A4B; }
+.custom .btn-entry.arrow:hover:after {
+    border-color: #162A4B; }
+/*
+.header {
+  background: url("//yohosi.ranking-japan.top/img/bg_hero.jpg") no-repeat 0 0;
+  background-size: cover; }
+.header #site-id {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+.header #site-id h1 {
+      margin: 0; }
+.header #site-id .site-id-img {
+      margin: 0 auto; }
+*/
+.section-ttl {
+  margin-top: 2em;
+  margin-bottom: 3em;
+  font-size: 1.7em;
+  font-weight: 400; }
+.intro .btn-entry {
+  margin: 40px 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg); }
+.intro .yyyy, .intro .mm, .intro .dd {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #1d4c98; }
+.intro .term .section-ttl {
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ccc; }
+.intro .news {
+  margin-top: 40px; }
+.intro .msg {
+  padding: .5em 0 0;
+  border-top: 3px solid #a23e2f;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 90%; }
+.intro .msg h4 {
+    color: #a23e2f; }
+.intro .msg .btn-entry {
+    margin: 0 0 10px; }
+.intro .sns-tl .sns-tl-box.twit {
+  border: 1px solid #e2e9ec; }
+.requirements .flow {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.requirements .flow li {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.5em;
+    background: #1798A5;
+    color: #fff;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+.requirements .flow li + li {
+    position: relative;
+    margin-top: 30px; }
+.requirements .flow li + li:before {
+      content: ' ';
+      position: absolute;
+      display: block;
+      top: -20px;
+      left: calc(50% - 14px);
+      width: 0;
+      height: 0;
+      border: 14px solid transparent;
+      border-top: 14px solid #1798A5;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg); }
+.requirements .formSample .formImage {
+  margin: 0 auto;
+  border: 1px solid #ddd; }
+.requirements .formSample p {
+  color: #999;
+  padding: 10px 20px;
+  font-size: 80%; }
+.requirements .btn-entry {
+  margin: 40px 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg); }
+.requirements .btn-entry span {
+    font-size: 0.8em;
+    font-weight: 400; }
+.press h3, .press h4 {
+  font-size: 1em; }
+.press em {
+  font-style: normal;
+  color: #A23E2F;
+  text-decoration: underline; }
+.press .date-release {
+  text-align: right; }
+.press .img-press {
+  max-width: 600px;
+  border: 1px solid #ddd;
+  margin: 20px auto; }
+.press .img-press img {
+    padding: 4px; }
+.press .row.custom + .row.custom .col-sm-10 {
+  border-top: 1px solid #eee;
+  margin-top: 60px;
+  padding-top: 60px; }
+.nomination .section-ttl em {
+  color: #1798a5;
+  font-style: normal; }
+.nomination .section-ttl + .note {
+  color: #A23E2F;
+  text-align: center;
+  margin-bottom: 30px; }
+.nomination h3 {
+  position: relative;
+  text-align: center; }
+.nomination .nomination-block h4 {
+  border-bottom: 1px solid #ccc;
+  color: #162A4B;
+  padding-bottom: .3em; }
+.nomination .nomination-block dl {
+  width: 100%;
+  overflow: hidden; }
+.nomination .nomination-block dt, .nomination .nomination-block dd {
+  font-size: 90%;
+  font-weight: 400; }
+.nomination .nomination-block dt {
+  float: left;
+  width: 7em; }
+.nomination .nomination-block dd {
+  margin-left: 8em; }
+.nomination .nomination-block dd a {
+    position: relative;
+    display: block; }
+.nomination .nomination-block dd a:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    background: url("//yohosi.ranking-japan.top/img/ico_new_win.png");
+    margin-left: 5px;
+    display: inline-block;
+    position: absolute;
+    bottom: 4px; }
+.nomination .female h4 {
+  color: #A23E2F; }
+.faq .qa {
+  margin-left: 10px;
+  margin-bottom: 40px; }
+.faq .q p {
+  color: #1798A5;
+  margin-bottom: 0; }
+.faq .q, .faq .a {
+  padding-left: 24px;
+  padding-left: 1.5rem;
+  position: relative; }
+.faq .q:before, .faq .a:before {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    text-align: left;
+    padding: 0; }
+.faq .q:before {
+  content: "Q.";
+  color: #1798A5; }
+.faq .a:before {
+  content: "A."; }
+.vote #result {
+  margin-top: 40px; }
+.vote #result [class*="hidden-"] {
+  display: none; }
+.vote #select {
+  overflow: hidden; }
+.vote .btn-entry {
+  margin: 20px 0 40px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg); }
+.vote label {
+  cursor: pointer;
+  position: relative;
+  margin: 0; }
+.vote label input, .vote label span {
+    display: inline-block; }
+.vote label input {
+    vertical-align: -0.1em; }
+.vote label span {
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+    -webkit-transform: rotate(0.001deg);
+            transform: rotate(0.001deg);
+    letter-spacing: .1em;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 15px; }
+.vote .yohosi-list {
+  min-height: 220px;
+  position: relative;
+  margin-bottom: 40px; }
+.vote .yohosi-list h3 {
+    font-size: 18px;
+    border-top: 1px solid #ccc;
+    padding-top: .5em; }
+.vote .yohosi-list .perform {
+    font-size: 14px;
+    margin-bottom: 0; }
+.vote .yohosi-list .perform:before {
+      content: "主な出演番組：";
+      display: block;
+      font-size: 12px;
+      color: #666; }
+.vote .yohosi-list .onair {
+    font-size: 12px;
+    margin-bottom: 1em; }
+.vote .yohosi-list .comment.modal-toggle {
+    margin-top: 1em; }
+.vote .yohosi-list .btnVote {
+    background: #1798A5;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    font-size: 14px;
+    padding: .5em 1em; }
+.vote .female h3 {
+  color: #A23E2F; }
+.vote .nomination {
+  min-height: 190px; }
+.ranking > .row {
+  margin-bottom: 60px; }
+.ranking h2 {
+  color: #b28146;
+  width: 290px;
+  height: 160px;
+  background: url(http://yohosi.ranking-japan.top/img/bg_award.png) 0 0 no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px; }
+.ranking h2 span {
+    display: block;
+    position: relative;
+    top: 10%; }
+.ranking h2 .sub-ttl {
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px; }
+.ranking h3 {
+  text-align: center;
+  clear: both; }
+.ranking .result {
+  width: 100%;
+  counter-reset: count; }
+.ranking .result dt {
+    display: block;
+    width: 70%;
+    clear: left;
+    float: left;
+    height: 2.5em;
+    line-height: 2.5em;
+    position: relative;
+    font-size: 90%; }
+.ranking .result dt:before {
+      counter-increment: count;
+      content: counter(count) "位 ";
+      color: #333;
+      font-weight: 400;
+      display: inline-block; }
+.ranking .result .rank1 span:before, .ranking .result .rank2 span:before, .ranking .result .rank3 span:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    top: 6px;
+    background: url(http://yohosi.ranking-japan.top/img/ico_rank.png) 0 0 no-repeat; }
+.ranking .result .rank2 span:before {
+    background-position: 0 -24px; }
+.ranking .result .rank3 span:before {
+    background-position: 0 -48px; }
+.ranking .result .male {
+    color: #162A4B; }
+.ranking .result .female {
+    color: #A23E2F; }
+.ranking .result dd {
+    display: block;
+    width: 30%;
+    float: left;
+    text-align: right;
+    height: 2.5em;
+    line-height: 2.5em;
+    font-size: 90%; }
+.ranking .result dd:after {
+      content: "票";
+      display: inline-block;
+      font-size: 80%; }
+.ranking .ranking-general dt:nth-of-type(n+21), .ranking .ranking-general dd:nth-of-type(n+21) {
+  display: none; }
+.ranking #ranking-all {
+  cursor: pointer; }
+.ranking #ranking-all:after {
+    content: "以降を見る"; }
+.ranking .showAll dt:nth-of-type(n+21), .ranking .showAll dd:nth-of-type(n+21) {
+  display: block; }
+.ranking .showAll #ranking-all:after {
+  content: "までを表示する"; }
+.ranking .ranking-general, .ranking .ranking-male, .ranking .ranking-female {
+  margin-bottom: 40px;
+  overflow: hidden; }
+.ranking .ranking-general dt, .ranking .ranking-general dd, .ranking .ranking-male dt, .ranking .ranking-male dd, .ranking .ranking-female dt, .ranking .ranking-female dd {
+    border-bottom: 1px solid #eee; }
+.ranking .ranking-general dt:nth-child(1), .ranking .ranking-male dt:nth-child(1), .ranking .ranking-female dt:nth-child(1) {
+    padding-left: 30px; }
+.ranking .ranking-general dt:nth-child(3), .ranking .ranking-male dt:nth-child(3), .ranking .ranking-female dt:nth-child(3) {
+    padding-left: 30px; }
+.ranking .ranking-general dt:nth-child(5), .ranking .ranking-male dt:nth-child(5), .ranking .ranking-female dt:nth-child(5) {
+    padding-left: 30px; }
+.ranking.ranking-result h2 {
+  color: #cca805;
+  width: 290px;
+  height: 279px;
+  background: url(http://yohosi.ranking-japan.top/img/bg_award2.png) 0 0 no-repeat; }
+.ranking.ranking-result h2 span {
+    top: 29%;
+    padding-left: .3em; }
+.ranking.ranking-result .rank1, .ranking.ranking-result .rank2, .ranking.ranking-result .rank3 {
+  font-size: 110%; }
+.ranking.ranking-result .rank1 span:before, .ranking.ranking-result .rank2 span:before, .ranking.ranking-result .rank3 span:before {
+    top: 10px; }
+.ranking.ranking-result .rank1 + dd, .ranking.ranking-result .rank2 + dd, .ranking.ranking-result .rank3 + dd {
+    font-size: 110%; }
+.ranking.ranking-result .interim {
+  font-size: 80%;
+  font-weight: 400;
+  color: #888; }
+.media-info .media-info-item li {
+  -webkit-transform: none;
+          transform: none; }
+.media-info .media-info-item span {
+  display: table-cell;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Mplus 1p", sans-serif;
+  -webkit-transform: rotate(0.001deg);
+          transform: rotate(0.001deg);
+  letter-spacing: .1em;
+  height: auto; }
+.winner .winner-comment-block {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px; }
+.winner .winner-comment-block .pic-winner {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    width: 150px; }
+.winner .winner-comment-block .pic-winner img {
+      max-width: 150px;
+      height: auto;
+      border: 1px solid #ccc; }
+.winner .winner-comment-block .winner-comment-inner {
+    display: inline-block;
+    overflow: hidden;
+    width: calc(100% - 176px); }
+.comment-bubble {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  color: #1798A5; }
+.comment-bubble:before {
+    content: ' ';
+    background: url(http://yohosi.ranking-japan.top/img/ico-speech-bubble.png) 0 0 no-repeat;
+    background-size: 18px;
+    padding-left: 24px; }
+.align-ctr,
+[class*='col-'] p.align-ctr {
+  text-align: center; }
+.tanonew {
+  margin-top: 80px; }
+.tanonew .detail {
+    font-size: 0.8em;
+    line-height: 1.3; }
+.footer {
+  background: #666;
+  padding: 20px 0; }
+.footer .nav-footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; }
+.footer .nav-footer li {
+      display: inline-block;
+      padding-left: 1.2em;
+      font-size: 0.9em; }
+.footer .nav-footer a {
+      color: #fff; }
+.footer .copyright, .footer .company {
+    text-align: right;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 0.7em;
+    color: #fff; }
+.footer .company a {
+    color: #fff; }
+@media (min-width: 768px) {
+  .navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float: none; }
+  .navbar-brand {
+    display: none; } }
+@media (max-width: 767px) {
+  #yohosi .navbar .active:after {
+    border: none;
+    content: none; }
+  .intro .sns-tl-box {
+    max-width: 500px;
+    margin: 0 auto; }
+  .formSample .formImage {
+    max-width: 360px; }
+  .navbar .nav li {
+    text-align: center; }
+  .tanonew .tanonew-logo img {
+    margin: auto; }
+  .tanonew .tanonew-logo, .tanonew .detail {
+    text-align: center; }
+  .tanonew .detail {
+    margin-top: 1em; }
+    .tanonew .detail br {
+      display: none; }
+  .footer .logo-footer {
+    text-align: center;
+    margin-bottom: 20px; }
+  .footer .nav-footer {
+    margin-bottom: 20px; }
+  .footer .nav-footer li {
+    padding: 0 .5em; }
+  .footer .nav-footer,
+  .footer .copyright,
+  .footer .company {
+    text-align: center; }
+  .vote .yohosi-list {
+    min-height: initial;
+    min-height: auto; }
+    .vote .yohosi-list .btnVote {
+      position: relative;
+      margin-top: 10px;
+      height: 3em; } }
+@media (max-width: 480px) {
+  .sns .col-sm-10 {
+    text-align: center; }
+  .nomination .nomination-block dt {
+    float: none;
+    width: auto; }
+    .nomination .nomination-block dt:after {
+      content: ":"; }
+  .nomination .nomination-block dd {
+    margin-left: 1em; } }

@@ -1,0 +1,43 @@
+- $this->set('title_for_layout', '診断結果');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+
+!{$this->element('admin/campaign-btn')}
+
+table.table.table-bordered
+  thead
+    tr
+      th ID
+      th 参加者数
+      th タイトル
+      th 本文
+  tbody
+    - foreach($_campaign['Result'] as $result):
+      tr
+        td #{$result['id']}
+        td #{$result['entry_count']}人
+        td
+          - if($result['image']):
+            p #{$result['title']}
+            !{$this->S3->image($result, 'Result.image')}
+          - else:
+            #{$result['title']}
+          - endif;
+        td !{nl2br(String::truncate(strip_tags($result['description']), 50))}
+
+h2 回答数
+
+table.table.table-bordered
+  tbody
+    - foreach($_campaign['Question'] as $question):
+      tr
+        td.active(colspan="2")
+          - if($question['image']):
+            !{$this->S3->image($question, 'Question.image')}
+          - endif;
+          #{$question['text']}
+      - foreach($question['Answer'] as $answer):
+        tr
+          td #{$answer['text']}
+          td #{$answer['entry_count']}人

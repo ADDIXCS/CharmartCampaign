@@ -1,0 +1,17 @@
+- $this->extend('admin_edit_preview');
+
+:php
+  | echo $this->Form->create('Campaign', [
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  |   'angular' => true,
+  | ]);
+  | echo $this->Form->input('title', [
+  |   'type' => 'hidden',
+  | ]);
+!{$this->element('admin/inputs-input')}
+!{$this->element('admin/btn-campaigns-edit')}
+!{$this->Form->end()}

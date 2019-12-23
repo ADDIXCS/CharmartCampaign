@@ -1,0 +1,192 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- ステップ
+!{$this->element('campaigns/section-step')}
+
+//- ファンゲート
+!{$this->element('campaigns/section-fangate', ['campaign' => $campaign])}
+
+//- 応募フォーム
+#section-form
+  .container
+    .section-lg.separator-triangle
+      .page-header
+        h2.text-center
+          - if(empty($isConfirm)):
+            | 応募者情報を入力してください
+          - else:
+            | 入力内容をご確認ください
+          - endif;
+      #section-form-inner.flap
+        - if(empty($isConfirm)):
+          p.text-center 下記項目を入力して下さい。<br>※必須項目は必ず入力して下さい。
+        - endif;
+        - if($campaign['campaign_type'] == 'vote'):
+          .section-sm.text-center !{$this->S3->image($item, 'Item.image')}
+          p.lead.text-center 「#{$item['Item']['title']}」に投票する
+        - endif;
+        :php
+          | echo $this->Form->create('Entry', [
+          |   'type' => $campaign['campaign_type'] == 'contest' && empty($isConfirm)
+          |     ? 'file'
+          |     : 'post',
+          |   'inputDefaults' => [
+          |     'div' => empty($isConfirm) ? 'form-group form-group-sm' : 'form-group',
+          |     'label' => ['class' => 'col-sm-4 control-label'],
+          |     'wrapInput' => 'col-sm-7',
+          |   ],
+          | ]);
+        - if($campaign['campaign_type'] == 'contest'):
+          .panel.panel-default
+            - if(empty($isConfirm)):
+              .panel-heading.text-center
+                p.panel-title 投稿画像
+            - endif;
+            .panel-body
+              :php
+                | echo $this->Form->input('Item.image', [
+                |   'type' => 'image',
+                |   'label' => false,
+                |   'div' => empty($isConfirm)
+                |     ? 'form-group form-group-sm text-center'
+                |     : 'form-group text-center',
+                |   'wrapInput' => false,
+                | ]);
+              p(style='color: red; background: #fee; border: 1px solid; font-size: smaller; text-align: center;')
+                | iPhoneをお使いのお客様へ<br>iOS8.0以上のFacebook公式アプリでご覧の<br>お客様は、画面右上の
+                :php
+                  | echo $this->Html->image('campaigns/ios_warning.png', ['width' => 29]);
+                | から、「safari<br>で開く」を選択いただき、ご応募下さい。
+              :php
+                | echo $this->Form->input('Item.nickname', [
+                |   'type' => 'text',
+                |   'label' => 'ニックネーム',
+                | ]);
+                | echo $this->Form->input('Item.title', [
+                |   'type' => 'text',
+                |   'label' => 'タイトル',
+                | ]);
+                | echo $this->Form->input('Item.description', [
+                |   'type' => 'textarea',
+                |   'label' => 'コメント',
+                | ]);
+        - endif;
+        - foreach(CampaignValue::$inputs as $key => $label):
+          - if($key == 'email' || $campaign['input_' . $key]):
+            !{$this->element('campaigns/input-entry', ['key' => $key, 'label' => $label])}
+          - endif;
+        :php
+          | // 追加入力項目
+          | echo $this->element('campaigns/inputs-enquete');
+          | // シェア用の入力欄
+          | $displayShare = false;
+          | if($this->Soraps->isPreview()) {
+          |   $displayShare = true;
+          | } elseif($campaign['entry_share_flg']) {
+          |   if(in_array($this->request->param('entryType'), ['facebook', 'twitter'])) {
+          |     $displayShare = true;
+          |   }
+          | }
+        - if($displayShare):
+          .form-group(ng-show="entry_share_flg")
+            .col-sm-12
+              .row
+                :php
+                  | $value = '';
+                  | $afterInput = '';
+                  | if($this->request->param('entryType') == 'twitter') {
+                  |   $value = $campaign['title'] . 'に参加しました！' . "\n";
+                  |   $value .= $this->Html->url([
+                  |     'action' => 'top',
+                  |     'accountName' => $currentAccount['Account']['account_name'],
+                  |     'id' => $campaign['id'],
+                  |   ], true);
+                  |   $afterInput = '<p id="js-share-left" class="share-left"><span></span> /140</p>';
+                  | }
+                  | echo $this->Form->input('share_message', [
+                  |   'type' => 'textarea',
+                  |   'label' => '',
+                  |   'div' => false,
+                  |   'id' => 'js-share-message-twitter',
+                  |   'placeholder' => 'シェアするコメントを入力ください。',
+                  |   'value' => $value,
+                  |   'afterInput' => $afterInput,
+                  | ]);
+              .row
+                :php
+                  | echo $this->Form->input('share_flg', [
+                  |   'type' => 'checkbox',
+                  |   'label' => ['text' => 'シェアしない', 'class' => false],
+                  |   'div' => false,
+                  |   'class' => false,
+                  |   'before' => '<label class="col-sm-4 hidden-xs"></label>',
+                  | ]);
+        - endif;
+        .row.text-center
+          .col-sm-12
+            p
+              input(type='checkbox',id='agree')
+              :php
+                | echo $this->Html->link(
+                |   '利用規約',
+                |   $this->Soraps->isPreview() ? '#' : [
+                |     'controller' => 'root',
+                |     'action' => 'pages',
+                |     'pageName' => 'terms',
+                |   ],
+                |   ['target' => '_blank']
+                | );
+              | とプライバシーポリシーに同意の上、
+              span #{empty($isConfirm) ? '確認' : '応募'}ボタンを押してください
+            - if($this->Soraps->isPreview()):
+              .btn-shadow
+                a.btn.btn-primary.btn-lg.btn-block(href="#") 確認へ進む
+            - else:
+              .btn-shadow
+                :php
+                  | echo $this->Form->button(
+                  |   empty($isConfirm)
+                  |     ? '確認へ進む'
+                  |     : $this->Soraps->customText(
+                  |       'entry_btn_label',
+                  |       CampaignValue::${$campaign['campaign_type']}['entryBtnDefaultText']
+                  |     ),
+                  |   [
+                  |     'type' => 'submit',
+                  |     'class' => 'btn btn-primary btn-lg btn-block',
+                  |     'id' => 'js-btn-submit',
+                  |     'name' => empty($isConfirm) ? 'confirm' : 'submit',
+                  |     'disabled' => 'disabled',
+                  |   ]
+                  | );
+              :php
+                | if(empty($isConfirm)) {
+                |   echo $this->Html->btn(
+                |     '戻る',
+                |     $this->Soraps->isPreview() ? '#' : [
+                |       'action' => 'top',
+                |       'accountName' => $currentAccount['Account']['account_name'],
+                |       'id' => $campaign['id'],
+                |     ]
+                |   );
+                | } else {
+                |   echo $this->Form->button('戻る', [
+                |     'type' => 'submit',
+                |     'class' => 'btn btn-default',
+                |   ]);
+                | }
+            - endif;
+        !{$this->Form->end()}
+
+// 同意するボタンのjs
+!{$this->element('campaigns/js-agree')}
+//- ファンゲート用のjs
+- if(empty($liked) && empty($isConfirm)):
+  !{$this->element('campaigns/js-fangate')}
+- endif;
+// 郵便番号
+!{$this->element('campaigns/js-postcode')}

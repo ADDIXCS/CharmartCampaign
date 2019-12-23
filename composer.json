@@ -1,0 +1,45 @@
+{
+    "name": "addix/faro-campaign",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "faro-campaign",
+            "email": "system@addix.co.jp"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.cakephp.org"
+        }
+    ],
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/DebugKit": ["cakephp/debug_kit"],
+            "app/Plugin/Utils": ["cakedc/utils"],
+            "app/Plugin/Migrations": ["cakedc/migrations"],
+            "app/Plugin/BoostCake": ["slywalker/boost_cake"],
+            "app/Plugin/Search": ["cakedc/search"]
+        }
+    },
+    "require": {
+        "pear-cakephp/cakephp": "2.*",
+        "cakephp/debug_kit": "*",
+        "cakedc/utils": "*",
+        "cakedc/migrations": "*",
+        "slywalker/boost_cake": "*",
+        "dz0ny/jade.php": "dev-master",
+        "aws/aws-sdk-php": "2.*",
+        "facebook/php-sdk": "3.2.*",
+        "jublonet/codebird-php": "dev-master",
+        "mobiledetect/mobiledetectlib": "dev-master",
+        "browscap/browscap-php": "dev-master",
+        "cakedc/search": "*",
+        "michelf/php-markdown": "1.4.1",
+        "fabpot/goutte": "~2.0",
+        "imagine/imagine": "~0.6.0"
+    },
+    "config": {
+        "secure-http": false
+    }
+}

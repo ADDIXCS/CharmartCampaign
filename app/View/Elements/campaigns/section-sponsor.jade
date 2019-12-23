@@ -1,0 +1,48 @@
+#section-sponsor.section-lg
+  .container
+    h2 主催者情報
+    table.table
+      tr
+        th 主催者
+        td #{$this->Soraps->text('sponsor_name')}
+      - if($this->Soraps->isDisplay('sponsor_url')):
+        tr(ng-show="sponsor_url")
+          th 主催者URL
+          td
+            a(href="#{$this->Soraps->text('sponsor_url')}") #{$this->Soraps->text('sponsor_url')}
+      - endif;
+      tr
+        th 問合せ先
+        td
+          - if($this->Soraps->isPreview()):
+            a(href="#") #{$this->Soraps->text('sponsor_contact')}
+          - else:
+            - if(strpos($campaign['Campaign']['sponsor_contact'], '@') !== false):
+              a(href="mailto:#{$this->Soraps->text('sponsor_contact')}")
+                #{$this->Soraps->text('sponsor_contact')}
+            - else:
+              a(href="#{$this->Soraps->text('sponsor_contact')}", target="_blank")
+                #{$this->Soraps->text('sponsor_contact')}
+            - endif;
+          - endif;
+      - if($this->Soraps->isDisplay('sponsor_address')):
+        tr(ng-show="sponsor_address")
+          th 住所
+          //td !{$this->Soraps->textarea('sponsor_address')}
+          td <u><a href="http://google.co.jp/maps/place/#{$this->Soraps->textarea('sponsor_address')}" target=_blank>!{$this->Soraps->textarea('sponsor_address')}</a></u>
+
+      - endif;
+      - if($this->Soraps->isDisplay('sponsor_tel')):
+        tr(ng-show="sponsor_tel")
+          th 電話番号
+          td #{$this->Soraps->text('sponsor_tel')}
+      - endif;
+      - if($this->Soraps->isDisplay('sponsor_access')):
+        tr(ng-show="sponsor_access")
+          th アクセス方法
+          td !{$this->Soraps->textarea('sponsor_access')}
+      - endif;
+//    - if($this->Soraps->isDisplay('sponsor_map')):
+//      .map(ng-show="sponsor_map")
+//        iframe(src="#{$campaign['Campaign']['sponsor_map']}", ng-src="#{$this->Soraps->resource('sponsor_map')}")
+//    - endif;

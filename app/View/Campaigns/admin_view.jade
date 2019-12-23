@@ -1,0 +1,156 @@
+- $this->set('title_for_layout', $campaign['Campaign']['title']);
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+:php
+  | $icons = [
+  |   'email' => $this->Html->icon('envelope', 'lg', true),
+  |   'facebook' => $this->Html->icon('facebook', 'lg', true),
+  |   'twitter' => $this->Html->icon('twitter', 'lg', true),
+  | ];
+
+!{$this->element('admin/campaign-btn')}
+
+.row
+  .col-sm-3
+    .well.well-lg.text-center
+      p.lead 参加回数
+      p.h1 #{$campaign['total_entries_count']}
+      p
+        :php
+          | $entriesCount = [];
+          | foreach(Entry::$entryTypes as $entryType) {
+          |   if($campaign[$entryType . '_entry_flg']) {
+          |     $entriesCount[] = $icons[$entryType] . $campaign[$entryType . '_entries_count'];
+          |   }
+          | }
+          | echo implode(' / ', $entriesCount);
+  .col-sm-3
+    .well.well-lg.text-center
+      p.lead 参加人数
+      p.h1 #{$campaign['total_entrants_count']}
+      p
+        :php
+          | $entrantsCount = [];
+          | foreach(Entry::$entryTypes as $entryType) {
+          |   if($campaign[$entryType . '_entry_flg']) {
+          |     $entrantsCount[] = $icons[$entryType] . $campaign[$entryType . '_entrants_count'];
+          |   }
+          | }
+          | echo implode(' / ', $entrantsCount);
+  .col-sm-3
+    .well.well-lg.text-center
+      p.lead シェア
+      p.h1 #{$campaign['total_shared_count']}
+      p
+        :php
+          | $sharedCount = [];
+          | foreach(Entry::$socialEntryTypes as $entryType) {
+          |   if($campaign[$entryType . '_entry_flg']) {
+          |     $sharedCount[] = $icons[$entryType] . $campaign[$entryType . '_shared_count'];
+          |   }
+          | }
+          | echo implode(' / ', $sharedCount);
+  .col-sm-3
+    .well.well-lg.text-center
+      p.lead リーチ
+      p.h1 #{$campaign['total_reach_count']}
+      p
+        :php
+          | $reachCount = [];
+          | foreach(Entry::$socialEntryTypes as $entryType) {
+          |   if($campaign[$entryType . '_entry_flg']) {
+          |     $reachCount[] = $icons[$entryType] . $campaign[$entryType . '_reach_count'];
+          |   }
+          | }
+          | echo implode(' / ', $reachCount);
+
+h2 参加者データ
+.row
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center 性別
+        #chart-gender
+  .col-sm-8
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center 年齢
+        #chart-age
+.row
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center Facebookの友達の数
+        #chart-facebook-friend
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center Twitterのフォロワーの数
+        #chart-twitter-followers
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center 都道府県（トップ10）
+        table.table
+          - $i = 1;
+          - foreach($campaign['state'] as $state => $count):
+            tr
+              td #{$i}
+              td #{$state}
+              td #{$count}人
+            :php
+              | $i++;
+              | if($i > 10) {
+              |   break;
+              | }
+
+h2 参加データ
+.row
+  .col-sm-12
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center 参加時間帯
+        #chart-time
+.row
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center デバイス
+        #chart-env
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center OS（デスクトップ）
+        #chart-env-desktop-os
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center ブラウザ（デスクトップ）
+        #chart-env-desktop-browser
+  .col-sm-4
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center OS（モバイル）
+        #chart-env-mobile-os
+    .panel.panel-default
+      .panel-body
+        p.lead.text-center ブラウザ（モバイル）
+        #chart-env-mobile-browser
+
+- $this->start('script');
+!{$this->Html->script('//www.google.com/jsapi')}
+:javascript
+  | var chartDatas = {
+  |   gender: #{$this->Chart->gender()},
+  |   age: #{$this->Chart->age()},
+  |   time: #{$this->Chart->time()},
+  |   'facebook-friend': #{$this->Chart->friend('facebook')},
+  |   'twitter-followers': #{$this->Chart->friend('twitter')},
+  |   env: #{$this->Chart->env()},
+  |   'env-desktop-os': #{$this->Chart->env('desktop.os')},
+  |   'env-desktop-browser': #{$this->Chart->env('desktop.browser')},
+  |   'env-mobile-os': #{$this->Chart->env('mobile.os')},
+  |   'env-mobile-browser': #{$this->Chart->env('mobile.browser')},
+  | };
+!{$this->Html->script('admin-chart')}
+- $this->end();

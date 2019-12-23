@@ -1,0 +1,48 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+- $_result = $result;
+- $result = $_result['Result'];
+- $entried = !empty($entried) ? $entried['Entry'] : false;
+
+//- 結果表示
+- if($result['image']):
+  #section-result.section
+    .container.container-img
+      h2.text-center !{$this->S3->image($result, 'Result.image')}
+    - if($result['description']):
+      .container.container-sm
+        .panel.panel-default
+          .panel-body.panel-body-bg
+            p !{nl2br($result['description'])}
+    - endif;
+- else:
+  #section-result.section.section-bg
+    .container.container-sm
+      .panel.panel-default
+        .panel-body.panel-body-bg
+          h2.text-center #{$result['title']}
+          p !{nl2br($result['description'])}
+- endif;
+
+//- シェア
+:php
+  | if(
+  |   $this->Soraps->isPreview() ||
+  |   (
+  |     $campaign['status'] == 'published' &&
+  |     $entried &&
+  |     in_array($entried['entry_type'], ['facebook', 'twitter'])
+  |   )
+  | ):
+#section-share.section
+  .container.container-xs
+    p.lead.text-center 結果をみんなにシェアしよう！
+    !{$this->element('campaigns/content-share')}
+- endif;
+
+//- トップへ戻るボタン
+.section.text-center
+  !{$this->element('campaigns/btn-top')}

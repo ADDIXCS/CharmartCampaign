@@ -1,0 +1,67 @@
+- $this->extend('/CampaignView/layout');
+
+- $_campaign = $campaign;
+- $campaign = $_campaign['Campaign'];
+- $this->Soraps->setCampaignData($campaign);
+
+//- ファンゲート
+!{$this->element('campaigns/section-fangate', ['campaign' => $campaign])}
+
+//- 設問
+:php
+  | echo $this->Form->create('Entry', [
+  |   'inputDefaults' => [
+  |     'label' => ['class' => false],
+  |     'wrapInput' => false,
+  |   ],
+  |   'class' => false,
+  | ]);
+#section-questions
+  - $questionsCount = count($_campaign['Question']);
+  - $i = 1;
+  - foreach($_campaign['Question'] as $question):
+    .section-sm
+      .container.container-xs
+        - if($question['image']):
+          p !{$this->S3->image($question, 'Question.image')}
+        - endif;
+        - if($question['text']):
+          p.lead #{$question['text']}
+        - endif;
+        p.small.text-right.text-muted Q#{$i}/#{$questionsCount}
+        :php
+          | $options = [];
+          | if($question['order'] == 'random') {
+          |   shuffle($question['Answer']);
+          | }
+          | foreach($question['Answer'] as $answer) {
+          |   $options[$answer['id']] = '<span>' . $answer['text'] . '</span>';
+          | }
+          | echo $this->Form->input($question['id'], [
+          |   'type' => 'radio',
+          |   'options' => $options,
+          |   'class' => false,
+          |   'beforeInput' => '<div class="radio">',
+          |   'separator' => '</div><div class="radio">',
+          |   'afterInput' => '</div>',
+          | ]);
+    - $i++;
+#section-entry-btn.section
+  .container
+    .btn-shadow
+      - if($this->Soraps->isPreview()):
+        a.btn.btn-primary.btn-lg.btn-block(href="#") 診断結果を見る
+      - else:
+        :php
+          | echo $this->Form->button('診断結果を見る', [
+          |   'type' => 'submit',
+          |   'class' => 'btn btn-primary btn-lg btn-block',
+          |   'id' => 'js-btn-submit',
+          | ]);
+      - endif;
+!{$this->Form->end()}
+
+//- ファンゲート用のjs
+- if(empty($liked)):
+  !{$this->element('campaigns/js-fangate')}
+- endif;

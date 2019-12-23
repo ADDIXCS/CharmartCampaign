@@ -1,0 +1,43 @@
+- $this->extend('admin_index');
+
+- $this->assign('title_for_layout', $list['AudienceList']['name']);
+
+- $this->start('audienceCounts');
+p
+  :php
+    | echo $this->Html->btn(
+    |   'オーディエンス一覧に戻る',
+    |   ['action' => 'index', 'accountName' => $currentAccount['Account']['account_name']],
+    |   ['type' => 'default', 'icon' => 'arrow-circle-left']
+    | );
+- $this->end();
+
+- $this->start('search');
+.pull-right
+  :php
+    |   echo $this->Html->btn(
+    |     'リストを編集',
+    |     '#',
+    |     ['type' => 'success', 'icon' => 'pencil'],
+    |     ['data-toggle' => 'modal', 'data-target' => '#modal-list-form']
+    |   );
+p.lead
+  | 検索結果: #{$this->request->params['paging']['Audience']['count']}件
+  br
+  | 検索条件: #{$this->element('admin/search-criteria')}
+- $this->end();
+
+- $this->start('modalListFormCreate');
+:php
+  | echo $this->Form->create('Audience', [
+  |   'url' => [
+  |     'action' => 'edit_list',
+  |     'accountName' => $currentAccount['Account']['account_name'],
+  |     'listId' => $list['AudienceList']['id'],
+  |   ],
+  |   'inputDefaults' => [
+  |     'label' => ['class' => 'col-sm-3 control-label'],
+  |     'wrapInput' => 'col-sm-5',
+  |   ],
+  | ]);
+- $this->end();
